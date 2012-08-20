@@ -1,0 +1,434 @@
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=us-ascii">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<STYLE>
+BODY {FONT-SIZE: 73%; BACKGROUND: #ffffff; COLOR: #000000; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+CODE {FONT-SIZE: 110%; FONT-FAMILY: "Courier New", Courier, monospace}
+DT {MARGIN-TOP: 1.2em; FONT-WEIGHT: bold}
+DD {MARGIN-BOTTOM: 0em; MARGIN-LEFT: 10em}
+H1 {FONT-SIZE: 150%; MARGIN-BOTTOM: 0.6em;}
+H2 {FONT-SIZE: 125%; MARGIN-BOTTOM: 0.6em; border-style: solid none none none; border-width: thin;}
+H3 {FONT-SIZE: 100%; MARGIN-BOTTOM: 0.6em}
+LI {MARGIN-TOP: 0.4em; MARGIN-BOTTOM: 0.4em}
+OL {MARGIN-TOP: 0.6em; MARGIN-BOTTOM: 0em; MARGIN-LEFT: 2.5em; LIST-STYLE-TYPE: decimal}
+OL OL {LIST-STYLE-TYPE: upper-alpha}
+OL OL OL {LIST-STYLE-TYPE: lower-roman}
+P {MARGIN-TOP: 0.6em; MARGIN-BOTTOM: 0.6em}
+PRE {MARGIN-TOP: 0.5em; MARGIN-BOTTOM: 0.5em}
+TABLE {BORDER-RIGHT: 0px; PADDING-RIGHT: 2px; BORDER-TOP: 0px; MARGIN-TOP: 0.6em; PADDING-LEFT: 2px; FONT-SIZE: 100%; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 2px; BORDER-LEFT: 0px; PADDING-TOP: 2px; BORDER-BOTTOM: 0px}
+TABLE P {MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px}
+TABLE OL {MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px}
+TABLE UL {MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px}
+TABLE.layout {PADDING-RIGHT: 0em; MARGIN-TOP: -0.6em; PADDING-LEFT: 0em; FONT-SIZE: 100%; MARGIN-BOTTOM: 0em; PADDING-BOTTOM: 0em; PADDING-TOP: 0em}
+TD {BACKGROUND: #eeeeee; VERTICAL-ALIGN: top}
+TH {BACKGROUND: #dddddd; VERTICAL-ALIGN: bottom; TEXT-ALIGN: left}
+TR {VERTICAL-ALIGN: top}
+UL {MARGIN-TOP: 0.6em; PADDING-LEFT: 0em; MARGIN-BOTTOM: 0em; MARGIN-LEFT: 1.75em; LIST-STYLE-TYPE: disc}
+UL UL {LIST-STYLE-TYPE: circle}
+UL.simple {MARGIN-TOP: 0.6em; PADDING-LEFT: 0em; MARGIN-BOTTOM: 0em; MARGIN-LEFT: 1.75em; LIST-STYLE-TYPE: none}
+A:link {BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: hand; COLOR: #0000ff}
+A:visited {BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: hand; COLOR: #0000ff}
+A:active {BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: hand; COLOR: #ff0000}
+A:hover {BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: hand; COLOR: #ff0000}
+</STYLE>
+
+<HEAD> <TITLE>Installation Notes for Delphi 2007 for Win32 and C++Builder</TITLE> </HEAD>
+<BODY>
+<H1>Installation Notes for Delphi<sup>&reg;</sup> 2007 for Win32<sup>&reg;</sup> (Update 1) and C++Builder<sup>&reg;</sup> 2007</H1>
+
+For additional information about installing the product, see:
+
+<ul><li>The Release Notes (README.htm), available on the installation DVD or on the CodeGear Developer Network at 
+ (<a href="http://dn.codegear.com/article/36575">http://dn.codegear.com/article/36575</a>)</li>
+ <li> <a href="http://dn.codegear.com/article/36523">Installation FAQ on the CodeGear Developer Network</a></li></ul>
+
+
+<H2 id=contents>Contents</H2>
+
+<UL class=simple>
+  <LI><A href="#requirements">Minimum System Requirements</A></LI>
+  <LI><A href="#General">General Installation Notes</A></LI>
+  <LI><a href="#InstallingCB">Installing Either Delphi 2007 for Win32 (Update 1) or C++Builder 2007 Using the Installation DVD</a></LI>
+  <li><A href="#InstallingBoth">Installing Both Products Using the Installation DVD</a></li>
+  <li><a href="#Upgrading">Upgrading Delphi 2007 for Win32 Using the Installation DVD</a></li>
+  <li><a href="#ElectronicInstall">Installing via Electronic Software Delivery</a></li>      
+  <li><a href="#ElectronicUpgrade">Upgrading Delphi 2007 for Win32 via Electronic Software Delivery</a></li>  
+  <li><a href="#NetworkLicense">Installing Either Product Using Purchased Network Licenses</a></li>
+  <LI><A href="#_Modifying_product_from">Modifying the Installed Product</A></LI>
+  <LI><A href="#Optional">Installing Optional, Add-on Products</A></LI>
+  <LI><A href="#Issues">Known Installation Issues</A></LI>
+  <LI><A href="#Uninstall">Uninstalling This Product</A> </LI>
+  <LI><A href="#problems">Installation Problems?</A></LI> <LI></LI>
+</UL>
+
+<H2 id="requirements">Minimum System Requirements</H2>
+<ul>
+  <li>The following Windows platforms are supported: 
+    <ul>
+      <li> Microsoft<sup>&reg;</sup> Windows 2000 Professional or Windows 2000 Server (SP4 or higher and security updates are recommended)</li>
+      <li> Microsoft Windows XP Professional (SP2)</li>      
+	  <li> Microsoft Windows Vista<sup><font size="-6">TM</font></sup></li>
+      <li> Microsoft Windows Server 2003 (SP1)</li>
+      <li> The latest service packs and security updates are recommended for all platforms</li>
+      <li> Microsoft Internet Explorer 6.0 SP1 or later 
+        <p><strong>NOTE</strong>: Installing the English version of the product updates Internet 
+          Explorer with the English version of Internet Explorer 6.0 SP1. If you 
+          are running a localized operating system, run Windows Update to ensure 
+          that you get the proper localized version of Internet Explorer.</p>
+      </li>
+    </ul>
+  </li>
+  <li>The product requires a number of prerequisites including the Microsoft .NET Framework 2.0 SDK, 
+  Microsoft .NET Framework 2.0 Redistributable Package, Microsoft Visual J#Version 2.0 Redistributable Package,
+  Microsoft Data Access Components (MDAC) 2.8, and Microsoft Core XML Services (MSXML) 6.0.  
+  The prerequisites are automatically installed on your system during the install process if 
+  they are not already present.  Although .NET 2.0 files are installed and required for the IDE to run, 
+  the product does not support development for .NET.</li>
+
+  <li> Free space requirement: Approximately 1.5 GB of disk space is required for full product 
+  installation, and the installer requires 2 GB additional temporary space.</li>
+  <li> Intel Pentium III/M 1.4GHz or Pentium IV 1.4 GHz minimum (Pentium III/M 1.4 GHz+ or Pentium IV 2GHz+ recommended).</li>
+  <li> 512 MB RAM (1 GB recommended)</li>
+  <li> DVD drive</li>
+  <li> XGA (1024x768) or higher resolution monitor</li>
+  <li> Mouse or other pointing device</li>
+  <li> The Together modeling functionality in the product requires the Java Runtime Environment.  You can download the JRE from 
+  http://www.java.com.</li>
+  </ul>
+<p><A href="#top">Top</A> </p>
+<p>&nbsp;</p>
+
+<H2 id="General">General Installation Notes</H2>
+
+<h3>Contents</h3>
+<p>The RAD Studio installation DVD contains C++Builder 2007 as well as Update 1 of 
+Delphi 2007 for Win32. You can use the installation DVD to:
+<ul>
+<li>Install either product (Delphi 2007 for Win32, Update 1; or C++Builder 2007)</li>
+<li>Install both products (Delphi 2007 for Win32, Update 1; and C++Builder 2007)</li>
+<li>Upgrade an installation of Delphi 2007 for Win32 to Update 1.
+</li></ul>
+
+Note that you can use the installation DVD for Delphi 2007 for Win32 only to install or 
+upgrade Delphi 2007, but not to install C++Builder 2007.</p>  
+
+<H3>On Windows Vista<sup><font size="-20">TM</font></sup>, must install as Administrator </H3>
+<p>For Windows Vista, you <em>must</em> run as Administrator or be on the Administrator list to 
+install the product. 
+</p>
+<H3>New installer, no bootstrap utility</H3>
+Previous versions of Borland Developer Studio and Delphi included a bootstrap utility that checked 
+for the presence of prerequisite software and installed it as necessary before the main product install started.  
+Installation is now done by InstallAware, and there is no separate bootstrap utility; all is done within the new installer.
+
+<H3>Multiple users on one machine</H3>
+<p>The product can be installed by any licensed user with administrator privileges, 
+  and is immediately available to all licensed users of the same machine. 
+  It is also available to any licensed users you might add later.</p>
+  
+<h3>Installer might require a reboot</h3>
+<p>You are prompted to reboot your system at the end of the installation 
+  if the installer updated to Internet Explorer 6.0 SP1, or if the
+  Microsoft .NET Framework v2.0 or MDAC 2.8 were installed from the installer setup. </p>
+  
+<h3>Installer requires additional temporary space</h3>
+<p>If the drive containing the folder specified in your TEMP environment variable 
+  is low on space, the Installer might halt with an error message noting the shortage. 
+  If this occurs, you'll need to assign your TEMP variable to a folder on a drive 
+  with more disk space, then rerun the installation. 
+  See <A href="#requirements">Minimum System Requirements</A> for exact specification.</p>
+  
+<h3>Assemblies installed in the Global Assembly Cache (GAC)</h3>
+<p>Duplicate copies of assemblies installed in the GAC are provided in the 
+&lt;CommonFilesFolder&gt;\CodeGear Shared\RAD Studio\Shared Assemblies\5.0 directory. If C:\ is your Windows drive, the 
+  default &lt;CommonFilesFolder&gt; is C:\Program Files\Common Files\.</p>
+  
+<h3>Verifying Installation of Update 1 for Delphi 2007 for Win32</h3>
+<p>To verify that your update has been installed, check the version number in the About box.  
+The file timestamp is 11:00.</p>
+
+<p>The only way to remove the update is to uninstall the product.</p>
+<p>This update can be applied to all language editions.</p>
+
+
+<h3>Additional information</h3>
+<p>See the README.HTM file for additional information about the product.
+</p> 
+  
+<p><A href="#top">Top</A> </p>
+<p>&nbsp;</p>
+
+<h2 id="InstallingCB">Installing Either Product Using the Installation DVD (Delphi 2007 for Win32 (Update 1) or C++Builder 2007) </h2>
+<strong>To install either product:</strong>
+<ol><li>Insert the installation DVD; this should auto-run the installer.  If this does not happen, run Setup.exe from the install directory.</li>
+<li>When prompted, enter the serial number (license key) for the product.</li>
+<li>If you are prompted to select from Setup Personalities, select the product you are installing.</li>
+</ol>
+
+<p><A href="#top">Top</A> </p>
+<p>&nbsp;</p>
+
+<h2 id="InstallingBoth">Installing Both Delphi 2007 for Win32 (Update 1) and C++Builder 2007 Using the Installation DVD</h2>
+
+<p>Use the appropriate procedure described below.</p>
+
+<h3>To install both products on a system that does not contain either product:</h3>
+
+<ol><li>Insert the installation DVD; this should auto-run the installer.  If this does not happen, run Setup.exe from the install directory.</li>
+<li>When prompted, enter the serial number (license key) for the product you want to install.</li>
+
+<li>After the install completes, initiate a secondary installation to install the second product:
+<ul><li>Select <strong>Start menu | Programs | CodeGear RAD Studio | Modify, Repair, Uninstall</strong>. 
+<li>In the maintenance dialog, choose <strong>Upgrade</strong>.</li>
+<li>Enter the serial number (license key) for the second product and complete the install.</li></li></ul>
+</ol>
+
+<h3>To install both products on a system that already contains Delphi 2007 for Win32:</h3>
+<ol><li>Insert the installation DVD; this should auto-run the installer.  If this does not happen, run Setup.exe from the install directory.</li>
+<li>When prompted, provide the appropriate serial number (license key) for C++Builder.</li>
+<li>When prompted for personalities to install, select both C++Builder and Delphi 2007 for Win32.</li>
+</ol>
+
+  
+<p><A href="#top">Top</A> </p>
+<p>&nbsp;</p>
+
+<h2 id="Upgrading">Upgrading Delphi 2007 for Win32 Using the Installation DVD</h2>
+If you have the original release of Delphi 2007 for Win32 on your system, you can upgrade to Update 1 
+using the installation DVD.  (See later section about electronic delivery for alternate media.)
+Setup.exe detects the earlier version of Delphi 2007 on your system and uninstalls 
+that previous version and then install Delphi 2007 for Win32 Update 1.
+
+<h3>To upgrade Delphi 2007 for Win32 to Update 1 on a system that already contains Delphi 2007 for Win32:</h3>
+<ul><li>Using the installation DVD, run <strong>install\setup.exe</strong> with the <strong>/upgrade</strong> 
+switch.  The /upgrade switch means that the installer displays fewer dialogs and installs the same edition of 
+Delphi 2007 for Win32 that was previously on your system.
+</li>
+</ul>
+
+<p><A href="#top">Top</A> </p>
+<p>&nbsp;</p>
+
+<h2 id="ElectronicInstall">Installing via Electronic Software Delivery</h2>
+<p>If the product is purchased via Electronic Software Delivery, you receive a setup.exe file.  
+
+<h3>To install using Electronic Software Delivery:</h3>
+<ol><li>Double-click the setup.exe file to start the installation.</li>
+<li>When prompted, enter your serial number (license key).</li>
+<li>All the required ZIP files are downloaded from the Internet and uncompressed.</li>
+<li><p>You are asked to supply an archive location for the install ZIP files.</p>
+<p><strong>Note: </strong>Backing up the downloaded ZIP files is strongly
+ encouraged so that in the future you can do a reinstall without downloading all the ZIP files again.</p>
+ </li>
+ <li>The install proceeds automatically.</li>
+</ol>
+
+<h3>To install the second product:</h3> 
+ <p>If you have installed C++Builder 2007 or Delphi 2007 for Win32 Update 1, and you want to install the
+ second product but you do not have an installation DVD, you can run a secondary or Maintenance install, 
+ which is equivalent to running setup.exe from the DVD. Use the following steps:</p>  
+ 
+ <ol><li>Select <strong>Start&gt;
+ Programs | CodeGear RAD Studio | Modify, Repair, Uninstall</strong>. </li>
+  
+ <li>In the Maintenance dialog, choose to Upgrade your current installation.
+</li>  
+<li>Enter the new serial number (license key) for the second product.
+</li></ol>
+ 
+<p><A href="#top">Top</A> </p>
+<p>&nbsp;</p>
+
+<h2 id="ElectronicUpgrade">Upgrading Delphi 2007 for Win32 via Electronic Software Delivery</h2>
+  
+<p> If you have Delphi 2007 for Win32 and you want to upgrade to Delphi 2007 for Win32 Update 1:</p>
+ 
+ <ol><li>
+ Select <strong>Start | Programs | CodeGear RAD Studio | Check for updates</strong>.</li>
+ <li>In the list of available updates, select Update 1.</li>
+ <li>Your current Delphi 2007 for Win32 installation is uninstalled, 
+ and then the required files are downloaded and installed automatically. 
+</li></ol>
+
+<p><strong>Note: </strong>Due to the MSI registration and unregistration that take place, this upgrade
+process might take an hour or two hours.  If you have problems with the download, 
+you can restart the install by running <strong>setup.exe /upgrade</strong>, and the 
+install attempts to start from where it ended.</p>
+
+<p><A href="#top">Top</A> </p>
+<p>&nbsp;</p>
+
+<h2 id="NetworkLicense">Installing Using Purchased Network Licenses</h2>
+
+If you purchased Networked Licenses (managed by the Borland License Server or FLEXlm) for Delphi 2007 for 
+Win32 or C++Builder 2007, you must follow these instructions to set up the install image or your users 
+will be prompted for a serial number and be unable to install. 
+<ol><li>Copy all the files from your media kit DVD 
+to a writeable directory on your network.</li>
+<li>Copy the networked license .slip file you received in your 
+order confirmation email to the \Install directory where setup.exe is located.</li>
+<li>When your users run setup.exe, the product detects the .slip file and installs the software.  
+During installation, the .slip file is moved to the license folder in the installation directory.</li></ol>
+
+<p><A href="#top">Top</A> </p>
+<p>&nbsp;</p>
+
+
+<h2 id="_Modifying_product_from">Modifying the Installed Product</h2>
+<ul><li>After the product is installed, you can add optional products,
+and/or add/remove features. Choose either method to modify the installed product:
+</li>
+<ul><li>Use the <strong>Control Panel | Add/Remove Programs</strong> command, 
+  select the <strong>Modify</strong> button, and then choose features 
+  that you want to add or remove.</li>
+  <li>Choose <strong>Start menu | Programs | CodeGear RAD Studio | Modify, Repair, Uninstall</strong>, 
+  select <strong>Modify</strong>, and then choose features to add or remove.
+  </li>
+  </ul>
+  <li>See also <A href="#Issues">Known Installation Issues</A>. </li>
+  </ul>
+</p>
+
+<p>&nbsp; </p>
+<p><A href="#top">Top</A> </p>
+
+<p>&nbsp;</p>
+<H2 id="Optional">Installing Optional, Add-On Products</H2>
+<h3>Rave Reports Borland Edition (BE)</h3>
+<p>Rave Reports offers a powerful suite of Win32 components that simplify 
+  the task of creating professional reports.
+  The final screen of the installer includes a checkbox where you can select or deselect the option to run the Rave Reports installer. 
+  If you want to install Rave later, the install file is located in the \Rave directory on the installation DVD or 
+  available for download from the Delphi 2007 for Win32 and C++Builder 2007 Registered Users pages on 
+  <a href="http://www.codegear.com">http://www.codegear.com</a>.</p>
+  
+<h3>InterBase 2007 Developer Edition</h3>
+<p>InterBase 2007 Developer Edition provides all developers the best cross-platform database to build and test database applications 
+for embedded and SME segments. Developers are free to choose the standard connectivity they want, and make use of a mature SQL92 
+compliant database for their applications. Database Performance monitoring allows the developer to streamline applications for optimal deployment.</p>
+<p>Install InterBase by clicking the InterBase button on the DVD launcher or download it from the Delphi 2007 for Win32 and 
+C++Builder 2007 Registered Users pages on http://www.codegear.com. Your free InterBase Developer serial number is included 
+on a sticker in your product box or in your order confirmation email or in a PDF file if you purchased via electronic delivery.</p>
+
+<h3>InstallAware Express, CodeGear Edition</h3>
+<p>Your CodeGear Express Edition of InstallAware provides the industry-unique benefits of partial web deployment, 67% better 
+compression, interactive Flash/HTML billboards, one-click runtime deployment, unlimited web updates, and one-click patching.
+Install InstallAware Express by clicking the InstallAware Express button on the DVD launcher or download it from the Delphi 
+2007 for Win32 and C++Builder 2007 Registered Users pages on   <a href="http://www.codegear.com">http://www.codegear.com</a>.</p>
+  
+
+<h3>Remote Debugger</h3>
+<p>The Remote Debugger installer is available by clicking the Remote Debugger button on the DVD launcher or as a download from 
+the Delphi 2007 for Win32 and C++Builder 2007 Registered Users pages on <a href="http://www.codegear.com">http://www.codegear.com</a>.</p>
+  
+
+<h3>CodeGear Partner Software</h3>
+Your product package may include a DVD of partner software. You can also access the partner software online via the Delphi 
+2007 for Win32 and C++Builder 2007 Registered Users pages on http://www.codegear.com or via the CodeCentral download area 
+on <a href="http://www.codegear.com">http://www.codegear.com</a>..
+
+
+
+<p><A href="#top">Top</A> </p>
+<p>&nbsp;</p>
+<H2 id="Issues">Known Installation Issues</H2>
+
+<ul>
+  <li>If you modify the CodeGear product installation by clicking the <strong>Change</strong> 
+    button in <strong>Add/Remove Programs</strong> and choosing the <strong>Modify</strong> 
+    option to remove features, setup makes the appropriate 
+    changes in the registry only in <strong>HKEY_LOCAL_MACHINE</strong>. Follow any one of the 
+    steps below to make these changes in <strong>HKEY_CURRENT_USER</strong>. 
+    <ul>
+      <li> After doing a maintenance install from <strong>Add/Remove Programs</strong>, 
+        restart the IDE and click on <strong>No</strong> for all the <em>Package 
+        not found</em> errors and <em>Assembly not found</em> errors. This automatically 
+        removes the correct assembly or package entries from the registry and should 
+        prevent these errors when starting CodeGear Delphi 2007. This is the preferred option, 
+        since the options outlined below involve manually editing the registry.</li>
+      <li> Manually edit the <strong>HKEY_CURRENT_USER\Software\Borland\BDS\5.0\Known IDE Packages</strong> 
+	    and <strong>Known Packages</strong> 
+        registry keys to delete the assemblies or packages that were removed by 
+        the setup in <strong>HKEY_LOCAL_MACHINE\Software\Borland\BDS\5.0</strong>.</li>
+      <li> Delete the <strong>HKEY_CURRENT_USER\Software\Borland\BDS\5.0</strong> registry key 
+        and restart the IDE to get the updated registry settings. Be aware that 
+        when you delete this key, you lose your customized settings that 
+        were stored under this registry key. 
+        <p><strong>Note:</strong> Read the WARNING at the end of this file before 
+          editing your system registry.</p>
+      </li>
+    </ul>
+  </li>
+  <li>Uninstalling Delphi 2007 when an earlier version of BDS or C++Builder  
+    is installed should not affect pre-existing installations.</p>
+  </li>
+<li>
+You cannot have Delphi 2007 installed and install the C++ Trial version or vice versa.  
+The personality associated with the trial will not have the files installed.
+</li>
+ 
+<li>
+If you have a Delphi Trial installed and install C++Builder Enterprise or vice versa, 
+your Delphi Trial will be uninstalled.
+</li>
+ 
+<li>
+You cannot install the previous Delphi 2007 version over an installation of C++Builder 2007 or 
+Delphi 2007 for Win32 (Update 1). If you want to reinstall Delphi on a system with C++Builder 2007, 
+you must use the Delphi install from this DVD (Update 1).
+</li>
+
+<li id="RAID250266">
+The Installer does not notify you if you have less than the required free space (2 GB on the C: drive).  
+If you try to install with too little space, the install hangs.</li>
+</ul>
+<p>&nbsp;</p>
+<p><A href="#top">Top</A> </p>
+<p>&nbsp; </p>
+<H2 id="Uninstall">Uninstalling This Product</H2>
+
+<ul><li>
+<P>To uninstall the product, the Administrator who initially installed the product 
+  must open the Control Panel, select <strong>Add or Remove Programs</strong>, 
+  select <strong>RAD Studio</strong> and click the <strong>Remove</strong> 
+  button. After uninstalling, in order to remove user-specific data from the Windows 
+  registry, all non-Administrator users of the product must log in and delete 
+  the following registry key:</P>
+<blockquote>
+  <p><font face="Courier New, Courier, mono">HKEY_CURRENT_USER\Software\Borland\BDS\5.0</font></p>
+  </blockquote>
+<p> </p>
+<p><strong>WARNING:</strong> Registry editing is performed at your own risk. This 
+  document and other documentation that accompanies this product describe how 
+  to edit your Windows registry. In most cases, CodeGear recommends that you use 
+  the Microsoft Regedit tool to perform editing. Whatever tool you use, however, 
+  you should, before making any changes, make backups of your registry and thoroughly 
+  familiarize yourself with the editing tool and the registry editing process. 
+  The registry is a critical component of your operating system, and any mistakes 
+  you make while editing it can cause your machine to stop functioning.</p>
+</li>
+ <li>After uninstalling, user-specific data such as default project settings might remain in 
+ configuration files found in this directory:  
+<p>Documents and Settings\&lt;username&gt;\Application Data\Borland\BDS\5.0\</p>
+<p>This folder should be manually removed.</p>
+</li> 
+  </ul>
+<p>&nbsp;</p>
+<p><A href="#top">Top</A> </p>
+<p>&nbsp;</p>
+
+<h2 id="Problems">Installation Problems?</h2>
+<p>Please file a support case via the <a href="http://support.codegear.com">http://support.codegear.com </a> website if you encounter any problems during installation.</p>
+
+<p><br>
+</p>
+<p><A href="#top">Top</A> </p>
+<p>&nbsp;</p>
+
+<P>Copyright (c) 2007 CodeGear. <BR>
+All rights reserved.
+</P>
+</BODY>
+</HTML>

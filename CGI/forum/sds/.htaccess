@@ -1,0 +1,4 @@
+<Files *.sds>
+  Order Deny, Allow
+  Deny from All
+</Files>

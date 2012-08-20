@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* Stylesheet for the anti-phishing warning documents */
+/* Copyright 2006 Opera Software */
+@media tv, handheld {html {font-size: 150%;}}
+@media screen, projection, tv, handheld, speech {
+html {
+	font-family: sans-serif;
+	color: rgb(56,56,56);
+	background-color: rgb(200,200,200);
+	margin: 50px auto 10px;
+	max-width: 390px;
+	voice-family: female;
+}
+body {margin: 0;}
+a {
+	color: rgb(74,74,74);
+	background-color: transparent;
+}
+h1 {
+	font-family: sans-serif;	
+	font-size: 83%;
+	text-align: center;
+	color: rgb(255,255,255);
+	background-image: url(images/red_center.png);
+	background-repeat: repeat-x;
+	padding: 5px 0;
+	margin: 0 11px;
+	min-height: 18px;
+	position: relative;
+}
+h1::before, h1::after {
+	content: "";
+	background-image: url(images/red_left.png);
+	width: 13px;
+	height: 28px;
+	position: absolute;
+	left: -13px;
+	top: 0;
+}
+h1::after {
+	background-image: url(images/red_right.png);
+	left: auto;
+	right: -13px;
+}
+p {
+	font-size: 83%;
+	color: inherit;
+	background-color: rgb(252,252,252);
+	-o-text-overflow: ellipsis;
+	padding: 10px;
+	margin: 0;
+	overflow: hidden;
+}
+h1+p::before {
+	content: "";
+	background-image: -o-skin('Dialog Warning');
+	margin: 0 7px 0 0;
+	width: 47px;
+	height: 47px;
+	float: left;
+}
+ul {
+	color: inherit;
+	background-color: rgb(252,252,252);
+	padding: 15px 25px 5px;
+	margin: 0;
+	list-style: none;
+}
+li {
+	font-size: 83%;
+	text-align: center;
+	vertical-align: middle;
+	padding: 5px;
+	display: block;
+}
+li+li {
+	font-size: 70%;
+	text-align: center;
+	padding: 25px 0 0;
+	width: 100%;
+}
+address {
+	font-size: 70%;
+	font-style: normal;
+	text-indent: 5px;
+	background-color: rgb(250,250,250);
+	background-image: url(images/center.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	padding: 3px 3px 5px;
+	border-top: 1px solid rgb(144,144,144);
+	clear: both;
+}
+}
+@media all and (max-width: 416px) {
+	html {margin: 10px 15px;}
+}
+@media all and (max-width: 200px) {
+	html {margin: 0;}
+	h1 {
+		margin: 0;
+		background-color: rgb(179,0,0);
+	}
+	h1::before, h1::after {display: none;}
+}
+@media tv {h1 {height: 18px;}}

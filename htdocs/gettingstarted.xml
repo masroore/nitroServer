@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Getting Started</title>
+		<link>ms-help://borland.bds5/bds5guide/html/GettingStartedPart.htm</link>
+		<description>The Borland Developer Studio integrated development environment (IDE) provides many tools and features to help you build powerful applications quickly. Not all features and tools are available in all editions of Borland Developer Studio. For a list of features and tools included in your edition, refer to the feature matrix on http://www.codegear.com/delphi </description>
+		<item ignoreSize="1">
+			<title>What is Borland Developer Studio?</title>
+			<description>Borland Developer Studio is an integrated development environment (IDE) for building Delphi, Delphi for .NET, C#, and C++ applications. The Borland Developer Studio IDE provides a comprehensive set of tools that streamline and simplify the development life cycle.</description>
+			<link>javascript:openDExplore('ms-help://borland.bds5/bds5guide/html/ProductOV.htm');</link>
+			<guid></guid>
+			<category></category>
+			<pubDate>Fri, 30 Sep 2005 10:00:00 GMT</pubDate>
+		</item>
+		<item ignoreSize="1">
+			<title>What's New in Borland Developer Studio 2006</title>
+			<description>Borland Developer Studio provides key new features for developing Delphi, Delphi for .NET, C#, and C++ applications </description>
+			<link>javascript:openDExplore('ms-help://borland.bds5/bds5guide/html/WhatsNew.htm');</link>
+			<guid></guid>
+			<category></category>
+			<pubDate>Fri, 30 Sep 2005 10:00:00 GMT</pubDate>
+		</item>
+		<item ignoreSize="1">
+			<title>Tour of the IDE</title>
+			<description>When you start Borland Developer Studio, the integrated development environment (IDE) launches and displays several tools and menus. The IDE helps you visually design user interfaces, set object properties, write code, and view and manage your application in various ways. </description>
+			<link>javascript:openDExplore('ms-help://borland.bds5/bds5guide/html/IDETour.htm');</link>
+			<guid></guid>
+			<category></category>
+			<pubDate>Fri, 30 Sep 2005 10:00:00 GMT</pubDate>
+		</item>
+		<item ignoreSize="1">
+			<title>Starting a Project</title>
+			<description>A project is a collection of files that is used to create a target application. This collection of files consists of the files you include and modify directly, such as source code files and resources, and other files that Borland Developer Studio maintains to store project settings, such as the .bdsproj project file. Projects are created at design time, and they produce the project target files (.exe, .dll, .bpl, etc.) when you compile the project. To assist in the development process, the Object Repository offers many pre-designed templates, forms, files, and other items that you can use to create applications.</description>
+			<link>javascript:openDExplore('ms-help://borland.bds5/bds5guide/html/StartProject.htm');</link>
+			<guid></guid>
+			<category></category>
+			<pubDate>Fri, 30 Sep 2005 10:00:00 GMT</pubDate>
+		</item>
+		<item ignoreSize="1">
+			<title>Code Editor</title>
+			<description>The Code Editor is a full-featured, customizable, UTF8 editor that provides syntax highlighting, multiple undo capability, and context-sensitive Help for language elements. As you design the user interface for your application, Borland Developer Studio generates the underlying code. When you modify object properties, your changes are automatically reflected in the source files. Because all of your programs share common characteristics, Borland Developer Studio auto-generates code to get you started. You can think of the auto-generated code as an outline that you can examine to create your program.</description>
+			<link>javascript:openDExplore('ms-help://borland.bds5/bds5guide/html/CodeEditor.htm');</link>
+			<guid></guid>
+			<category></category>
+			<pubDate>Fri, 30 Sep 2005 10:00:00 GMT</pubDate>
+		</item>
+		<item ignoreSize="1">
+			<title>Help on Help</title>
+			<description>Explains how information is organized in the online Help and lists additional developer resources.</description>
+			<link>javascript:openDExplore('ms-help://borland.bds5/bds5guide/html/HelpOnHelp.htm');</link>
+			<guid></guid>
+			<category></category>
+			<pubDate>Fri, 30 Sep 2005 10:00:00 GMT</pubDate>
+		</item>
+		<item ignoreSize="1">
+			<title>Delphi Language Guide</title>
+			<description>The Delphi Language guide describes the Delphi language as it is used in Borland development tools. This book describes the Delphi language on both the Win32, and .NET development platforms.</description>
+			<link>javascript:openDExplore('ms-help://borland.bds5/bds5ref/html/LanguageGuidePart.htm');</link>
+			<guid></guid>
+			<category></category>
+			<pubDate>Fri, 30 Sep 2005 10:00:00 GMT</pubDate>
+		</item>
+		<item ignoreSize="1">
+			<title>Procedures</title>
+			<description>This section provides how-to information for various areas of Borland Developer Studio development. 
+			</description>
+			<link>javascript:openDExplore('ms-help://borland.bds5/bds5tasks/html/ProcedurePart.htm');</link>
+			<guid></guid>
+			<category></category>
+			<pubDate>Fri, 30 Sep 2005 10:00:00 GMT</pubDate>
+		</item>
+	</channel>
+</rss>

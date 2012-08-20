@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<codetemplate	xmlns="http://schemas.borland.com/Delphi/2005/codetemplates"
+				version="1.0.0">
+	<template name="sisep" invoke="manual">
+		<description>SmartInspect LogSeparator</description>
+		<author>Gurock Software</author>
+		<code language="C" context="methodbody" delimiter="|"><![CDATA[SiMain->LogSeparator();]]></code>
+	</template>
+</codetemplate>

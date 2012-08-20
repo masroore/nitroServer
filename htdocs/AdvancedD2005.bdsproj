@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality" Type="String">CSharp.Personality</Option>
+			<Option Name="GUID" Type="String">{7D8CE487-AA73-47E3-9406-42118848DE44}</Option>
+			<Option Name="ProjectType" Type="String">Application</Option>
+			<Option Name="Version" Type="String">1.0</Option>
+		</Option>
+	</PersonalityInfo>
+	<CSharp.Personality>
+		<Options>
+			<SelectedOptionSet Name="OptionsSet" Type="String">Debug</SelectedOptionSet>
+			<OptionsSet Name="Debug">
+				<Options>
+					<Options Name="DebugInformation" Type="Boolean">true</Options>
+					<Options Name="Optimization" Type="Boolean">false</Options>
+					<Options Name="Incremental" Type="Boolean">true</Options>
+					<Options Name="Overflow" Type="Boolean">false</Options>
+					<Options Name="DocumentationFile" Type="String"></Options>
+					<Options Name="ivUnsafe" Type="Boolean">false</Options>
+					<Options Name="WarningAsError" Type="Boolean">false</Options>
+					<Options Name="Warning" Type="Integer">4</Options>
+					<Options Name="Defines" Type="String">DEBUG;TRACE</Options>
+					<Options Name="TargetName" Type="String">Advanced</Options>
+					<Options Name="TargetType" Type="String">Windows</Options>
+					<Options Name="BaseAddress" Type="String">285212672</Options>
+					<Options Name="OutputDirectory" Type="String">.\</Options>
+					<Options Name="DefaultNamespace" Type="String">Gurock.SmartInspect.Examples.Advanced</Options>
+					<Options Name="Main" Type="String"></Options>
+					<Options Name="RunParams" Type="String"></Options>
+					<Options Name="HostApplication" Type="String"></Options>
+					<Options Name="Launcher" Type="String"></Options>
+					<Options Name="UseLauncher" Type="Boolean">False</Options>
+					<Options Name="DebugCWD" Type="String"></Options>
+					<Options Name="RemotePath" Type="String"></Options>
+					<Options Name="RemoteHost" Type="String"></Options>
+					<Options Name="RemoteLauncher" Type="String"></Options>
+					<Options Name="RemoteDebug" Type="Boolean">False</Options>
+					<Options Name="AspNetUseHostServer" Type="Boolean">False</Options>
+					<Options Name="AspNetLaunchBrowser" Type="Boolean">False</Options>
+					<Options Name="AspNetStartPage" Type="String"></Options>
+					<Options Name="AspNetHostServer" Type="String">IIS</Options>
+					<Options Name="AspNetCassiniVirtualDirectory" Type="String"></Options>
+					<Options Name="AspNetIISVirtualDirectory" Type="String"></Options>
+					<Options Name="AspNetHTTPAddress" Type="String"></Options>
+					<Options Name="ApplicationIcon" Type="String"></Options>
+					<Options Name="BuildInOutput" Type="Boolean">True</Options>
+				</Options>
+			</OptionsSet>
+			<OptionsSet Name="Release">
+				<Options>
+					<Options Name="DebugInformation" Type="Boolean">false</Options>
+					<Options Name="Optimization" Type="Boolean">true</Options>
+					<Options Name="Incremental" Type="Boolean">false</Options>
+					<Options Name="Overflow" Type="Boolean">false</Options>
+					<Options Name="DocumentationFile" Type="String"></Options>
+					<Options Name="ivUnsafe" Type="Boolean">false</Options>
+					<Options Name="WarningAsError" Type="Boolean">false</Options>
+					<Options Name="Warning" Type="Integer">4</Options>
+					<Options Name="Defines" Type="String">TRACE</Options>
+					<Options Name="TargetName" Type="String">Advanced</Options>
+					<Options Name="TargetType" Type="String">Windows</Options>
+					<Options Name="BaseAddress" Type="String">285212672</Options>
+					<Options Name="OutputDirectory" Type="String">.\</Options>
+					<Options Name="DefaultNamespace" Type="String">Gurock.SmartInspect.Examples.Advanced</Options>
+					<Options Name="Main" Type="String"></Options>
+					<Options Name="RunParams" Type="String"></Options>
+					<Options Name="HostApplication" Type="String"></Options>
+					<Options Name="Launcher" Type="String"></Options>
+					<Options Name="UseLauncher" Type="Boolean">False</Options>
+					<Options Name="DebugCWD" Type="String"></Options>
+					<Options Name="RemotePath" Type="String"></Options>
+					<Options Name="RemoteHost" Type="String"></Options>
+					<Options Name="RemoteLauncher" Type="String"></Options>
+					<Options Name="RemoteDebug" Type="Boolean">False</Options>
+					<Options Name="AspNetUseHostServer" Type="Boolean">False</Options>
+					<Options Name="AspNetLaunchBrowser" Type="Boolean">False</Options>
+					<Options Name="AspNetStartPage" Type="String"></Options>
+					<Options Name="AspNetHostServer" Type="String">IIS</Options>
+					<Options Name="AspNetCassiniVirtualDirectory" Type="String"></Options>
+					<Options Name="AspNetIISVirtualDirectory" Type="String"></Options>
+					<Options Name="AspNetHTTPAddress" Type="String"></Options>
+					<Options Name="ApplicationIcon" Type="String"></Options>
+					<Options Name="BuildInOutput" Type="Boolean">True</Options>
+				</Options>
+			</OptionsSet>
+		</Options>
+		<FileList>
+			<File FileName="System.dll" ContainerId="DotNetAssemblyCompiler" ModuleName="System" AssemblyName="System"/>
+			<File FileName="System.Data.dll" ContainerId="DotNetAssemblyCompiler" ModuleName="System.Data" AssemblyName="System.Data"/>
+			<File FileName="System.Drawing.dll" ContainerId="DotNetAssemblyCompiler" ModuleName="System.Drawing" AssemblyName="System.Drawing"/>
+			<File FileName="System.Windows.Forms.dll" ContainerId="DotNetAssemblyCompiler" ModuleName="System.Windows.Forms" AssemblyName="System.Windows.Forms"/>
+			<File FileName="System.Xml.dll" ContainerId="DotNetAssemblyCompiler" ModuleName="System.XML" AssemblyName="System.Xml"/>
+			<File FileName="Gurock.SmartInspect.dll" ContainerId="DotNetAssemblyCompiler" ModuleName="Gurock.SmartInspect" AssemblyName="Gurock.SmartInspect"/>
+			<File FileName="MainForm.cs" ContainerId="CSharpCompiler" ModuleName="MainForm" FileTypeString="System.Windows.Forms.Form" RootComponentClassName="Gurock.SmartInspect.Examples.Advanced.MainForm"/>
+		</FileList>
+	</CSharp.Personality>
+	<ImportData>
+		<CSharpProjectOptions ApplicationIcon="" AssemblyKeyContainerName="" AssemblyName="Advanced" AssemblyOriginatorKeyFile="" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="WinExe" PreBuildEvent="" PostBuildEvent="" RootNamespace="Gurock.SmartInspect.Examples.Advanced" RunPostBuildEvent="OnBuildSuccess" StartupObject=""/>
+		<CSharpLocalOptions Name="Debug" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="true" NoStdLib="false" NoWarn="" Optimize="false" OutputPath=".\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4"/>
+		<CSharpLocalOptions Name="Release" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="TRACE" DocumentationFile="" DebugSymbols="false" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="true" OutputPath=".\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4"/>
+	</ImportData>
+</BorlandProject>

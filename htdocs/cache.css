@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* Stylesheet for the Opera cache document */
+/* Copyright 2006 Opera Software */
+@media screen, projection, tv, handheld, speech {
+html {
+	font-family: sans-serif;
+	color: rgb(56,56,56);
+	background-color: rgb(236,236,236);
+	background-image: url(images/root.png);
+	margin: 0 auto 10px;
+	border-width: 0 1px;
+	border-color: rgb(144,144,144);
+	border-style: solid;
+	max-width: 700px;
+	voice-family: female;
+}
+body {
+	color: rgb(56,56,56);
+	background-color: rgb(246,246,246);
+	margin: 0;
+}
+h1 {
+	font-family: sans-serif;	
+	font-size: 110%;
+	font-weight: normal;
+	text-align: right;
+	letter-spacing: -1px;
+	color: rgb(74,74,74);
+	background-image: url(images/top.png);
+	background-repeat: repeat-x;	
+	padding: 20px 10px 0;
+	margin: 0;
+	height: 35px;
+}
+html[dir="rtl"] h1 {
+	text-align: left;
+	letter-spacing: normal;
+}
+a {
+	text-decoration: none;
+	color: rgb(74,74,74);
+	background-color: transparent;
+}
+a:hover {text-decoration: underline;}
+table {
+	font-size: 70%;
+	line-height: 130%;
+	padding: 0;
+	margin: 0 0 10px;
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+th {
+	background-image: url(images/bar.png);
+	background-repeat: repeat-x;
+	background-position: 0px -5px;
+	padding: 5px 3px;
+	border-top: 1px solid rgb(188,188,188);
+}
+td {
+	vertical-align: top;
+	padding: 3px 10px;
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: rgb(223,223,223) rgb(246,246,246) rgb(246,246,246);
+}
+td:first-child, td:first-child+td {
+	border-width: 1px 1px 1px 0;
+	border-color: rgb(223,223,223) rgb(223,223,223) rgb(246,246,246) rgb(246,246,246);
+}
+td:first-child+td {
+	text-align: right;
+	padding: 2px 15px 2px 25px;
+}
+tr:first-child+tr>td {border-top: 1px solid rgb(188,188,188);}
+td+td+td a {
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+	display: block;
+}
+body::after {
+	content: "";
+	background-color: rgb(250,250,250);
+	background-image: url(images/center.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	border-top: 1px solid rgb(144,144,144);
+	height: 20px;
+	width: 100%;
+	display: block;
+	speak: none;
+}
+}
+@media all and (max-width: 400px) {th {width: 100px;}}
+@media all and (max-width: 350px) {
+	h1 {
+		text-align: center;
+		padding: 10px 5px;
+		height: auto;
+	}
+	tr:first-child {
+		background-image: url(images/bar.png);
+		background-repeat: repeat-x;
+		background-position: 0px -5px;
+	}
+	tr {border-top: 1px solid rgb(188,188,188) !important;}
+	th {
+		font-size: 10px;
+		background-image: none;
+		border-top: none;
+		display: inline;
+	}
+	td {
+		text-align: left !important;
+		padding: 2px !important;
+		border-color: rgb(246,246,246) !important;
+		width: auto;
+		display: block;
+	}
+	html[dir="rtl"] td {text-align: right !important;}
+}

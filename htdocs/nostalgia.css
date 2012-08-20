@@ -1,0 +1,160 @@
+@charset "utf-8";
+/*	Name: 1490680841
+	Nostalgia
+Copyright 2006 Opera Software */
+* {
+	font-family: monospace !important;
+	font-style: normal !important;
+	line-height: 1.3em !important;
+	letter-spacing: 0px !important;
+	text-decoration: none !important;
+	text-align: left !important;
+	border: none !important;
+	outline: none !important;
+}
+html::before, html::after, html body *::before, html body *::after {display: none !important;}
+title, h1 {text-transform: uppercase !important;}
+h1, h2, h3, h4, h5, h6, th, caption {margin-top: 2em !important;}
+iframe {content: "IFRAME removed" !important;}
+iframe[title] {content: attr(title) !important;}
+iframe[longdesc] {content: attr(longdesc) !important;}
+img {
+	max-width: 96px !important;
+	max-height: 84px !important;
+}
+iframe, img[alt], img[title] {
+	padding: 0.2em !important;
+	max-width: none !important;
+	max-height: none !important;
+	width: auto !important;
+	height: auto !important;
+	background: Black !important;
+	color: White !important;
+}
+img[title] {content: attr(title) !important;}
+img[alt] {content: attr(alt) !important;}
+input, textarea, select {
+	background: White !important;
+	color: Black !important;
+}
+input[type="text"], input[type="password"] {min-height: 1.2em !important;}
+textarea {min-height: 4em !important;}
+button, input[type="file"], input[type="submit"], input[type="button"], input[type="reset"], input[type="image"] {
+	height: 1.2em !important;
+	background: Silver !important;
+	color: Black !important;
+	text-align: center !important;
+	padding: 2px 3px 2px 3px !important;
+	min-width: 2em !important;
+}
+button:active, input[type="file"]:active, input[type="submit"]:active,
+input[type="button"]:active, input[type="reset"]:active, input[type="image"]:active {padding: 2px 2px 2px 4px !important;}
+hr {
+	height: 0px !important;
+	border-top: medium dashed #6C5EB5 !important;
+	margin: 4px 0px 4px 0px !important;
+}
+@media screen, projection {
+	* {
+		font-size: 22px !important;
+		font-weight: bold !important;
+		white-space: normal !important;
+		background: #352879 !important;	/*Blue*/
+		color: #6C5EB5 !important;	/*Light blue*/
+		position: static !important;
+		float: none !important;
+		max-width: 40em !important;
+		min-width: 0px !important;
+		width: auto !important;
+		max-height: none !important;
+		min-height: 0px !important;
+		height: auto !important;
+	}
+	html {
+		border: 2.5em solid #6C5EB5 !important;	/*Light blue*/
+		width: 40em !important;
+		margin: 0em !important;
+		padding: 0em !important;
+	
+		background: #6C5EB5 !important;	/*Light blue*/
+		color: #352879 !important;	/*Blue*/
+	}
+	html::after {
+		display: block !important;
+		clear: both !important;
+		margin: 0em !important;
+		padding: 0em 0em 0em 2px !important;
+		content: "\2588" !important;
+		background: #352879 !important;	/*Blue*/
+		color: #6C5EB5 !important;	/*Light blue*/
+		text-decoration: blink !important;
+		text-align: left !important;
+	}
+	head, title {display: block !important;}
+	head::before, head::after, html body::before, html body::after {
+		display: block !important;
+		clear: both !important;
+		background: #352879 !important;	/*Blue*/
+		color: #6C5EB5 !important;	/*Light blue*/
+		text-decoration: none !important;
+	}
+	head::after, body::before, body::after {text-align: left !important;}
+	head::before {
+		margin: 0em !important;
+		padding: 1em 0em 2em 0em !important;
+		content: "**** OPERA FOR 8-BIT COMPUTERS ****" !important;
+		text-align: center !important;
+	}
+	head::after {
+		margin: 0em !important;
+		padding: 0em !important;
+		content: "READY." !important;
+	}
+	body {
+		margin: 0px !important;
+		padding: 1em 12px 0.5em 2px !important;
+		text-align: left !important;
+	}
+	body::before {
+		margin: 0em 0em 1em !important;
+		padding: 0em !important;
+		content: "RUN" !important;
+	}
+	body::after {
+		margin: 2em 0 0 !important;
+		padding: 0 !important;
+		content: "READY." !important;
+	}
+	title {
+		margin: 0em !important;
+		padding: 0px 0px 0px 2px !important;
+	}
+	title::before {content: 'LOAD"' !important;}
+	title::after {content: '",8\ALOADING' !important;}
+	table, caption, tr, thead, tfoot, tbody, th, td {
+		display: block !important;
+		text-align: left !important;
+	}
+	pre {white-space: -pre-wrap !important;}
+	input, textarea, select {max-width: 38em !important;}
+	kbd, em, b, i, strong, u {
+		padding: 0px 2px 0px 2px !important;
+		background: #6C5EB5 !important;	/*Light blue*/
+		color: #352879 !important;	/*Blue*/
+	}
+	a[href], a[href]:link, a[href]:hover, a[href]:active {
+		color: #FFFFFF !important;	/*White*/
+		text-decoration: none !important;
+	}
+	a[href]:visited {
+		color: #9A6759 !important;	/*Light red*/
+		text-decoration: none !important;
+	}
+}
+@media print {
+	* {
+		font-size: 12pt !important;
+		background: White !important;
+		color: Black !important;
+	}
+}

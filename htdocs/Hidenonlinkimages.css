@@ -1,0 +1,6 @@
+@charset "utf-8";
+/*	Name: 1490680846
+	Hide non-linking images
+	Copyright 2006 Opera Software */
+img, object[type^="image"] {display: none !important;}
+a img, a object[type^="image"], a [usemap], a[ismap] {display: inline-block !important;}

@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS style sheet for content blocker */
+/* Copyright 2006 Opera Software */
+
+* {
+color: #e0e0e0 !important;
+background: white !important;
+border-color: white !important;
+outline-color: white !important;
+}
+ 
+hr {
+visibility: hidden;
+}
+
+select, textarea, input {
+opacity: 0.25 !important;
+}

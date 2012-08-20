@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<CodeSnipplets><Snipplet ID="3" EditorOptions="Borland.EditOptions.Pascal">try
+except
+end;
+</Snipplet><Snipplet ID="4" EditorOptions="Borland.EditOptions.Pascal">try
+  try
+  except
+  end;
+finally
+end;
+</Snipplet><Snipplet ID="5" EditorOptions="Borland.EditOptions.Pascal">try
+finally
+end;
+</Snipplet><Snipplet ID="6" EditorOptions="Borland.EditOptions.Pascal">TClass1 = class()
+private
+protected
+public
+end;
+</Snipplet><Snipplet ID="7" EditorOptions="Borland.EditOptions.Pascal">for := to do
+begin
+end;
+</Snipplet><Snipplet ID="8" EditorOptions="Borland.EditOptions.C#">try
+{
+
+}
+catch (Exception ex)
+{
+
+}</Snipplet><Snipplet ID="9" EditorOptions="Borland.EditOptions.C#">try
+{
+
+}
+catch (Exception ex)
+{
+
+}
+finally
+{
+
+}</Snipplet><Snipplet ID="10" EditorOptions="Borland.EditOptions.C#">try
+{
+
+}
+finally
+{
+
+}</Snipplet><Snipplet ID="11" EditorOptions="Borland.EditOptions.C#">public class Class1
+{
+  public Class1()
+  {
+  }
+}</Snipplet><Snipplet ID="12" EditorOptions="Borland.EditOptions.C#">for (; ;)
+{
+
+}</Snipplet></CodeSnipplets>

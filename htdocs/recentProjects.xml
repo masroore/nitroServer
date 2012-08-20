@@ -1,0 +1,22 @@
+﻿<rss version="2.0">
+	<channel>
+		<reload>javascript:reloadProjects(false);</reload>
+		<title>Recent Projects</title>
+		<item>
+			<title>Show Recent Projects</title>
+			<link>javascript:menuPersistCall('{29C682DC-AC59-4EFE-925F-C8318C62B219}');</link>
+		</item>
+		<action>
+			<title>New Project...</title>
+			<link>javascript:newProject();</link>
+		</action>
+		<action>
+			<title>Open Project...</title>
+			<link>javascript:openProject();</link>
+		</action>
+		<action>
+			<title>Help...</title>
+			<link>javascript:openDExplore('ms-help://borland.bds5/bds5start/intro.html');</link>
+		</action>
+	</channel>
+</rss>

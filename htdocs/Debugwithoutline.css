@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*	Name: 1947827513
+	Debug with outline
+	Copyright 2006 Opera Software */
+iframe {outline: 3px solid green !important;}
+table {outline: 3px solid black !important;}
+div {outline: 2px solid #CC0000 !important;}
+object {outline: 2px dashed #3366CC !important;}
+form {outline: 2px dotted green !important;}
+td, th {outline: 1px dashed #FFCC00 !important;}
+p {outline: 2px dotted black !important;}
+span {outline: 1px dotted #CC0000 !important;}

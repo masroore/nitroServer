@@ -1,0 +1,41 @@
+[-- Simple Data Storage File --]
+5
+4
+5
+
+id
+2
+cid
+2
+aid
+2
+date
+6
+text
+1
+
+0
+1
+1
+2005-10-23 17:27:32
+This is the First Message Text
+1
+1
+1
+24.10.2005 04:30:06
+test
+2
+2
+1
+24.10.2005 04:32:11
+testing
+3
+2
+1
+24.10.2005 04:32:30
+yy
+4
+2
+1
+24.10.2005 04:39:18
+test

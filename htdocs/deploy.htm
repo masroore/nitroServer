@@ -1,0 +1,798 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0109)file://C:\Documents and Settings\khouser\Local Settings\Temporary Internet Files\OLK56\NewDeploy-Combined.htm -->
+<HTML><HEAD><TITLE>Deploying Delphi 2007 for Win32 and C++Builder 2007 Applications</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY>
+<H1><A name=top></A>Deploying Delphi<SUP>®</SUP> 2007 for Win32<SUP>®</SUP> and 
+C++Builder<SUP>®</SUP> 2007 Applications </H1>
+<P>Please read this entire file before deploying Delphi 2007 for Win32 or 
+C++Builder 2007 applications, components, or libraries. This file is provided 
+pursuant to the CodeGear License Terms and provides information on deploying 
+Delphi 2007 for Win32 and C++Builder 2007 applications. </P>
+<HR>
+
+<H2>Table of Contents </H2>
+<P><A href="#General">1. General Application Deployment </A><BR>
+<A href="#Components">2. Components and Packages</A> 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<A href="#custom">2.1 Distributing Custom Packages </A>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<A href="#CodeGearRuntime">2.2 CodeGear Runtime Packages </A>
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;<A href="#Runtime">2.3 Runtime Packages</A> 
+<BR><A href="#BDE">3. The Borland Database Engine (BDE) </A>
+<BR><A href="#Images">4. Sample Images </A>
+<BR><A href="#WebSnap">5. WebSnap Application Deployment </A>
+<BR><A href="#InterBase">6. InterBase </A>
+<BR><A href="#JPEG">7. JPEG Compression Software </A>
+<BR><A href="#Indy">8. Indy (Internet Direct)</A>
+<BR><A href="#Other">9. Other Components </A>
+<BR><A href="#Removed">9. Removed or Modified Redistributable Files </A>
+<BR></P>
+<HR>
+
+<H2><A name=General></A>1. General Application Deployment <BR></H2>
+<P>When building applications using Delphi and C++Builder, provide your .EXE 
+file and any DLLs or BPLs that it calls. For simple applications you can 
+distribute a standalone .EXE file. If you have used runtime packages with your 
+application, be sure to include all required BPLs with the distribution. </P>
+<P>If you build C++Builder applications using the dynamic Run-Time Library, you 
+will also have to distribute one or more of the Run-Time Library DLLs cc3280.dll 
+or cc3280mt.dll and the memory manager DLL. </P>
+<P>For third party deployables, please see the third party documentation 
+included with this product for other redistribution limitations. </P>
+<P><A 
+href="#top">Top</A> 
+</P>
+<HR>
+
+<H2><A name=Components></A>2. Components and Packages <BR></H2>
+<H3><A name=custom></A>2.1 Distributing Custom Packages </H3>
+<P>If you distribute Delphi packages to other developers, be sure to supply the 
+necessary files including .DLL, .DCP, .DCU, .BPL, or executable files as 
+required. Also, include any documentation you might have. </P>
+<P>If you distribute C++Builder packages to other developers, be sure to supply 
+both .BPI and any .LIB files to which your packages link. You will probably also 
+want to include .OBJ and .DCU files. </P>
+<P><A 
+href="#top">Top</A> 
+</P>
+<H3><A name=CodeGearRuntime></A>2.2 CodeGear Runtime Packages </H3>
+<P>In accordance with the "General Terms That Apply to Compiled Programs and 
+Redistributables," you may redistribute CodeGear-supplied runtime packages only 
+for the purpose of executing Works created with Delphi 2007 for Win32 or 
+C++Builder 2007. You may not modify these packages in any way. </P>
+<P>The redistributable runtime packages are installed in the system files 
+directory of the computer, which is commonly WINDOWS\System32 on Windows 2000, 
+Windows XP, and Windows Vista computers. </P>
+<P>Although this software may include packages other than those listed below, 
+only the packages identified below as redistributable may be redistributed by 
+you. For third party deployables, please see the third party documentation 
+included with this product for other redistribution limitations. </P>
+<P>You may NOT redeploy CodeGear-supplied design-time only assemblies and 
+packages. If an assembly and package is not listed in this document, then it is 
+considered a design-time only package. You may not recompile or redistribute any 
+CodeGear-supplied components or libraries for use by other developers. </P>
+<P>Packages that you develop may not have the same names as CodeGear-supplied 
+packages. </P>
+<P>If you distribute component libraries or other packages, it is recommended 
+that you avoid using the default DCLUSR package name, since this will cause 
+naming conflicts with other developers. </P>
+<P><A 
+href="#top">Top</A> 
+</P>
+<H3><A name=Runtime></A>2.3 Runtime Packages </H3>
+<P>The following table lists the redistributable Win32 runtime packages and DLLs 
+for each edition of Delphi 2007 for Win32 or C++Builder 2007. The 
+redistributable files are marked with an X. Associated resource files are 
+permitted to be redistributed. </P>
+<TABLE width="80%" border=1>
+  <TBODY>
+  <TR bgColor=#bbbbbb>
+    <TH scope=col width="40%">
+      <DIV align=left>File</DIV></TH>
+    <TH scope=col width="15%">
+      <DIV align=center>Delphi<BR>Enterprise</DIV></TH>
+    <TH scope=col width="15%">
+      <DIV align=center>Delphi<BR>Professional</DIV></TH>
+    <TH scope=col width="15%">
+      <DIV align=center>C++Builder<BR>Enterprise</DIV></TH>
+    <TH scope=col width="15%">
+      <DIV align=center>C++Builder<BR>Professional</DIV></TH></TR>
+  <TR bgColor=#eeeeee>
+    <TD>adortl100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>bcboffice2k100.bpl </TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>bcbofficexp100.bpl<BR></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>bcbie100.bpl</TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>bdertl100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>borlndmm.dll<BR></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>cc3280.dll<BR></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>cc3280mt.dll<BR></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>cg32.dll</TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbxadapter30.dll</TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbxasa30.dll </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbxase30.dll </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbxdb230.dll </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbxinf30.dll </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbxint30.dll </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbxmss30.dll</TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbxmys30.dll </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbxmysA30.dll </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbxora30.dll </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbxoraw30.dll </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbexpress4100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbrtl100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dbxcds4100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dcloffice2k100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dclofficexp100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dsnap100.bpl (ClientDataSet Redistributable) </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dsnapcon100.bpl (ClientDataSet Redistributable) </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>dsnapent100.bpl (ClientDataSet Redistributable) </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>ibevnt100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>ibxpress100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>inet100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>inetdb100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>inetdbbde100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>inetdbxpress4100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>Intraweb_90_100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>Intrawebdb_90_100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>midas.dll (ClientDataSet Redistributable) </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>Rave75VCL110.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>rtl100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>soaprtl100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>tee7100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>teedb7100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>teeui7100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>vcl100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>vclactnband100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>vcldb100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>vcldbx100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>vclib100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>vclie100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>vclimg100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>vcljpg100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>vclshlctrls100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>vclsmp100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>vclx100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>webdsnap100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>websnap100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center></DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>xercesLib.dll </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>xercesxmldom.dll </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR>
+  <TR bgColor=#eeeeee>
+    <TD>xmlrtl100.bpl </TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD>
+    <TD>
+      <DIV align=center>X</DIV></TD></TR></TBODY></TABLE>
+<P><A href="#top">Top</A> 
+</P>
+<HR>
+
+<H2><A name=BDE></A>3. The Borland Database Engine (BDE) <BR></H2>
+<P>Delphi 2007 for Win32 and C++Builder 2007 applications that use the Borland 
+Database Engine (BDE) for database access require that you distribute the BDE 
+with the application. </P>
+<P>In accordance with the Additional License Terms for BDE, you may distribute 
+the BDE files with your application using a CodeGear-certified Redistributable 
+Install program, such as InstallAware Express or another compliant install 
+program. You may redistribute only those BDE files specified in BDEDEPLOY.TXT 
+(found in the BDE directory). </P>
+<P>Additionally, CodeGear supplies a BDE merge module that is an approved 
+mechanism for deploying BDE. This module may be used with any Windows Installer 
+(MSI) development tool (such as InstallAware Installer, InstallShield for 
+Windows Installer, Wise for Windows Installer and others). The merge module 
+includes the base BDE appropriate to the version of Delphi or C++Builder 
+purchased. </P>
+<P><A 
+href="#top">Top</A> 
+</P>
+<HR>
+
+<H2><A name=Images></A>4. Sample Images <BR></H2>
+<P>Delphi 2007 for Win32 and C++Builder 2007 include a library of 
+redistributable bitmap images normally installed in the subdirectory: </P>
+<P>\Program Files\Common Files\CodeGear Shared\Images</P>
+<P>Delphi 2007 for Win32 and C++Builder 2007 also include a database EVENTS.DB 
+with licensed images from PhotoDisc, Inc. and may not be redistributed. </P>
+<P><A 
+href="#top">Top</A> 
+</P>
+<HR>
+
+<H2><A name=WebSnap></A>5. WebSnap Application Deployment <BR></H2>
+<P>If you created your application as a Web App Debugger executable, you will 
+first have to convert it to an ISAPI DLL or CGI executable. To deploy your DLL 
+or EXE to a web server, you will have to place your application in a directory 
+that has executable rights. With Internet Information Services (IIS) this is 
+typically C:\Inetpub\Scripts. For each WebModule in your application, you must 
+copy the associated HTML file to the same directory as your EXE/DLL. By default, 
+the associated HTML file is simply the WebModule unit's name with .html as the 
+extension. </P>
+<P>WebSnap applications require the Microsoft Active Scripting Engine in order 
+to work. It is included with Internet Explorer 5 and is installed by default on 
+Windows 2000 machines. To download the Scripting Engine, visit: <A 
+href="http://msdn.microsoft.com/scripting/">http://msdn.microsoft.com/scripting/</A> 
+</P>
+<P><A 
+href="#top">Top</A> 
+</P>
+<HR>
+
+<H2><A name=InterBase></A>6. InterBase <BR></H2>
+<P>Delphi 2007 for Win32 and C++Builder 2007 include a development license for 
+InterBase (InterBase 2007 Developer Edition). This product does not include 
+deployment rights for InterBase server. When deploying an application requiring 
+InterBase server, you must first obtain InterBase Deployment licenses, available 
+separately from CodeGear. For more information on InterBase, see CodeGear's 
+World Wide Web site at <A 
+href="http://www.codegear.com/interbase">http://www.codegear.com/interbase</A>, 
+or contact your local CodeGear sales office. </P>
+<P><A 
+href="#top">Top</A> 
+</P>
+<HR>
+
+<H2><A name=JPEG></A>7. JPEG Compression Software <BR></H2>
+<P>The Delphi 2007 for Win32 and C++Builder 2007 DVDs include software for JPEG 
+image compression and decompression. This software and its source code are 
+distributed by the Independent JPEG Group and copyrighted by Thomas G. Lane. For 
+conditions of distribution and use, see the README file that accompanies the 
+software. </P>
+<P><A 
+href="#top">Top</A> 
+</P>
+<HR>
+
+<h2><A name=Indy></A>8. Indy (Internet Direct)
+</h2>
+<p>All Indy files are redistributable according to the terms of the Indy license at 
+<A href="http://www.indyproject.org/License/index.en.aspx">www.indyproject.org/License/index.en.aspx</A>.</p>
+<A href="#top">Top</A> 
+<HR>
+
+<H2><A name=Other></A>9. Other Components <BR></H2>
+<P>Any file, module or component not designated as redistributable in this 
+document may not be redistributed, and is limited to use by you under the terms 
+of the end-user license agreement accompanying this product. </P>
+<P><A 
+href="#top">Top</A> 
+</P>
+<HR>
+
+<H2><A name=Removed></A>10. Removed or Modified Redistributable Files <BR></H2>
+<P>CODEGEAR RESERVES THE RIGHT TO REMOVE OR MODIFY INDIVIDUAL REDISTRIBUTABLE 
+FILES FROM THIS CODEGEAR SOFTWARE PRODUCT, AT ANY TIME PRIOR TO RELEASE OF THE 
+PRODUCT, REGARDLESS OF WHETHER SUCH FILES CONTINUE TO BE LISTED AS 
+"REDISTRIBUTABLE" UPON RELEASE OF THE PRODUCT. CODEGEAR SHALL HAVE NO OBLIGATION 
+WHATSOEVER IN CONNECTION WITH ANY FILE WHICH IS LISTED AS "REDISTRIBUTABLE" BUT 
+HAS BEEN REMOVED FROM THE PRODUCT PRIOR TO THE PRODUCT'S RELEASE. </P>
+<P><A 
+href="#top">Top 
+</A></P>
+<P>Unless otherwise noted, all materials provided in this release are Copyright 
+2007 by CodeGear. </P>
+<P>&nbsp;</P>
+<P></P></BODY></HTML>

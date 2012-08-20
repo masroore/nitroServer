@@ -1,0 +1,5 @@
+<TypeMappings>
+  <Mapping 
+    OriginalAssembly="Microsoft.VSDesigner"
+    NewAssembly="Borland.Studio.TypeMappings" />
+</TypeMappings>

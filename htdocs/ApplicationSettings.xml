@@ -1,0 +1,251 @@
+<Data>
+  <AssemblySearchPaths>
+    <SearchPath>%SYSTEMROOT%\Microsoft.NET\Framework\v2.0.50727</SearchPath>
+    <SearchPath>%CommonProgramFiles%\Crystal Decisions\1.1\Managed</SearchPath>
+  </AssemblySearchPaths>
+  <ToolboxAssemblies>
+    <Components>
+      <Component TypeName="System.Windows.Forms.Label" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.LinkLabel" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.Button" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.TextBox" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.Panel" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.CheckBox" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.RadioButton" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.ComboBox" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.ListBox" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.CheckedListBox" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.TreeView" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.ListView" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.TabControl" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.PictureBox" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.Splitter" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.ToolBar" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.MonthCalendar" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.DateTimePicker" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.TrackBar" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.VScrollBar" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.HScrollBar" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.NumericUpDown" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.DomainUpDown" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.GroupBox" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.PropertyGrid" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.StatusBar" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.PrintPreviewControl" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.RichTextBox" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.ProgressBar" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />\
+      <Component TypeName="System.Windows.Forms.ToolTip" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.MainMenu" AssemblyName="System.Windows.Forms" CategoryName="Components" />
+      <Component TypeName="System.Windows.Forms.ContextMenu" AssemblyName="System.Windows.Forms" CategoryName="Components" />
+      <Component TypeName="System.Windows.Forms.NotifyIcon" AssemblyName="System.Windows.Forms" CategoryName="Components" />
+      <Component TypeName="System.Drawing.Printing.PrintDocument" AssemblyName="System.Drawing" CategoryName="Components" />
+      <Component TypeName="System.Windows.Forms.ImageList" AssemblyName="System.Windows.Forms" CategoryName="Components" />
+
+      <Component TypeName="System.Windows.Forms.DataGrid" AssemblyName="System.Windows.Forms" CategoryName="Data Controls" />
+      <Component TypeName="System.Data.SqlClient.SqlDataAdapter" AssemblyName="System.Data" CategoryName="Data Components" />
+
+      <Component TypeName="System.Windows.Forms.SaveFileDialog" AssemblyName="System.Windows.Forms" CategoryName="Dialogs" />
+      <Component TypeName="System.Windows.Forms.FontDialog" AssemblyName="System.Windows.Forms" CategoryName="Dialogs" />
+      <Component TypeName="System.Windows.Forms.PrintPreviewDialog" AssemblyName="System.Windows.Forms" CategoryName="Dialogs" />
+      <Component TypeName="System.Windows.Forms.ColorDialog" AssemblyName="System.Windows.Forms" CategoryName="Dialogs" />
+      <Component TypeName="System.Windows.Forms.PageSetupDialog" AssemblyName="System.Windows.Forms" CategoryName="Dialogs" />
+      <Component TypeName="System.Windows.Forms.PrintDialog" AssemblyName="System.Windows.Forms" CategoryName="Dialogs" />
+      <Component TypeName="System.Windows.Forms.OpenFileDialog" AssemblyName="System.Windows.Forms" CategoryName="Dialogs" />
+
+      <!-- New components in winforms 2.0 -->
+      <Component TypeName="System.Windows.Forms.BindingNavigator" AssemblyName="System.Windows.Forms" CategoryName="Data Controls" />
+      <Component TypeName="System.Windows.Forms.BindingSource" AssemblyName="System.Windows.Forms" CategoryName="Data Components" />
+      <Component TypeName="System.Windows.Forms.ContextMenuStrip" AssemblyName="System.Windows.Forms" CategoryName="Components" />
+      <Component TypeName="System.Windows.Forms.DataGridView" AssemblyName="System.Windows.Forms" CategoryName="Data Controls" />
+      <Component TypeName="System.Windows.Forms.FlowLayoutPanel" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.FolderBrowserDialog" AssemblyName="System.Windows.Forms" CategoryName="Dialogs" />
+      <Component TypeName="System.Windows.Forms.MaskedTextBox" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.MenuStrip" AssemblyName="System.Windows.Forms" CategoryName="Components" />
+      <Component TypeName="System.Windows.Forms.SplitContainer" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.StatusStrip" AssemblyName="System.Windows.Forms" CategoryName="Components" />
+      <Component TypeName="System.Windows.Forms.TableLayoutPanel" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.ToolStrip" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.ToolStripContainer" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.ToolStripDropDown" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.ToolStripDropDownMenu" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.ToolStripPanel" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+      <Component TypeName="System.Windows.Forms.WebBrowser" AssemblyName="System.Windows.Forms" CategoryName="Windows Forms" />
+
+      <Component TypeName="System.Web.UI.WebControls.AdRotator" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.Button" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.Calendar" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.CheckBox" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.CheckBoxList" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.CompareValidator" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.CustomValidator" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.DataGrid" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.DataList" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.DropDownList" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.HyperLink" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.Image" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.ImageButton" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.Label" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.LinkButton" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.ListBox" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.Literal" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.Panel" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.PlaceHolder" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.RadioButton" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.RadioButtonList" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.RangeValidator" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.RegularExpressionValidator" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.Repeater" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.RequiredFieldValidator" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.Table" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.TextBox" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.ValidationSummary" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.WebControl" AssemblyName="System.Web" CategoryName="Web Controls"/>
+      <Component TypeName="System.Web.UI.WebControls.Xml" AssemblyName="System.Web" CategoryName="Web Controls"/>
+
+      <!-- New components in .NET 2.0 -->
+      <Component TypeName="System.ComponentModel.BackgroundWorker" AssemblyName="System" CategoryName="Components"/>
+      <Component TypeName="System.Diagnostics.EventLog" AssemblyName="System" CategoryName="Components"/>
+      <Component TypeName="System.Diagnostics.PerformanceCounter" AssemblyName="System" CategoryName="Components"/>
+      <Component TypeName="System.Diagnostics.Process" AssemblyName="System" CategoryName="Components"/>
+      <Component TypeName="System.IO.FileSystemWatcher" AssemblyName="System" CategoryName="Components"/>
+      <Component TypeName="System.IO.Ports.SerialPort" AssemblyName="System" CategoryName="Components"/>
+      <Component TypeName="System.ServiceProcess.ServiceController" AssemblyName="System.ServiceProcess" CategoryName="Components"/>
+      <Component TypeName="System.Messaging.MessageQueue" AssemblyName="System.Messaging" CategoryName="Components"/>
+      <Component TypeName="System.DirectoryServices.DirectoryEntry" AssemblyName="System.DirectoryServices" CategoryName="Directory Services" />
+      <Component TypeName="System.DirectoryServices.DirectorySearcher" AssemblyName="System.DirectoryServices" CategoryName="Directory Services" />
+
+      <!-- ASP.NET 2.0 Mobile not included -->
+
+      <!-- ASP.NET 2.0 Components Standard -->
+      <Component TypeName="System.Web.UI.WebControls.ImageMap" AssemblyName="System.Web" CategoryName="Standard Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.BulletedList" AssemblyName="System.Web" CategoryName="Standard Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.HiddenField" AssemblyName="System.Web" CategoryName="Standard Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.FileUpload" AssemblyName="System.Web" CategoryName="Standard Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.Wizard" AssemblyName="System.Web" CategoryName="Standard Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.MultiView" AssemblyName="System.Web" CategoryName="Standard Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.View" AssemblyName="System.Web" CategoryName="Standard Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.Substitution" AssemblyName="System.Web" CategoryName="Standard Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.Localize" AssemblyName="System.Web" CategoryName="Standard Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.ContentPlaceHolder" AssemblyName="System.Web" CategoryName="Standard Web 2.0"/>
+
+      <!-- ASP.NET 2.0 Components Data -->
+      <Component TypeName="System.Web.UI.WebControls.GridView" AssemblyName="System.Web" CategoryName="Data Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.DetailsView" AssemblyName="System.Web" CategoryName="Data Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.FormView" AssemblyName="System.Web" CategoryName="Data Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.SqlDataSource" AssemblyName="System.Web" CategoryName="Data Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.ObjectDataSource" AssemblyName="System.Web" CategoryName="Data Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.AccessDataSource" AssemblyName="System.Web" CategoryName="Data Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.XmlDataSource" AssemblyName="System.Web" CategoryName="Data Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.SiteMapDataSource" AssemblyName="System.Web" CategoryName="Data Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.ReportViewer" AssemblyName="Microsoft.Reporting.WebForms" CategoryName="Data Web 2.0"/>
+
+      <!-- ASP.NET 2.0 Components Validation no new controls in 2.0 -->
+
+      <!-- ASP.NET 2.0 Components Navigation -->
+      <Component TypeName="System.Web.UI.WebControls.SiteMapPath" AssemblyName="System.Web" CategoryName="Navigation 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.Menu" AssemblyName="System.Web" CategoryName="Navigation 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.TreeView" AssemblyName="System.Web" CategoryName="Navigation 2.0"/>
+
+      <!-- ASP.NET 2.0 Components Login -->
+      <Component TypeName="System.Web.UI.WebControls.Login" AssemblyName="System.Web" CategoryName="Login Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.LoginView" AssemblyName="System.Web" CategoryName="Login Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.PasswordRecovery" AssemblyName="System.Web" CategoryName="Login Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.LoginStatus" AssemblyName="System.Web" CategoryName="Login Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.LoginName" AssemblyName="System.Web" CategoryName="Login Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.CreateUserWizard" AssemblyName="System.Web" CategoryName="Login Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.ChangePassword" AssemblyName="System.Web" CategoryName="Login Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.ReportView" AssemblyName="System.Web" CategoryName="Login Web 2.0"/>
+
+      <!-- ASP.NET 2.0 Components WebParts -->
+      <Component TypeName="System.Web.UI.WebControls.WebParts.WebPartManager" AssemblyName="System.Web" CategoryName="WebParts Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.WebParts.ProxyWebPartManager" AssemblyName="System.Web" CategoryName="WebParts Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.WebParts.WebPartZone" AssemblyName="System.Web" CategoryName="WebParts Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.WebParts.CatalogZone" AssemblyName="System.Web" CategoryName="WebParts Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart" AssemblyName="System.Web" CategoryName="WebParts Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.WebParts.PageCatalogPart" AssemblyName="System.Web" CategoryName="WebParts Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.WebParts.ImportCatalogPart" AssemblyName="System.Web" CategoryName="WebParts Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.WebParts.EditorZone" AssemblyName="System.Web" CategoryName="WebParts Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.WebParts.BehaviorEditorPart" AssemblyName="System.Web" CategoryName="WebParts Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.WebParts.AppearanceEditorPart" AssemblyName="System.Web" CategoryName="WebParts Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.WebParts.LayoutEditorPart" AssemblyName="System.Web" CategoryName="WebParts Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" AssemblyName="System.Web" CategoryName="WebParts Web 2.0"/>
+      <Component TypeName="System.Web.UI.WebControls.WebParts.ConnectionsZone" AssemblyName="System.Web" CategoryName="WebParts Web 2.0"/>
+
+      <Component TypeName="System.Data.SqlClient.SqlConnection" AssemblyName="System.Data" CategoryName="Data Components" />
+      <Component TypeName="System.Data.DataView" AssemblyName="System.Data" CategoryName="Data Components" />
+      <Component TypeName="System.Data.DataSet" AssemblyName="System.Data" CategoryName="Data Components" />
+      <Component TypeName="System.Windows.Forms.Timer" AssemblyName="System.Windows.Forms" CategoryName="Components" />
+      <Component TypeName="System.Data.SqlClient.SqlCommand" AssemblyName="System.Data" CategoryName="Data Components" />
+      <Component TypeName="System.Windows.Forms.ErrorProvider" AssemblyName="System.Windows.Forms" CategoryName="Components" />
+      <Component TypeName="System.Windows.Forms.HelpProvider" AssemblyName="System.Windows.Forms" CategoryName="Components" />
+
+      <Component TypeName="CrystalDecisions.CrystalReports.BorlandShell.ReportDocument" AssemblyName="CrystalDecisions.BorlandShell" CategoryName="Crystal Reports" AssemblyCodeBase="%BDS%\bin\CrystalDecisions.BorlandShell.dll"/>
+      <Component TypeName="CrystalDecisions.Windows.Forms.CrystalReportViewer" AssemblyName="CrystalDecisions.Windows.Forms" CategoryName="Crystal Reports"/>
+      <Component TypeName="CrystalDecisions.Web.CrystalReportViewer" AssemblyName="CrystalDecisions.Web" CategoryName="Crystal Reports"/>
+
+      <Component TypeName="Borland.Data.Provider.BdpConnection" AssemblyName="Borland.Data.Provider" CategoryName="Borland Data Provider"/>
+      <Component TypeName="Borland.Data.Provider.BdpCommand" AssemblyName="Borland.Data.Provider" CategoryName="Borland Data Provider"/>
+      <Component TypeName="Borland.Data.Provider.BdpDataAdapter" AssemblyName="Borland.Data.Provider" CategoryName="Borland Data Provider"/>
+      <Component TypeName="Borland.Data.Provider.BdpCommandBuilder" AssemblyName="Borland.Data.Provider" CategoryName="Borland Data Provider"/>
+      <Component TypeName="Borland.Data.Provider.BdpCopyTable" AssemblyName="Borland.Data.Provider" CategoryName="Borland Data Provider"/>
+      <Component TypeName="Borland.Data.Provider.DataHub" AssemblyName="Borland.Data.DataSync" CategoryName="Borland Data Provider"/>
+      <Component TypeName="Borland.Data.Provider.DataSync" AssemblyName="Borland.Data.DataSync" CategoryName="Borland Data Provider"/>
+      <Component TypeName="Borland.Data.Remoting.RemoteConnection" AssemblyName="Borland.Data.DataSync" CategoryName="Borland Data Provider"/>
+      <Component TypeName="Borland.Data.Remoting.RemoteServer" AssemblyName="Borland.Data.DataSync" CategoryName="Borland Data Provider"/>
+
+      <!--<Component TypeName="Borland.Data.Web.DBWebDataSource" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.Eco.EcoDataSource" AssemblyName="Borland.Data.Web.Eco" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebAggregateControl" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebCalendar" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebCheckBox" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebDropDownList" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebGrid" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebImage" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebSound" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebVideo" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebLabel" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebLabeledTextBox" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebListBox" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebMemo" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebNavigator" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebNavigationExtender" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebRadioButtonList" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>
+      <Component TypeName="Borland.Data.Web.DBWebTextBox" AssemblyName="Borland.Data.Web" CategoryName="DB Web"/>-->
+
+      <Component TypeName="Borland.Data.DataStore.DataStoreConnection" AssemblyName="Borland.Data.NDataStore.LocalClient" CategoryName="NDataStore"/>
+      <Component TypeName="Borland.Data.DataStore.DataStoreCommand" AssemblyName="Borland.Data.NDataStore.LocalClient" CategoryName="NDataStore"/>
+      <Component TypeName="Borland.Data.DataStore.DataStoreDataAdapter" AssemblyName="Borland.Data.NDataStore.LocalClient" CategoryName="NDataStore"/>
+
+      <Component TypeName="Borland.Eco.Handles.CursorHandle" AssemblyName="Borland.Eco.Handles" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Handles.ExpressionHandle" AssemblyName="Borland.Eco.Handles" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Handles.OclPSHandle" AssemblyName="Borland.Eco.Handles" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Handles.OclVariables" AssemblyName="Borland.Eco.Handles" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Handles.ReferenceHandle" AssemblyName="Borland.Eco.Handles" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Handles.VariableHandle" AssemblyName="Borland.Eco.Handles" CategoryName="Enterprise Core Objects"/>
+
+      <Component TypeName="Borland.Eco.Persistence.PersistenceMapperMultiDb" AssemblyName="Borland.Eco.Persistence.Multi" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Persistence.SyncHandler" AssemblyName="Borland.Eco.Persistence.Multi" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Persistence.Remoting.PersistenceMapperClient" AssemblyName="Borland.Eco.Persistence" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Persistence.PersistenceMapperSharer" AssemblyName="Borland.Eco.Persistence" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Persistence.ORMapping.DefaultORMappingBuilder" AssemblyName="Borland.Eco.Persistence" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Persistence.ORMapping.FileMappingProvider" AssemblyName="Borland.Eco.Persistence" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Persistence.ORMapping.DbMappingProvider" AssemblyName="Borland.Eco.Persistence" CategoryName="Enterprise Core Objects"/>
+
+      <Component TypeName="Borland.Eco.Persistence.PersistenceMapperBdp" AssemblyName="Borland.Eco.Persistence.Bdp" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Persistence.PersistenceMapperDbx" AssemblyName="Borland.Eco.Persistence.Dbx" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Persistence.PersistenceMapperSqlServer" AssemblyName="Borland.Eco.Persistence.SqlServer" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Persistence.PersistenceMapperNDataStore" AssemblyName="Borland.Eco.Persistence.NDataStore" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Persistence.PersistenceMapperXml" AssemblyName="Borland.Eco.Persistence.Xml" CategoryName="Enterprise Core Objects"/>
+
+      <Component TypeName="Borland.Eco.WinForm.EcoAutoFormExtender" AssemblyName="Borland.Eco.Windows.Forms" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.WinForm.EcoActionExtender" AssemblyName="Borland.Eco.Windows.Forms" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.WinForm.EcoDragDropExtender" AssemblyName="Borland.Eco.Windows.Forms" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.WinForm.EcoListActionExtender" AssemblyName="Borland.Eco.Windows.Forms" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Handles.CurrencyManagerHandle" AssemblyName="Borland.Eco.Windows.Forms" CategoryName="Enterprise Core Objects"/>
+
+      <Component TypeName="Borland.Eco.Web.EcoAspListActionExtender" AssemblyName="Borland.Eco.Web" CategoryName="Enterprise Core Objects"/>
+      <Component TypeName="Borland.Eco.Web.UI.WebControls.EcoDataSource" AssemblyName="Borland.Eco.Web" CategoryName="Enterprise Core Objects"/>
+
+  </Components>
+  </ToolboxAssemblies>
+</Data>

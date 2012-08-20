@@ -1,0 +1,109 @@
+.body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #1B1B1B;
+	color: #999966;
+	text-align: left;
+	vertical-align: top;
+    border: 0px solid #666666;
+}
+.table {
+	border: 0px solid #666666;
+	width: 100%;
+	vertical-align: top;
+}
+.header {
+	background-color: #111111;
+	border: 0px #AAAAAA;
+	text-align: left;
+	height: 50px;
+	color: #588301;
+	font-weight: bold;
+}
+.spacer {
+	background-color: #111111;
+	height: 5px;
+	border: 0px solid #666666;
+}
+.navbar {
+	background-color: #111111;
+	border: 0px solid #999999;
+	text-align: center;
+	height: 14px;
+}
+.menu {
+	background-color: #111111;
+	border: 0px solid #999999;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+.footer {
+	background-color: #111111;
+	border: 0px solid #AAAAAA;
+	text-align: left;
+	height: 20px;
+	color: #999966;
+}
+.main {
+	background-color: #111111;
+	border: 0px solid #888888;
+	text-align: left;
+}
+.heading1 {font-size: 24px}
+.topic {
+	background-color: #111111;
+	border: 0px solid #333333;
+	text-align: left;
+	color: #9B8C68;
+	width: 100%;
+}
+.topic_name {
+	font-size: 15px;
+	color: #669966;
+	border: 0px solid #666666;
+}
+.topic_descr {
+	font-size: 10px;
+	color: #99CC00;
+	border: 0px solid #666666;
+}
+.topic_header {
+	background-color: #111111;
+	font-weight: bold;
+	color: #669933;
+	text-align: center;
+	border: 0px solid #666666;
+}
+.topic_heading {
+	font-size: 16px;
+	border: 0px solid #666666;
+}
+.topic_hdescr {
+	font-size: 12px;
+    border: 0px solid #666666;
+}
+.post {
+	background-color: #111111;
+	border: 0px solid #666666;
+	text-align: left;
+	color: #CCCCCC;
+	width: 100%;
+}
+.post_header {
+	background-color: #292929;
+	text-align: left;
+	color: #9D9D9D;
+	font-weight: bold;
+	font-size: 14px;
+	border: 0px solid #666666;
+}
+.main_infopage {
+	background-color: #111111;
+	border: 0px solid #888888;
+}
+.reply_form {
+	text-align: center;
+	width: 70%;
+    border: 0px solid #666666;
+}

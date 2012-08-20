@@ -1,0 +1,339 @@
+<BorlandObjectRepository>
+  <Items>
+	<Item IDString="DelphiWin32\RecError" CreatorIDString="BorlandDelphiRepositoryCreator">
+	  <Type Value="FormTemplate"/>
+	  <Name Value="Reconcile Error Dialog"/>
+	  <Icon Value="DelphiWin32\RecError.ICO"/>
+	  <Description Value="Reconcile Error Dialog"/>
+	  <Author Value="CodeGear"/>
+	  <Ancestor Value=""/>
+	  <Designer Value="dfm"/>
+	  <Personality Value="Delphi.Personality"/>
+	  <FormName Value="DelphiWin32\RecError.dfm"/>
+	  <Categories>
+		<Category Value="Borland.Delphi.NewFiles" Parent="Borland.Delphi.New">Delphi Files</Category>
+		<Category Value="Borland.Delphi.New" Parent="Borland.Root">Delphi Projects</Category>
+	  </Categories>
+	</Item>
+
+	<Item IDString="Cpp\RecError" CreatorIDString="BorlandCPPRepositoryCreator">
+	  <Type Value="FormTemplate"/>
+	  <Name Value="Reconcile Error Dialog"/>
+	  <Icon Value="Cpp\RecError.ICO"/>
+	  <Description Value="Reconcile Error Dialog"/>
+	  <Author Value="CodeGear"/>
+	  <Ancestor Value=""/>
+	  <Designer Value="dfm"/>
+	  <Personality Value="CPlusPlusBuilder.Personality"/>
+	  <FormName Value="Cpp\RecError.dfm"/>
+	  <Categories>
+		<Category Value="Borland.CBuilder.NewFiles" Parent="Borland.CBuilder.New">C++Builder Files</Category>
+		<Category Value="Borland.CBuilder.New" Parent="Borland.Root">C++Builder Projects</Category>
+	  </Categories>
+	</Item>
+
+	<Item IDString="DelphiWin32\OKCNHLP1" CreatorIDString="BorlandDelphiRepositoryCreator">
+	  <Type Value="FormTemplate"/>
+	  <Name Value="Dialog with Help (Horizontal)"/>
+	  <Icon Value="DelphiWin32\OKCNHLP1.ICO"/>
+	  <Description Value="OK, Cancel, Help along bottom of dialog. This is an Inherited Form."/>
+	  <Author Value="CodeGear"/>
+	  <Ancestor Value="DelphiWin32\OKCANCL1"/>
+	  <Designer Value="dfm"/>
+	  <Personality Value="Delphi.Personality"/>
+	  <FormName Value="DelphiWin32\OKCNHLP1.dfm"/>
+	  <Categories>
+		<Category Value="Borland.Delphi.NewFiles" Parent="Borland.Delphi.New">Delphi Files</Category>
+		<Category Value="Borland.Delphi.New" Parent="Borland.Root">Delphi Projects</Category>
+	  </Categories>
+	</Item>
+
+	<Item IDString="Cpp\OKCNHLP1" CreatorIDString="BorlandCPPRepositoryCreator">
+	  <Type Value="FormTemplate"/>
+	  <Name Value="Dialog with Help (Horizontal)"/>
+	  <Icon Value="Cpp\OKCNHLP1.ICO"/>
+	  <Description Value="OK, Cancel, Help along bottom of dialog. This is an Inherited Form."/>
+	  <Author Value="CodeGear"/>
+	  <Ancestor Value="Cpp\OKCANCL1"/>
+	  <Designer Value="dfm"/>
+	  <Personality Value="CPlusPlusBuilder.Personality"/>
+	  <FormName Value="Cpp\OKCNHLP1.dfm"/>
+	  <Categories>
+		<Category Value="Borland.CBuilder.NewFiles" Parent="Borland.CBuilder.New">C++Builder Files</Category>
+		<Category Value="Borland.CBuilder.New" Parent="Borland.Root">C++Builder Projects</Category>
+	  </Categories>
+	</Item>
+
+	<Item IDString="DelphiWin32\OKCANCL2" CreatorIDString="BorlandDelphiRepositoryCreator">
+      <Type Value="FormTemplate"/>
+      <Name Value="Standard Dialog (Vertical)"/>
+	  <Icon Value="DelphiWin32\OKCANCL2.ICO"/>
+      <Description Value="OK, Cancel along right edge."/>
+      <Author Value="CodeGear"/>
+      <Ancestor Value=""/>
+      <Designer Value="dfm"/>
+      <Personality Value="Delphi.Personality"/>
+      <FormName Value="DelphiWin32\OKCANCL2.dfm"/>
+      <Categories>
+        <Category Value="Borland.Delphi.NewFiles" Parent="Borland.Delphi.New">Delphi Files</Category>
+        <Category Value="Borland.Delphi.New" Parent="Borland.Root">Delphi Projects</Category>
+      </Categories>
+	</Item>
+
+	<Item IDString="Cpp\OKCANCL2" CreatorIDString="BorlandCPPRepositoryCreator">
+	  <Type Value="FormTemplate"/>
+	  <Name Value="Standard Dialog (Vertical)"/>
+	  <Icon Value="Cpp\OKCANCL2.ICO"/>
+	  <Description Value="OK, Cancel along right edge."/>
+	  <Author Value="CodeGear"/>
+	  <Ancestor Value=""/>
+	  <Designer Value="dfm"/>
+	  <Personality Value="CPlusPlusBuilder.Personality"/>
+	  <FormName Value="Cpp\OKCANCL2.dfm"/>
+	  <Categories>
+		<Category Value="Borland.CBuilder.NewFiles" Parent="Borland.CBuilder.New">C++Builder Files</Category>
+		<Category Value="Borland.CBuilder.New" Parent="Borland.Root">C++Builder Projects</Category>
+	  </Categories>
+	</Item>
+
+	<Item IDString="DelphiWin32\OKCNHLP2" CreatorIDString="BorlandDelphiRepositoryCreator">
+	  <Type Value="FormTemplate"/>
+	  <Name Value="Dialog with Help (Vertical)"/>
+	  <Icon Value="DelphiWin32\OKCNHLP2.ICO"/>
+	  <Description Value="OK, Cancel, Help along right edge. This is an Inherited Form."/>
+	  <Author Value="CodeGear"/>
+	  <Ancestor Value="DelphiWin32\OKCANCL2"/>
+	  <Designer Value="dfm"/>
+	  <Personality Value="Delphi.Personality"/>
+	  <FormName Value="DelphiWin32\OKCNHLP2.dfm"/>
+	  <Categories>
+		<Category Value="Borland.Delphi.NewFiles" Parent="Borland.Delphi.New">Delphi Files</Category>
+		<Category Value="Borland.Delphi.New" Parent="Borland.Root">Delphi Projects</Category>
+	  </Categories>
+	</Item>
+
+	<Item IDString="Cpp\OKCNHLP2" CreatorIDString="BorlandCPPRepositoryCreator">
+	  <Type Value="FormTemplate"/>
+	  <Name Value="Dialog with Help (Vertical)"/>
+	  <Icon Value="Cpp\OKCNHLP2.ICO"/>
+	  <Description Value="OK, Cancel, Help along right edge. This is an Inherited Form."/>
+	  <Author Value="CodeGear"/>
+	  <Ancestor Value="Cpp\OKCANCL2"/>
+	  <Designer Value="dfm"/>
+	  <Personality Value="CPlusPlusBuilder.Personality"/>
+	  <FormName Value="Cpp\OKCNHLP2.dfm"/>
+	  <Categories>
+		<Category Value="Borland.CBuilder.NewFiles" Parent="Borland.CBuilder.New">C++Builder Files</Category>
+		<Category Value="Borland.CBuilder.New" Parent="Borland.Root">C++Builder Projects</Category>
+	  </Categories>
+	</Item>
+
+	<Item IDString="DelphiWin32\ABOUT" CreatorIDString="BorlandDelphiRepositoryCreator">
+      <Type Value="FormTemplate"/>
+      <Name Value="About box"/>
+      <Page Value="Forms"/>
+      <Icon Value="DelphiWin32\ABOUT.ICO"/>
+      <Description Value="Generic About box dialog."/>
+      <Author Value="CodeGear"/>
+      <Ancestor Value=""/>
+      <Designer Value="dfm"/>
+      <Personality Value="Delphi.Personality"/>
+      <FormName Value="DelphiWin32\About.dfm"/>
+      <Categories>
+        <Category Value="Borland.Delphi.NewFiles" Parent="Borland.Delphi.New">Delphi Files</Category>
+        <Category Value="Borland.Delphi.New" Parent="Borland.Root">Delphi Projects</Category>
+      </Categories>
+	</Item>
+
+	<Item IDString="Cpp\ABOUT" CreatorIDString="BorlandCPPRepositoryCreator">
+	  <Type Value="FormTemplate"/>
+	  <Name Value="About box"/>
+	  <Page Value="Forms"/>
+	  <Icon Value="Cpp\ABOUT.ICO"/>
+	  <Description Value="Generic About box dialog."/>
+	  <Author Value="CodeGear"/>
+	  <Ancestor Value=""/>
+	  <Designer Value="dfm"/>
+	  <Personality Value="CPlusPlusBuilder.Personality"/>
+	  <FormName Value="Cpp\About.dfm"/>
+	  <Categories>
+		<Category Value="Borland.CBuilder.NewFiles" Parent="Borland.CBuilder.New">C++Builder Files</Category>
+		<Category Value="Borland.CBuilder.New" Parent="Borland.Root">C++Builder Projects</Category>
+	  </Categories>
+	</Item>
+
+	<Item IDString="DelphiWin32\TABPGDLG" CreatorIDString="BorlandDelphiRepositoryCreator">
+	  <Type Value="FormTemplate"/>
+      <Name Value="Tabbed pages"/>
+	  <Icon Value="DelphiWin32\TABPGDLG.ICO"/>
+      <Description Value="Generic tabbed pages dialog with OK, Cancel, and Help buttons."/>
+      <Author Value="CodeGear"/>
+	  <Ancestor Value=""/>
+      <Designer Value="dfm"/>
+      <Personality Value="Delphi.Personality"/>
+	  <FormName Value="DelphiWin32\TabPgDlg.dfm"/>
+      <Categories>
+		<Category Value="Borland.Delphi.NewFiles" Parent="Borland.Delphi.New">Delphi Files</Category>
+        <Category Value="Borland.Delphi.New" Parent="Borland.Root">Delphi Projects</Category>
+	  </Categories>
+	</Item>
+
+	<Item IDString="Cpp\TABPGDLG" CreatorIDString="BorlandCPPRepositoryCreator">
+	  <Type Value="FormTemplate"/>
+	  <Name Value="Tabbed pages"/>
+	  <Icon Value="Cpp\TABPGDLG.ICO"/>
+	  <Description Value="Generic tabbed pages dialog with OK, Cancel, and Help buttons."/>
+	  <Author Value="CodeGear"/>
+	  <Ancestor Value=""/>
+	  <Designer Value="dfm"/>
+	  <Personality Value="CPlusPlusBuilder.Personality"/>
+	  <FormName Value="Cpp\TabPgDlg.dfm"/>
+	  <Categories>
+		<Category Value="Borland.CBuilder.NewFiles" Parent="Borland.CBuilder.New">C++Builder Files</Category>
+		<Category Value="Borland.CBuilder.New" Parent="Borland.Root">C++Builder Projects</Category>
+	  </Categories>
+	</Item>
+
+    <Item IDString="DelphiWin32\PassWord" CreatorIDString="BorlandDelphiRepositoryCreator">
+      <Type Value="FormTemplate"/>
+      <Name Value="Password Dialog"/>
+      <Icon Value="DelphiWin32\PASSWORD.ICO"/>
+      <Description Value="Generic password entry form."/>
+      <Author Value="CodeGear"/>
+      <Ancestor Value=""/>
+	  <Designer Value="dfm"/>
+	  <Personality Value="Delphi.Personality"/>
+	  <FormName Value="DelphiWin32\PassWord.dfm"/>
+	  <Categories>
+		<Category Value="Borland.Delphi.NewFiles" Parent="Borland.Delphi.New">Delphi Files</Category>
+		<Category Value="Borland.Delphi.New" Parent="Borland.Root">Delphi Projects</Category>
+	  </Categories>
+	</Item>
+
+	<Item IDString="Cpp\PassWord" CreatorIDString="BorlandCPPRepositoryCreator">
+	  <Type Value="FormTemplate"/>
+	  <Name Value="Password Dialog"/>
+	  <Icon Value="Cpp\PASSWORD.ICO"/>
+	  <Description Value="Generic password entry form."/>
+	  <Author Value="CodeGear"/>
+	  <Ancestor Value=""/>
+	  <Designer Value="dfm"/>
+	  <Personality Value="CPlusPlusBuilder.Personality"/>
+	  <FormName Value="Cpp\PassWord.dfm"/>
+	  <Categories>
+		<Category Value="Borland.CBuilder.NewFiles" Parent="Borland.CBuilder.New">C++Builder Files</Category>
+		<Category Value="Borland.CBuilder.New" Parent="Borland.Root">C++Builder Projects</Category>
+	  </Categories>
+	</Item>
+
+    <Item IDString="DelphiWin32\DUALLIST" CreatorIDString="BorlandDelphiRepositoryCreator">
+      <Type Value="FormTemplate"/>
+      <Name Value="Dual list box"/>
+      <Icon Value="DelphiWin32\DUALLIST.ICO"/>
+	  <Description Value="Dialog box with two list boxes. Supports moving items from one list to the other."/>
+      <Author Value="CodeGear"/>
+      <Ancestor Value=""/>
+      <Designer Value="dfm"/>
+      <Personality Value="Delphi.Personality"/>
+      <FormName Value="DelphiWin32\DualList.dfm"/>
+      <Categories>
+        <Category Value="Borland.Delphi.NewFiles" Parent="Borland.Delphi.New">Delphi Files</Category>
+        <Category Value="Borland.Delphi.New" Parent="Borland.Root">Delphi Projects</Category>
+      </Categories>
+	</Item>
+
+	<Item IDString="Cpp\DUALLIST" CreatorIDString="BorlandCPPRepositoryCreator">
+	  <Type Value="FormTemplate"/>
+	  <Name Value="Dual list box"/>
+	  <Icon Value="Cpp\DUALLIST.ICO"/>
+	  <Description Value="Dialog box with two list boxes. Supports moving items from one list to the other."/>
+	  <Author Value="CodeGear"/>
+	  <Ancestor Value=""/>
+	  <Designer Value="dfm"/>
+	  <Personality Value="CPlusPlusBuilder.Personality"/>
+	  <FormName Value="Cpp\DualList.dfm"/>
+	  <Categories>
+		<Category Value="Borland.CBuilder.NewFiles" Parent="Borland.CBuilder.New">C++Builder Files</Category>
+		<Category Value="Borland.CBuilder.New" Parent="Borland.Root">C++Builder Projects</Category>
+	  </Categories>
+	</Item>
+
+    <Item IDString="DelphiWin32\MDIAPP" CreatorIDString="ProjectRepositoryCreator">
+      <ProjectName Value="MdiApp.bdsproj"/>
+      <Name Value="MDI Application"/>
+      <Icon Value="MDIAPP.ICO"/>
+      <Description Value="Standard MDI application frame."/>
+      <Author Value="CodeGear"/>
+      <DefaultProject Value="0"/>
+      <Personality Value="Delphi.Personality"/>
+      <Categories>
+        <Category Value="Borland.Delphi.New" Parent="Borland.Root">Delphi Projects</Category>
+      </Categories>
+    </Item>
+
+	<Item IDString="Cpp\MDIAPP" CreatorIDString="ProjectRepositoryCreator">
+	  <ProjectName Value="MdiApp.cbproj"/>
+	  <Name Value="MDI Application"/>
+	  <Icon Value="MDIAPP.ICO"/>
+	  <Description Value="Standard MDI application frame."/>
+	  <Author Value="CodeGear"/>
+	  <DefaultProject Value="0"/>
+	  <Personality Value="CPlusPlusBuilder.Personality"/>
+	  <Categories>
+		<Category Value="Borland.CBuilder.New" Parent="Borland.Root">C++Builder Projects</Category>
+	  </Categories>
+	</Item>
+
+
+    <Item IDString="DelphiWin32\SDIAPP" CreatorIDString="ProjectRepositoryCreator">
+      <ProjectName Value="SdiApp.bdsproj"/>
+      <Name Value="SDI Application"/>
+      <Icon Value="SDIAPP.ICO"/>
+	  <Description Value="Generic SDI style application."/>
+      <Author Value="CodeGear"/>
+      <DefaultProject Value="0"/>
+      <Personality Value="Delphi.Personality"/>
+      <Categories>
+        <Category Value="Borland.Delphi.New" Parent="Borland.Root">Delphi Projects</Category>
+      </Categories>
+    </Item>
+
+    <Item IDString="Cpp\SDIAPP" CreatorIDString="ProjectRepositoryCreator">
+      <ProjectName Value="SdiApp.cbproj"/>
+      <Name Value="SDI Application"/>
+      <Icon Value="SDIAPP.ICO"/>
+      <Description Value="Generic SDI style application."/>
+      <Author Value="CodeGear"/>
+      <DefaultProject Value="0"/>
+	  <Personality Value="CPlusPlusBuilder.Personality"/>
+      <Categories>
+		<Category Value="Borland.CBuilder.New" Parent="Borland.Root">C++Builder Projects</Category>
+      </Categories>
+    </Item>
+
+    <Item IDString="DelphiWin32\LOGOAPP" CreatorIDString="ProjectRepositoryCreator">
+      <Name Value="Win95/98 Logo Application"/>
+      <ProjectName Value="LogApp.bdsproj"/>
+      <Icon Value="LOGOAPP.ICO"/>
+      <Description Value="Application that meets minimum Windows95/98 Logo requirements."/>
+      <Author Value="CodeGear"/>
+      <DefaultProject Value="0"/>
+      <Personality Value="Delphi.Personality"/>
+      <Categories>
+        <Category Value="Borland.Delphi.New" Parent="Borland.Root">Delphi Projects</Category>
+      </Categories>
+    </Item>
+
+    <Item IDString="DelphiWin32\WIN2kAPP" CreatorIDString="ProjectRepositoryCreator">
+      <Name Value="Win2000 Logo Application"/>
+      <Icon Value="WIN2kAPP.ICO"/>
+      <Description Value="Application that meets minimum Windows2000 Logo requirements."/>
+      <Author Value="CodeGear"/>
+      <DefaultProject Value="0"/>
+      <Personality Value="Delphi.Personality"/>
+      <Categories>
+        <Category Value="Borland.Delphi.New" Parent="Borland.Root">Delphi Projects</Category>
+      </Categories>
+    </Item>
+  </Items>
+</BorlandObjectRepository>

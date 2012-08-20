@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<codetemplate	xmlns="http://schemas.borland.com/Delphi/2005/codetemplates"
+				version="1.0.0">
+	<template name="sime" invoke="manual">
+		<description>SmartInspect Enter/Leave Method</description>
+		<author>Gurock Software</author>
+		<point name="instance">
+			<text>this</text>
+			<hint>An object whose class name and a dot will be prepended to the method name.</hint>
+		</point>
+		<point name="method">
+			<text>Method</text>
+			<hint>The name of the method.</hint>
+		</point>
+		<code language="C" context="methodbody" delimiter="|"><![CDATA[SiMain->EnterMethod(|instance|, "|method|");
+|selected||end|
+SiMain->LeaveMethod(|instance|, "|method|");]]>
+		</code>
+	</template>
+</codetemplate>

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<CodeSnipplets>
+	<Snipplet ID="1" Title="HTML Label" Image="Label">&lt;div style="DISPLAY: inline; WIDTH: 70px; HEIGHT: 15px" ms_positioning="FlowLayout"&gt;Label&lt;/div&gt;</Snipplet>
+	<Snipplet ID="2" Title="HTML Button" Image="Button">&lt;input type="button" value="Button"&gt;</Snipplet>
+	<Snipplet ID="3" Title="HTML TextBox" Image="TextBox">&lt;input type="text"&gt;</Snipplet>
+	<Snipplet ID="4" Title="HTML TextArea" Image="TextArea">&lt;textarea rows="2" cols="20"&gt;&lt;/textarea&gt;</Snipplet>
+	<Snipplet ID="5" Title="HTML Password" Image="Password">&lt;input type="password"&gt;</Snipplet>
+	<Snipplet ID="6" Title="HTML Submit Button" Image="SubmitButton">&lt;input type="submit" value="Submit"&gt;</Snipplet>
+	<Snipplet ID="7" Title="HTML Reset Button" Image="ResetButton">&lt;input type="reset" value="Reset"&gt;</Snipplet>
+	<Snipplet ID="8" Title="HTML Image Button" Image="ImageButton">&lt;input type="image"&gt;</Snipplet>
+	<Snipplet ID="9" Title="HTML CheckBox" Image="CheckBox">&lt;input type="checkbox"&gt;</Snipplet>
+	<Snipplet ID="10" Title="HTML Radio Button" Image="RadioButton">&lt;input type="radio"&gt;</Snipplet>
+	<Snipplet ID="11" Title="HTML DropDown" Image="DropDown">&lt;select&gt;&lt;/select&gt;</Snipplet>
+	<Snipplet ID="12" Title="HTML ListBox" Image="ListBox">&lt;select size=2&gt;&lt;option&gt;one&lt;/option&gt;&lt;/select&gt;</Snipplet>
+	<Snipplet ID="13" Title="HTML Hidden Field" Image="HiddenField">&lt;input type="hidden"&gt;</Snipplet>
+	<Snipplet ID="14" Title="HTML File Upload" Image="FileUpload">&lt;input type="file"&gt;</Snipplet>
+	<Snipplet ID="15" Title="HTML Anchor" Image="Anchor">&lt;a href=" "&gt;Anchor&lt;/a&gt;</Snipplet>
+	<Snipplet ID="16" Title="HTML Image" Image="Image">&lt;img alt="" src=""&gt;</Snipplet>
+	<Snipplet ID="17" Title="HTML Table" Image="Table">&lt;table cellspacing=1 cellpadding=1 width=300 border=1&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Snipplet>
+	<Snipplet ID="18" Title="HTML Span" Image="Span">&lt;span&gt;Span&lt;/span&gt;</Snipplet>
+	<Snipplet ID="19" Title="HTML Div" Image="Div">&lt;div&gt;Div&lt;/div&gt;</Snipplet>
+	<Snipplet ID="20" Title="HTML Flow Panel" Image="Panel">&lt;div ms_positioning="FlowLayout" style="height=100; width=100"&gt;Div&lt;/div&gt;</Snipplet>
+	<Snipplet ID="21" Title="HTML Grid Panel" Image="Panel">&lt;div ms_positioning="GridLayout" style="height=100; width=100"&gt;Div&lt;/div&gt;</Snipplet>
+	<Snipplet ID="22" Title="HTML Horizontal Rule" Image="HorizontalRule">&lt;hr width="100%" size=1&gt;</Snipplet>
+</CodeSnipplets>

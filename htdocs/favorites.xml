@@ -1,0 +1,16 @@
+﻿<rss version="2.0">
+	<channel>
+		<title>My Favorites</title>
+		<action>
+			<title>Show Favorites</title>
+			<link>javascript:menuPersistCall('{08D4336C-D636-42C9-AED4-CDA1EA26BF4B}');</link>
+		</action>
+		<action>
+			<title>Manage Favorites</title>
+			<link>javascript:menuGuidCall('{E8175EB7-6FB1-4AE1-B0F2-85F610538EB1}');</link>
+		</action>
+		<noFavoritesMsg>
+			You have not selected any favorites. Select Projects -> Show Recent Projects from the Welcome Page menu to create your favorites.
+		</noFavoritesMsg>
+	</channel>
+</rss>

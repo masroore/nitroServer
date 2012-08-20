@@ -1,0 +1,415 @@
+﻿<rss version="2.0">
+	<title>News Headlines</title>
+	<subTitle>Select Newsfeed</subTitle>
+	<action>javascript:rssFeedSelected('', '[selectOnly]', '[link]');</action>
+	<channel>
+		<title>CodeGear Developer Network</title>
+		<item>
+			<title>Delphi</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/bdn_delphi.xml</link>
+		</item>
+		<item>
+			<title>C#</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/bdn_csharp.xml</link>
+		</item>
+		<item>
+			<title>C++</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/bdn_cpp.xml</link>
+		</item>
+		<item>
+			<title>CaliberRM</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/bdn_caliberrm.xml</link>
+		</item>
+		<item>
+			<title>CORBA</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/bdn_corba.xml</link>
+		</item>
+		<item>
+			<title>Enterprise Server</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/bdn_appserver.xml</link>
+		</item>
+		<item>
+			<title>InterBase</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/bdn_interbase.xml</link>
+		</item>
+		<item>
+			<title>Java</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/bdn_java.xml</link>
+		</item>
+		<item>
+			<title>JDataStore</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/bdn_jdatastore.xml</link>
+		</item>
+		<item>
+			<title>StarTeam</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/bdn_starteam.xml</link>
+		</item>
+		<item>
+			<title>Together</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/bdn_together.xml</link>
+		</item>
+	</channel>
+	<channel>
+		<title>CodeCentral</title>
+		<item>
+			<title>Delphi</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/codecentral_delphi.xml</link>
+		</item>
+		<item>
+			<title>C#Builder</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/codecentral_csharpbuilder.xml</link>
+		</item>
+		<item>
+			<title>CodeGear C++</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/codecentral_borlandc.xml</link>
+		</item>
+		<item>
+			<title>C++Builder</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/codecentral_bcppbuilder.xml</link>
+		</item>
+		<item>
+			<title>CaliberRM</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/codecentral_caliberrm.xml</link>
+		</item>
+		<item>
+			<title>InterBase</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/codecentral_interbase.xml</link>
+		</item>
+		<item>
+			<title>JBuilder</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/codecentral_jbuilder.xml</link>
+		</item>
+		<item>
+			<title>JDataStore</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/codecentral_jdatastore.xml</link>
+		</item>
+		<item>
+			<title>Kylix</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/codecentral_kylix.xml</link>
+		</item>
+		<item>
+			<title>StarTeam</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/codecentral_starteam.xml</link>
+		</item>
+		<item>
+			<title>Together</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/codecentral_together.xml</link>
+		</item>
+		<item>
+			<title>Turbo Pascal</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/codecentral_turbopascal.xml</link>
+		</item>
+	</channel>
+	<channel>
+		<title>QualityCentral</title>
+		<item>
+			<title>Delphi</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_delphi.xml</link>
+		</item>
+		<item>
+			<title>Delphi.Net</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_delphi.net.xml</link>
+		</item>
+		<item>
+			<title>C#Builder</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_csharpbuilder.xml</link>
+		</item>
+		<item>
+			<title>BDN</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_bdn.xml</link>
+		</item>
+		<item>
+			<title>C++Builder</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_c_builder.xml</link>
+		</item>
+		<item>
+			<title>CaliberRM</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_caliberrm.xml</link>
+		</item>
+		<item>
+			<title>CodeCentral</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_codecentral.xml</link>
+		</item>
+		<item>
+			<title>Community Photos</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_community_photos.xml</link>
+		</item>
+		<item>
+			<title>InterBase</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_interbase.xml</link>
+		</item>
+		<item>
+			<title>InterClient</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_interclient.xml</link>
+		</item>
+		<item>
+			<title>JBuilder</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_jbuilder.xml</link>
+		</item>
+		<item>
+			<title>JDataStore</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_jdatastore.xml</link>
+		</item>
+		<item>
+			<title>Optimizeit</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_optimizeit.xml</link>
+		</item>
+		<item>
+			<title>Quality Central</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_quality_central.xml</link>
+		</item>
+		<item>
+			<title>StarTeam</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_starteam.xml</link>
+		</item>
+		<item>
+			<title>TeamSource</title>
+			<selectOnly>1</selectOnly>
+			<link>http://news.codegear.com/qualitycentral_teamsource.xml</link>
+		</item>
+	</channel>
+	<channel>
+		<title>CodeGear Blogs</title>
+		<item default="">
+			<title>Main Aggregated Feed</title>
+			<link>http://blogs.codegear.com/MainFeed.aspx</link>
+		</item>
+		<item>
+			<title>Allen Bauer</title>
+			<link>http://blogs.codegear.com/abauer/rss.aspx</link>
+		</item> 
+		<item>
+			<title>Chee Wee Chua</title>
+			<link>http://blogs.codegear.com/chewy/rss.aspx</link>
+		</item> 
+		<item>
+			<title>Mark Edington</title>
+			<link>http://blogs.codegear.com/medington/rss.aspx</link>
+		</item> 
+		<item>
+			<title>Pawel Glowacki</title>
+			<link>http://blogs.codegear.com/PawelGlowacki/rss.aspx</link>
+		</item> 
+		<item>
+			<title>Malcolm Groves</title>
+			<link>http://blogs.codegear.com/MalcolmGroves/rss.aspx</link>
+		</item> 
+		<item>
+			<title>Chris Hesik</title>
+			<link>http://blogs.codegear.com/ChrisHesik/rss.aspx</link>
+		</item> 
+		<item>
+			<title>Jesper Hogstrom</title>
+			<link>http://blogs.codegear.com/jesperhogstrom/rss.aspx</link>
+		</item>
+		<item>
+			<title>Jonas Hogstrom</title>
+			<link>http://blogs.codegear.com/jonashogstrom/rss.aspx</link>
+		</item>
+		<item>
+			<title>David Intersimone</title>
+			<link>http://blogs.codegear.com/davidi/rss.aspx</link>
+		</item> 
+		<item>
+			<title>Anders Ivner</title>
+			<link>http://blogs.codegear.com/AndersIvner/rss.aspx</link>
+		</item> 
+		<item>
+			<title>Tim Jarvis</title>
+			<link>http://blogs.codegear.com/TimJarvis/rss.aspx</link>
+		</item> 
+		<item>
+			<title>Henrik Jondell</title>
+			<link>http://blogs.codegear.com/HenrikJondell/rss.aspx</link>
+		</item> 
+		<item>
+			<title>John Kaster</title>
+			<link>http://blogs.codegear.com/johnk/rss.aspx</link>
+		</item> 
+		<item>
+			<title>Andreano Lanusse</title>
+			<link>http://blogs.codegear.com/AndreanoLanusse/rss.aspx</link>
+		</item> 
+		<item>
+			<title>Adam Markowitz</title>
+			<link>http://blogs.codegear.com/AdamMarkowitz/rss.aspx</link>
+		</item>
+		<item>
+			<title>Anders Ohlsson</title>
+			<link>http://blogs.codegear.com/ao/rss.aspx</link>
+		</item>
+		<item>
+			<title>Jason Vokes</title>
+			<link>http://blogs.codegear.com/JasonVokes/rss.aspx</link>
+		</item>
+	</channel>
+	<channel>
+		<title>English Community Blogs</title>
+		<item>
+			<title>Brad Prendergast</title>
+			<link>http://www.bpsoftware.com/blog/bpsoftware.xml</link>
+		</item> 
+		<item>
+			<title>Craig Stuntz</title>
+			<link>http://blogs.teamb.com/craigstuntz/Rss.aspx</link>
+		</item> 
+		<item>
+			<title>Dan Miser</title>
+			<link>http://distribucon.com/blog/Rss.aspx</link>
+		</item> 
+		<item>
+			<title>Daniel Wischnewski</title>
+			<link>http://delphi-notes.blogspot.com/atom.xml</link>
+		</item> 
+		<item>
+			<title>Dave Nottage</title>
+			<link>http://blogs.teamb.com/davenottage/Rss.aspx</link>
+		</item> 
+		<item>
+			<title>Deepak Shenoy</title>
+			<link>http://blogs.teamb.com/deepakshenoy/Rss.aspx</link>
+		</item> 
+		<item>
+			<title>Dr. Bob Swart</title>
+			<link>http://www.drbob42.com/rss.xml</link>
+		</item> 
+		<item>
+			<title>Erwien Saputra</title>
+			<link>http://blogs.slcdug.org/esaputra/Rss.aspx</link>
+		</item> 
+		<item>
+			<title>Hallvard Vassbotn</title>
+			<link>http://hallvards.blogspot.com/atom.xml</link>
+		</item> 
+		<item>
+			<title>Holger Flick</title>
+			<link>http://delphi2006.blogspot.com/atom.xml</link>
+		</item> 
+		<item>
+			<title>David Clegg</title>
+			<link>http://dcleggsblog.blogspot.com/atom.xml</link>
+		</item> 
+		<item>
+			<title>Jake Jacobson</title>
+			<link>http://blogs.slcdug.org/jjacobson/Rss.aspx</link>
+		</item> 
+		<item>
+			<title>Jeremy North</title>
+			<link>http://jedqc.blogspot.com/atom.xml</link>
+		</item> 
+		<item>
+			<title>Marco Cantu</title>
+			<link>http://blog.marcocantu.com/blog_rss2.xmldata</link>
+		</item>
+		<item>
+			<title>Robert Love</title>
+			<link>http://peakxml.com/atom.aspx</link>
+		</item> 
+		<item>
+			<title>Ronald Hordijk </title>
+			<link>http://blogs.slcdug.org/rhordijk/Rss.aspx</link>
+		</item> 
+		<item>
+			<title>Rudy Velthuis</title>
+			<link>http://blogs.teamb.com/rudyvelthuis/Rss.aspx</link>
+		</item> 
+		<item>
+			<title>S. Kamradt</title>
+			<link>http://delphiaddict.blogspot.com/atom.xml</link>
+		</item>
+		<item>
+			<title>Tobias and Dennis Gurock</title>
+			<link>http://software.gurock.com/feeds/postings.rss</link>
+		</item>
+		<item>
+			<title>TOndrej</title>
+			<link>http://tondrej.blogspot.com/atom.xml</link>
+		</item>
+	</channel>
+	<channel>
+		<title>German Blogs/Sites</title>
+		<item>
+			<title>Delphi-PRAXiS News</title>
+			<link>http://www.delphipraxis.net/rdf.php?f=62</link>
+		</item>
+		<item>
+			<title>Delphi-Source, der Delphi-Treff</title>
+			<link>http://www.dsdt.info/news/news.xml</link>
+		</item>
+		<item>
+			<title>Entwickler-Ecke News</title>
+			<link>http://www.entwickler-ecke.de/rss.php?f=42</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Japanese Blogs</title>
+		<item>
+			<title>Delphi 某所</title>
+			<link>http://blog.so-net.ne.jp/bousyo/index.rdf</link>
+		</item>
+		<item>
+			<title>避難所</title>
+			<link>http://bousyo.blog45.fc2.com/?xml</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Portuguese Blogs</title>
+		<item>
+			<title>Erick Sasse</title>
+			<link>http://feeds.feedburner.com/ericksasse</link>
+		</item>
+		<item>
+			<title>Diego Garcia</title>
+			<link>http://unitonedev.blogspot.com/atom.xml</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Spanish Blogs</title>
+		<item>
+			<title>BLOGNIX</title>
+			<link>http://blogs.softnix.es/www/rss.xml</link>
+		</item>
+		<item>
+			<title>Carlos García</title>
+			<link>http://cgarcia.blogspot.com/atom.xml</link>
+		</item>
+	</channel>
+</rss>

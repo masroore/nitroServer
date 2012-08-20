@@ -1,0 +1,58 @@
+<rss version="2.0">
+	<channel>
+		<item ignoreSize="1">
+			<title>ASP.NET DBWeb Control Examples</title>
+			<description>The following is a list of the DBWeb Demo applications included with the product. You can open each example in the IDE by simply clicking the button. For more detailed information on each individual example including setup information necessary to run the example see the readme.htm file provided with each of the same applications.</description>
+		</item>
+		<item ignoreSize="1">
+			<title>Aggregate Controls</title>
+			<link>javascript:openFileLink(appPath + 'demos\\delphi.net\\dbweb\\aggregates\\aggregates.bdsproj');</link>
+			<description>This demo illustrates how to use DBWebAggregateControls. There are 5 aggregate controls below the grid, each connected to a DBWebDataSource, a TableName and a ColumnName. The caption for each is identified in the properties under the "Caption" heading (Caption and CaptionPosition). When the application is run, the aggregate values are updated as you make changes.&lt;br /&gt; For additional setup information please refer to &lt;a href="bds://../demos/delphi.net/dbweb/aggregates/readme.htm"&gt;readme.htm&lt;/a&gt;</description>
+		</item>
+		<item ignoreSize="1">
+			<title>Auto Apply Updates</title>
+			<link>javascript:openFileLink(appPath + 'demos\\delphi.net\\dbweb\\autoapply\\DBWebAutoApply.bdsproj');</link>
+			<description>This sample shows how to set up a OnAutoApplyChanges() event of the DBWebDataSource so that changes are updated to the server as they are made. The Navigator buttons will typically be adjusted to remove the Apply and Refresh Buttons, as well as the Undo and UndoAll buttons, as once the changes are sent to the server caching isno longer possible.&lt;br /&gt; For additional setup information please refer to &lt;a href="bds://../demos/delphi.net/dbweb/autoapply/readme.htm"&gt;readme.htm&lt;/a&gt;</description>
+		</item>
+		<item ignoreSize="1">
+			<title>GoTo Control</title>
+			<link>javascript:openFileLink(appPath + 'demos\\delphi.net\\dbweb\\gotocontrol\\gotocontrol.bdsproj');</link>
+			<description>This demo shows how to use the RegisterGoToControl() method of IDBDataSource, which is implemented by DBWebDataSource and EcoDataSource. The DBWebListBox control is registered as a GoTo control in the Page_Load event. The DBWebListBox is connected to the master DEPARTMENT table. When the user clicks on an any of the DEPARTMENT values in the listbox, the current row is set to that row in the table, and the detail PROJECTS table shows the projects for that Department in the DBWebGrid. Note also that the AutoPostBack property of the DBWebListBox is set to true -- this allows the client to submit a request back to the server each time a DBWebListBox item is clicked.&lt;br /&gt;  For additional setup information please refer to &lt;a href="bds://../demos/delphi.net/dbweb/gotocontrol/readme.htm"&gt;readme.htm&lt;/a&gt;</description>
+		</item>
+		<item ignoreSize="1">
+			<title>DBWebImage</title>
+			<link>javascript:openFileLink(appPath + 'demos\\delphi.net\\dbweb\\imagelink\\imagelink.bdsproj');</link>
+			<description>This demo shows how to use the DBWebImage control with string columns in a DataTable. In DBWeb 1.0, only Blob columns could be used with DBWeb image. In DBWeb 2.0, if a string column is found its contents are interpreted as a link to an image file. &lt;br /&gt; For additional setup information please refer to &lt;a href="bds://../demos/delphi.net/dbweb/imagelink/readme.htm"&gt;readme.htm&lt;/a&gt;</description>
+		</item>
+		<item ignoreSize="1">
+			<title>Master Detail</title>
+			<link>javascript:openFileLink(appPath + 'demos\\delphi.net\\dbweb\\masterdetail\\masterdetail.bdsproj');</link>
+			<description>This sample demonstrates: &lt;ol type="1"&gt; &lt;li&gt;Master-detail-detail scenario. &lt;li&gt;The data has been loaded from the standard Interbase employee.gdb, using the Country/Employee/Salary History columns &lt;li&gt;Relations have been added at design time using the Relations Editor of the DataSet. First, click on the EmployeeSales DataSet, and then go to the Relations property, and open the relations editor. You will see that 2 relations have been added, linking the Country table to the Employee table by means of their common COUNTRY/JOB_COUNTRY fields, and then linking the Employee table to the SalaryHistory table using their common EMP_NO field.  &lt;/li&gt; &lt;/ol&gt;&lt;br /&gt; For additional setup information please refer to &lt;a href="bds://../demos/delphi.net/dbweb/masterdetail/readme.htm"&gt;readme.htm&lt;/a&gt;</description>
+		</item>
+		<item ignoreSize="1">
+			<title>Navigation Buttons</title>
+			<link>javascript:openFileLink(appPath + 'demos\\delphi.net\\dbweb\\navigationreg\\navigationreg.bdsproj');</link>
+			<description>This demo shows how to modify ASP:Buttons (which are not DBWebControls) to have them behave as Navigation Controls for DBWeb. The code to do this is all in the page's Form_Load event. &lt;br /&gt; For additional setup information please refer to &lt;a href="bds://../demos/delphi.net/dbweb/navigationreg/readme.htm"&gt;readme.htm&lt;/a&gt;</description>
+		</item>
+		<item ignoreSize="1">
+			<title>DBWeb Demo</title>
+			<link>javascript:openFileLink(appPath + 'demos\\delphi.net\\dbweb\\travelplanner\\DBWebTravelPlanner.bdsproj');</link>
+			<description>Basic demo of DBWeb controls. &lt;ol type="1"&gt; &lt;li&gt;Uses a DataSet which is not connected to a back end. Instead, the data is loaded at run time. Warning: as a result, you cannot see the data at design time. &lt;li&gt;Application assumes user has read-write rights to directory. If not, applyChanges will fail with an error. &lt;li&gt;The GetXmlFile method shows how to access the physical directory for the virtual path. &lt;li&gt;The Page_Load event shows how to load an xml file into a DataSet for use by DB Web controls. &lt;li&gt;The OnApplyChangesRequest event shows how to update changes to the xml file. Note that if the xml file does not exist, this code will create one. (However, the attached xml file is needed for the Continent Dropdown.) &lt;li&gt; The following controls are used: &lt;ul style="font-size:120%;"&gt; &lt;li&gt;DBWebNavigator: for navigation, inserting, deleting, and applying changes. &lt;li&gt;DBWebLabeledTextBox: for editing COUNTRY and CAPITAL columns. &lt;li&gt;DBWebDropDown: for editing CONTINENT column. Values are taken from those CONTINENTS table in the Countries.xml file. &lt;li&gt;DBWebCalendar: for editing the DateVisited Data-Time column. &lt;li&gt;DBWebMemo: for editing the Comments field &lt;li&gt;DBWebCheckBox: for editing the boolean SECURITYRISK column. &lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ol&gt;&lt;br /&gt; For additional setup information please refer to &lt;a href="bds://../demos/delphi.net/dbweb/travelplanner/readme.htm"&gt;readme.htm&lt;/a&gt;</description>
+		</item>
+		<item ignoreSize="1">
+			<title>DBWebDataSource</title>
+			<link>javascript:openFileLink(appPath + 'demos\\delphi.net\\dbweb\\webfilter\\DBWebFilterSample.bdsproj');</link>
+			<description>This simple example shows how to connect a DBWebDataSource with a DataView so that the data can be filtered. The DataView's RowFilter property is set to limit the view to specific rows. Whenever the filter is changed, it is necessary to call DBWebDataSource's ClearSessionState() method so that cached changes are removed. Otherwise, the data from the preceding filter will be compared with the data from the current filter, resulting in unwanted updates and possibly invalid Row Numbers. &lt;br /&gt; For additional setup information please refer to &lt;a href="bds://../demos/delphi.net/dbweb/webfilter/readme.htm"&gt;readme.htm&lt;/a&gt;</description>
+		</item>
+		<item ignoreSize="1">
+			<title>World Travel</title>
+			<link>javascript:openFileLink(appPath + 'demos\\delphi.net\\dbweb\\worldtravel\\worldtravel.bdsproj');</link>
+			<description>This sample demonstrates how to work with Borland's Data Aware Web controls, and especially the DBWebImage control. The sample connects to the Interbase database "worldtravel.gdb", which is included with this project. &lt;br /&gt; For additional setup information please refer to &lt;a href="bds://../demos/delphi.net/dbweb/worldtravel/readme.htm"&gt;readme.htm&lt;/a&gt;</description>
+		</item>
+		<item ignoreSize="1">
+			<title>XML Caching</title>
+			<link>javascript:openFileLink(appPath + 'demos\\delphi.net\\dbweb\\xmlcaching\\xmlcaching.bdsproj');</link>
+			<description>This example shows a simple case of working with DBWebSource's XMLFileName and XSDSchemaName properties. The first time the application is run you might have to select the DBWebDataSource control, open the object inspector, set the XmlFileName property to "employee.xml", and set the XsdFileName to "employee.xsd". You can browse to this directory to find them. &lt;br /&gt; For additional setup information please refer to &lt;a href="bds://../demos/delphi.net/dbweb/xmlcaching/readme.htm"&gt;readme.htm&lt;/a&gt;</description>
+		</item>
+	</channel>
+</rss>

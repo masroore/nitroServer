@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*	Name: 1490680848
+	Disable tables
+Copyright 2006 Opera Software */
+table, caption, tr, thead, tfoot, tbody, th, td {
+	width: auto !important;
+	min-width: 0px !important;
+	max-width: none !important;
+	height: auto !important;
+	min-height: 0px !important;
+	max-height: none !important;
+	float: none !important;
+	display: block !important;
+}
+thead, th {font-weight: bolder !important;}

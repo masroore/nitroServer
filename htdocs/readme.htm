@@ -1,0 +1,1217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Release Notes for Delphi 2007 for Win32 and C++Builder 2007</TITLE>
+
+<META http-equiv="content-type" content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.2900.2722" name="GENERATOR">
+
+<STYLE type="text/css">
+BODY {FONT-SIZE: 73%; BACKGROUND: #ffffff; COLOR: #000000; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif}
+CODE {FONT-SIZE: 110%; FONT-FAMILY: Courier New, Courier, monospace}
+DT {MARGIN-TOP: 1.2em; FONT-WEIGHT: bold}
+DD { MARGIN-LEFT: 10em}
+H1 {FONT-SIZE: 150%; BORDER-TOP: thin solid; MARGIN-BOTTOM: 0.6em}
+H2 {BORDER-RIGHT: thin;  FONT-SIZE: 130%; MARGIN-BOTTOM: 0.6em; BORDER-LEFT: thin; BORDER-BOTTOM: thin}
+H3 {FONT-SIZE: 100%; MARGIN-BOTTOM: 0.6em}
+H4 {FONT-SIZE: 100%; MARGIN-BOTTOM: 0.6em}
+LI {MARGIN-TOP: 0.4em; MARGIN-BOTTOM: 0.4em}
+OL {MARGIN-TOP: 0.6em; MARGIN-BOTTOM: 0em; MARGIN-LEFT: 2.5em; LIST-STYLE-TYPE: decimal}
+OL OL {	LIST-STYLE-TYPE: upper-alpha}
+OL OL OL {LIST-STYLE-TYPE: lower-roman}
+P {MARGIN-TOP: 0.6em; MARGIN-BOTTOM: 0.6em}
+PRE {MARGIN-TOP: 0.5em; MARGIN-BOTTOM: 0.5em}
+TABLE {BORDER-RIGHT: 0px; PADDING-RIGHT: 2px; BORDER-TOP: 0px; MARGIN-TOP: 0.6em; PADDING-LEFT: 2px; FONT-SIZE: 100%; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 2px; BORDER-LEFT: 0px; PADDING-TOP: 2px; BORDER-BOTTOM: 0px}
+TABLE P {MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px}
+TABLE OL {MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px}
+TABLE UL {MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px}
+
+TABLE.layout {PADDING-RIGHT: 0em; MARGIN-TOP: -0.6em; PADDING-LEFT: 0em; FONT-SIZE: 100%; MARGIN-BOTTOM: 0em; PADDING-BOTTOM: 0em; PADDING-TOP: 0em}
+
+TD {BACKGROUND: #eeeeee; VERTICAL-ALIGN: top}
+
+TH {BACKGROUND: #dddddd; VERTICAL-ALIGN: bottom; TEXT-ALIGN: left}
+
+TR {VERTICAL-ALIGN: top}
+
+UL {MARGIN-TOP: 0.6em; PADDING-LEFT: 0em; MARGIN-BOTTOM: 0em; MARGIN-LEFT: 1.75em; LIST-STYLE-TYPE: disc}
+
+UL UL {	LIST-STYLE-TYPE: circle}
+
+UL.simple {	MARGIN-TOP: 0.6em; PADDING-LEFT: 0em; MARGIN-BOTTOM: 0em; MARGIN-LEFT: 1.75em; LIST-STYLE-TYPE: none}
+
+A:link {BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: hand; COLOR: #0000ff}
+
+A:visited {	BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: hand; COLOR: #0000ff}
+
+A:active {BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: hand; COLOR: #ff0000}
+
+A:hover {BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: hand; COLOR: #ff0000}
+
+</STYLE>
+
+</HEAD>
+
+<BODY>
+
+<H1>Release Notes for Delphi<sup>&reg;</sup> 2007 for Win32<sup>&reg;</sup> and C++Builder<sup>&reg;</sup></H1>
+
+<p>This file contains important supplementary information that might not appear 
+ in the main product documentation. CodeGear recommends that you read this file 
+ in its entirety.</p> For an updated version of these Release Notes, see the CodeGear Developer Network 
+ (<a href="http://dn.codegear.com/article/36575">http://dn.codegear.com/article/36575</a>).
+ 
+ </p>
+ <p>This document refers to &quot;the product&quot; when the information applies to both Delphi 2007 for Win32 and C++Builder 2007.</p>
+
+<p>For information about installation, deployment, and licensing issues, see the 
+ <strong>Install</strong>, <strong>Deploy</strong>, and <strong>License</strong> files located, by default, at <strong>C:\Program Files\CodeGear\RAD Studio\5.0</strong>.</p>
+
+<H1 id=contents>Contents</H1>
+
+<UL class=simple>
+ <li><A href="#installing">Installing, Uninstalling, and Upgrading Your Product</A></li> 
+ <LI><A href="#generalnotes">General Notes</A></LI>
+ <LI><A href="#knownproblems">Known Problems</A></LI>
+ <li><a href="#CPPcompiler">C++Builder and C++ Compiler Notes</A></li>
+ <LI><A href="#ide">Windows Vista<font size="-6"><sup>TM</sup></font> Notes</A></LI>
+ <LI><A href="#commandline">Command Line Notes</A></LI>
+ <LI><A href="#dbnotes">Database Notes</A></LI>
+ <LI><A href="#debugger">Debugger Notes</A></LI>
+ <LI><A href="#doc">Documentation Notes</A></LI>
+ <LI><A href="#international">International Notes</a></LI>
+ <li><A href="#together">Together Notes</A></li>
+ <li><A href="#vclrtl">VCL/RTL Notes</A> </li> 
+ <li><A href="#SOAP">SOAP Server</A> </li>
+</UL>
+
+<p>&nbsp;</p>
+
+<h1 id=installing>Installing, Uninstalling, and Upgrading Your Product</h1>
+<ul>
+<li>
+<p id="RAID250266qc45551">Before installing, uninstalling, or upgrading the product, see the INSTALL and LICENSE files for 
+detailed information about installation and licensing issues. Also see the Installation FAQ, located at:
+<a href="http://dn.codegear.com/article/36523">http://dn.codegear.com/article/36523</a>.
+The install.htm file gives the system and free space requirements for installing C++Builder 2007, as well as installation and upgrade procedures.</p>
+
+<p>Where to find the INSTALL file:</p>
+<ul>
+<li>At the root level of your installation DVD</li>
+<li>On the Update page of the Registered users website (<a href="http://www.codegear.com/downloads/regusers/delphi">http://www.codegear.com/downloads/regusers/delphi</a>)</li>
+<li>On the CodeGear Developer Network (<a href="http://dn.codegear.com/article/36574">http://dn.codegear.com/article/36574</a>)</li>
+</ul>
+<p>After installation, the INSTALL.htm and LICENSE.rtf files are located by default at:</p>
+
+ <p><strong>C:\Program Files\CodeGear\RAD Studio\5.0\</strong></p>
+</li>
+
+<li>
+<p id="RAID250217">Installing products in the wrong order can cause problems and should be avoided.  For example:</p>
+<ul><li>Do not install Borland Developer Studio 2006 after installing C++Builder 2007.  If you attempt 
+this combination, you will be unable to start BDS 2006. The following error occurs after you complete registration:
+
+<p>Exception EPackageRegistrationException in module coreide100.bpl at 000DB245.
+Registration procedure, Cppproject.IDERegister in package C:\Program Files\Borland\BDS\4.0\Bin\bcbide100.bpl 
+raised exception class EOleSysError: OLE error 80131040, ClassID: {F8FEDD39-E3CE-4B8D-A657-9CA24686881F}</p>
+
+<p>In this case, the assembly is registered incorrectly in the BDS2006 install. If .NET 2.0 and .NET 1.1 coexist on the system, the system cannot 
+load borland.studio.toolsets.dll. The workaround involves forcing the assembly loader to use .NET 1.1 for this assembly.  For more information, see:</p>
+<p><a href="http://qc.codegear.com/wc/qcmain.aspx?d=28728">http://qc.codegear.com/wc/qcmain.aspx?d=28728</a></p>
+<p><a href="http://qc.borland.com/wc/qcmain.aspx?d=22108">http://qc.borland.com/wc/qcmain.aspx?d=22108</a></p>
+<p><a href="http://support.codegear.com/article/36047">http://support.codegear.com/article/36047</a></p>
+</li>
+
+<li id="RAID250164"><p>Do not install Delphi 2007 for Win32 from an original release DVD (prior to Update 1) after you install C++Builder 2007. 
+The result is that neither product gets installed. Instead, select <strong>Start | Programs | RAD Studio | Modify, Repair, Uninstall</strong>; 
+select <strong>Upgrade</strong>, 
+enter your Delphi serial number, and continue through the steps in the installer to install Delphi 2007 for Win32 Update 1.</p></li>
+
+<li id="RAID249935">Do not uninstall Delphi 2007 for Win32 before installing both C++Builder 2007 and Update 1 of Delphi 2007 for Win32. 
+The result is that only Delphi is available, and C++Builder is unavailable.  As a workaround for this situation, you need to delete the registry keys 
+in HKEY_CURRENT_USER\Software\Borland\BDS\5.0.</li>
+</ul>
+</li>
+
+<li id="RAID250266">
+<p>The installer does not warn you when there is not enough free space to install the product. 
+Approximately 2 GB of free space is needed on the C: drive to install C++Builder (even if you are installing to a different drive). 
+If there is insufficient space, the installer might hang.</p>
+</li>
+
+<li id="RAID246909">
+<p>After uninstalling Delphi 2007, 
+some system files/settings are removed and prevent any subsequent .NET 2.0 uninstall or repair until you reboot.
+</p>
+</li>
+
+<li id="RAID248954">
+Only one set of Microsoft<sup>&reg;</sup> Office Controls can be registered and available in the IDE at one time.  
+Available packages include OfficeXP for Delphi Win32, OfficeXP for C++Builder, Office2K for Delphi Win32, 
+and Office2K for C++Builder.  To register these with the IDE, select <strong>Component&gt;Install packages</strong>.  
+</li>
+</ul>
+
+<p><A href="#contents">Top</A> </p>
+
+<p>&nbsp;</p>
+
+
+<H1 id=generalnotes>General Notes</H1>
+
+<UL>
+ <LI>The demos for both products are installed in directories according to the way you install the product 
+ and whether you are using Windows Vista: 
+<UL>
+ <LI>If you choose <strong>All Users</strong> during installation, the demos are installed in C:\Documents and 
+ Settings\All Users\Shared Documents\RAD Studio\5.0\Demos. </LI>
+ 
+ <LI>If you choose <strong>Just Me</strong> during installation, the demos are installed in C:\Documents and 
+ Settings\My Documents\RAD Studio\5.0\Demos.</LI>
+ 
+ <li>On Windows Vista, if you choose <strong>All Users</strong> during installation, the demos are 
+ installed in C:\Users\Public\Documents\RAD Studio\5.0\Demos.</li>
+ 
+ <li>On Windows Vista, if you choose <strong>Just Me</strong> during installation, the demos are
+ installed in C:Users\<em>username</em>\Documents\RAD Studio\5.0\Demos.</li>
+</UL>
+</LI>
+ <LI><strong>Indy10</strong> is integrated with the product.  However, you can install the earlier version, <strong>Indy9</strong>, from 
+ C:\Program Files\CodeGear\RAD Studio\5.0\source\Win32\Indy9. </LI>
+ 
+ <li id="RAID250744 RAID250743">
+ In order to build WebAppDebugger applications with packages, you must list the <strong>Indy9</strong> package in the runtime packages list before the <strong>Indy10</strong> packages.
+
+<p>Select <strong>Component&gt;Install Packages</strong>.</p>
+
+<p>Add &quot;<strong>indy;</strong>&quot; at the beginning of the runtime packages list, as follows:</p>
+
+<p>indy;vcl;rtl;bcbie;vclx;vclactnband;xmlrtl;bcbsmp;dbrtl;vcldb;bdertl;vcldbx;dsnap;dsnapcon;teeUI;tee;teedb;vclib;ibxpress;adortl;
+dbxcds;dbexpress;DbxCommonDriver;IndyCore;IndySystem;IndyProtocols;inet;IntrawebDB_90_100;Intraweb_90_100;VclSmp;vclie;websnap;webdsnap;inetdbbde;inetdbxpress;soaprtl</p>
+ <p>This applies to both products.</p>
+</li>
+
+<LI>To debug  web applications, you should start by running <strong>serverinfo.exe</strong>, which silently registers itself.  
+ This step is required to use the Web Application Debugger (WebAppDbg.exe, located in the \bin folder of
+ your installation directory).</LI>
+ 
+<li>For information about IntraWeb, including help for the VCL for the Web components, 
+see <a href="http://www.atozed.com/intraweb/docs/">
+<strong>http://www.atozed.com/intraweb/docs/</strong></a>.</li>
+
+ <li>It is possible for .NET Framework and .NET SDK to appear in different languages, such as English and Japanese.  
+ The .NET Framework installs all of the possible languages and then determines the language to use according to the system locale. 
+ The .NET SDK, however, installs only the language selected during installation. </li>
+ 
+ <li>
+ To register a COM server, you need to run (the first time only) with <strong><font face="Courier New">/regserver</font></strong> as a run parameter.  Follow the steps outlined here:
+ <ol>
+<li>Create a project.</li>
+<li>Save the project.</li>
+<li>Set Run | Parameters to <strong>/regserver</strong>.</li>
+<li>Run your project. The application registers and then closes.</li>
+<li>Clear the /regserver setting on the Run | Parameters page.</li>
+</ol>
+ </li>
+ 
+ <li>
+If you are a VCL Component Vendor and your component installer updates paths in the registry to include paths to your components, 
+there is one additional registry key your installer should update in HKEY_LOCAL_MACHINE under:<br>
+<p>
+<strong>Software\Borland\BDS\5.0\Globals</strong>
+</p>
+<p>
+Add (or update if it already exists) a string value called <strong>ForceEnvOptionsUpdate</strong>.  
+Assign it a string value of &quot;1.&quot;  When this registry key has a value of &quot;1,&quot; the next time the IDE runs, it updates the 
+<strong>EnvOptions.proj</strong> file on disk to include the path(s) that your installer added.  The EnvOptions.proj file is the mechanism 
+by which the new MSBuild build engine in the IDE is able to include paths that are listed on the <strong>Library - Win32</strong> 
+page in the IDE's <strong>Tools&gt;Options</strong> dialog.
+</p>
+
+<p>
+If your installer updates any of the following registry keys, it should also add or update the Globals\ForceEnvOptionsUpdate key:</p>
+
+<ul><li>Software\Borland\BDS\5.0\Library\Browsing Path <br></li>
+<li>Software\Borland\BDS\5.0\Library\Debug DCU Path<br></li>
+<li>Software\Borland\BDS\5.0\Library\Namespace Search Path<br></li>
+<li>Software\Borland\BDS\5.0\Library\Package DCP Output<br></li>
+<li>Software\Borland\BDS\5.0\Library\Package DPL Output<br></li>
+<li>Software\Borland\BDS\5.0\Library\Search Path</LI></ul>
+
+</li>
+
+<li>
+<p>The legacy WinHelp viewer (WinHelp.exe) is not implicitly registered by RAD Studio.
+If you want to use .HLP files from an application, 
+you need to add the WinHelp viewer to the <font face="Courier New">uses</font> 
+list of any unit included in the application.  
+</p>
+<p>To download the WinHelp viewer, visit the Microsoft website:</p>
+ <a href="http://www.microsoft.com/downloads/details.aspx?familyid=6ebcfad9-d3f5-4365-8070-334cd175d4bb&displaylang=en">
+ http://www.microsoft.com/downloads/details.aspx?familyid=6ebcfad9-d3f5-4365-8070-334cd175d4bb</a>.
+</li>
+
+</UL>
+
+<p><A href="#contents">Top</A> </p>
+
+<p>&nbsp; </p>
+
+
+<h1 id=knownproblems>Known Problems</h1>
+<h2 id="RAID239323">Cannot Use Dynamic Link RTL if Dynamically Load DLL</h2>
+<p>If you dynamically load a DLL, you can't link dynamically with the runtime library. 
+Otherwise, an Access Violation occurs when the program terminates.
+The workaround is to not check <strong>Dynamic RTL</strong> in the Linking section in Project Options 
+on the Linker\Linking page.
+</p>
+
+<h2 id="RAID237289">Must Turn off NO_STRICT #define with GdiPlus library</h2>
+<p>The C++ library GdiPlus cannot be used in non STRICT mode, 
+since it requires that Graphics::Graphics(HDC) be distinguishable from Graphics::Graphics(HWND).
+In non STRICT mode, both HWND and HDC are &quot;void*&quot;. Otherwise, you get the error:</p>
+[C++ Error] GdiplusGraphics.h(37): E2015 Ambiguity between 'Gdiplus::Graphics::Graphics(void *)' and 'Gdiplus::Graphics::Graphics(void *,int)'
+
+
+<H2 id=ActiveX>ActiveX </H2>
+<P id="RAID250558">The Register and Unregister menu items are not enabled if you open and run&nbsp;an ActiveX&nbsp;library project in C++ 
+Builder&nbsp;2007 that was created with C++ Builder 6. The work around is to go to <strong>Run&gt;Parameters</strong> and set Host application to &quot;C:\windows\system32\regsvr32.exe&quot; and 
+the Parameters to &lt;ProjectName&gt;.</P>
+<P>&nbsp;</P>
+<p><A href="#contents">Top</A> </p>
+
+<p>&nbsp; </p>
+
+
+<h1 id="#CPPcompiler">C++Builder and C++ Compiler Notes</h1>
+
+<h2 id="fromBruneau">Possible Binary Incompatibility with Previous Version of C++ Compiler</h2>
+
+<p>The C++ runtime libraries have been enhanced and altered to be more current, and 
+the standard C++ libraries from Dinkumware have been updated to version 5.01. 
+Because of these changes, the binary objects generated by the compiler in C++Builder 2007 
+might differ in some cases from previously compiled versions. 
+The incompatibilities are mainly restricted to the C++ standard libraries. 
+There are no changes in the basic C++ application binary interface (ABI). 
+</p>
+
+<h2>Delphi Interface Parameter with Default Value of nil Handled Differently<br> 
+Assigning the Type void * to Delphi Interface Now Fails to Compile</h2>
+
+<p>The Delphi compiler (DCC32) previously generated the following code in the .hpp file
+when an interface parameter had the default value of <strong>nil</strong>:</p>
+
+<p>&nbsp;&nbsp;void methodName(_di_IIntf param = (void *)(0x0));</p>
+
+<p>Previously the C++ compiler incorrectly accepted this syntax.</p>
+
+<p>In this release, both the Delphi compiler and the C++ compiler handle this case differently.</p>
+
+<p>The Delphi compiler now emits code like this in the .hpp file for an interface parameter 
+with a <strong>nil</strong> default value:</p>
+
+<p>&nbsp;&nbsp;void methodName(_di_IIntf param = _di_IIntf());</p>
+
+The C++ compiler now gives an error for code that assigns the type &quot;void *&quot; to a Delphi interface.
+ 
+For instance, the line
+
+<p>&nbsp;&nbsp;void methodName(_di_IIntf param = (void *)(0x0));</p>
+
+<p>now fails to compile, emitting the error:</p>
+
+<p>&nbsp;&nbsp;Cannot convert 'void *' to '_di_IIntf'</p>
+
+<p>If you have Delphi code containing an interface parameter with a <strong>nil</strong> default value, 
+recompile it with DCC32. If you do not have the source, edit the .hpp file and modify all
+occurrences like this</p>
+
+<p>&nbsp;&nbsp;void methodName(_di_IIntf param = (void *)(0x0));</p>
+
+<p>to this:</p>
+
+<p>&nbsp;&nbsp;void methodName(_di_IIntf param = _di_IIntf());</p>
+
+<h2 id="RAID248745">Selecting Both of the Symbol Reference Info Options for Delphi Code</h2>
+
+If you are compiling Delphi code inside your C++Builder project, 
+you currently can select only one of the Symbol Reference Info 
+options (either Definitions or Reference Info) on 
+the <strong>Project&gt;Options&gt;Delphi Compiler&gt;Compiling</strong> dialog box. 
+However, you can select both of these options 
+if you use source-level directives ($<em>xx</em>) as follows:
+<ul>
+<li>
+<strong>Definition Info ($YD)</strong> option: the Delphi compiler records 
+information about where each identifier is defined. 
+For most identifiers--variables, constants, classes, and so 
+forth--the compiler records the location of the declaration. 
+For procedures, functions, and methods, the compiler 
+records the location of the implementation. This enables Code editor browsing.
+</li>
+
+<li>
+<strong>Reference Info ($Y+)</strong> option: 
+the Delphi compiler records information about where every 
+identifier is used as well as where it is defined. 
+This enables the References page of the Project Browser.
+</li>
+</ul>
+These compiler options are only available when both the Debugging Information 
+(<strong>$D</strong>) and the 
+Local debug symbols (<strong>$L</strong>) options are ON. 
+
+<h2 id="RAID249816">Specifying WebSnap Directories</h2>
+If you are using C++Builder with WebSnap, ensure that the executables are written 
+to the same directory as the HTML files. 
+On <strong>Project&gt;Options&gt;Paths and Defaults&gt;Final Output</strong>,
+ enter a dot (&quot;.&quot;) so that the executable is written to the project directory.
+
+<h2 id="RAID250401">Location Change for Precompiled Headers</h2>
+C++ precompiled header files (PCH) are placed in a different file location than BDS2006. 
+If you import a project from BDS2006, 
+it does not import the project's PCH file location. You can set the PCH file in 
+<strong>Project&gt;Options&gt;Precompiled headers&gt;PCH filename</strong>.
+
+<h2 id="RAID251076">Generating C++ Files from the Delphi Compiler</h2>
+<p>If you want to generate .hpp files (and the corresponding .obj) from a .pas file, 
+you should use dcc32.exe with the -JPHNE switch. 
+Or use -JL on the .dpk file containing the .pas file.</p>
+
+<h2>Using WinHelp in C++ Applications</h2>
+<p>To use WinHelp in a C++ application:</p>
+
+<ol><li>Add #include &lt;WinHelpViewer.hpp&gt;.</li>
+<li>Refer to an object declared in the WinHelpViewer header file.
+
+<p>void LinkWinHelp()</p>
+<p>{</p>
+<p>&nbsp;&nbsp;# pragma startup LinkWinHelp 66</p>
+<p>&nbsp;&nbsp;if (WinHelpTester != NULL)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WinHelpTester-&gt;GetHelpPath();</p>
+<p>}</p></li></ol>
+
+<p>To download the WinHelp viewer, visit the Microsoft website:</p>
+ <a href="http://www.microsoft.com/downloads/details.aspx?familyid=6ebcfad9-d3f5-4365-8070-334cd175d4bb&displaylang=en">
+ http://www.microsoft.com/downloads/details.aspx?familyid=6ebcfad9-d3f5-4365-8070-334cd175d4bb</a>.
+ 
+ 
+<h2>C++ Compiler Changes</h2>
+<p>To more closely obey the rules of the C++ ANSI Standard, 
+the C++ compiler shipping with C++Builder 2007 is stricter than previous versions. 
+Code that did not generate errors in earlier versions of C++Builder might fail 
+to compile with C++Builder 2007. 
+This section lists some of the common areas where the compiler is stricter. 
+Each case is illustrated with an example showing the problem and 
+how to update the code to compile with C++Builder 2007. 
+Note that there are often many ways to bring offending code up to date. 
+The appropriate method depends on the intent of the original code. 
+</p>
+
+<ol><li><strong>Binding of References and Qualifiers</strong>
+
+<p>There are many constructs that now generate error messages with the C++ compiler 
+included with C++Builder 2007.
+The rules governing this are described in section 8.5.3 of the 2003 C++ ANSII standard.
+They fall in the following categories:</p>
+<ol type="a">
+<li type="a">
+Binding a non-const lvalue to to non-const reference. 
+Use the compiler switch <strong>-Vbr</strong> to allow this. 
+</li>
+<li type="a">
+Binding a temporary to a non-const reference.
+Use the compiler switch <strong>-Vbr</strong> to allow this.
+</li>
+<li type="a">
+Binding of const or volatile objects to non-const or non-volatile methods repectively.
+Use the compiler switch <strong>-Vbn</strong> to allow this. 
+</li>
+</ol>
+
+<p>Previous versions of the Borland C++ compilers allowed various forms of binding to non-const 
+reference parameters. 
+In the following example, for instance, one was allowed 
+to simply cast the <font face="Courier New">psize</font> parameter:</p>
+
+<p>&nbsp;&nbsp;int takesLongRef(long&amp; l);</p>
+&nbsp;&nbsp;int takesUnsignedPtr(unsigned long* psize) {</p>
+&nbsp;&nbsp;&nbsp;&nbsp;  return takesLongRef((long)*psize);<br>
+&nbsp;&nbsp;}<br>
+
+<p>With C++Builder2007, the above code generates these errors:</p>  
+<p>&nbsp;&nbsp;Error E2357 test.cpp 3: Reference initialized with 'long', needs lvalue of type 'long' in function takesUnsignedPtr(unsigned long *)</p>
+  &nbsp;&nbsp;Error E2342 test.cpp 3: Type mismatch in parameter 'l' (wanted 'long &amp;', got 'long') in function takesUnsignedPtr(unsigned long *)<br>
+<p>To remedy this, you can cast <font face="Courier New">psize</font> before dereferencing, as in:</p>
+
+<p>&nbsp;&nbsp;int takesLongRef(long&amp; l);</p>
+&nbsp;&nbsp;int takesUnsignedPtr(unsigned long* psize) {<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;return takesLongRef(*reinterpret_cast&lt;long*&gt;(psize));<br>
+&nbsp;&nbsp;}<br>
+
+<p>Be aware of cases that involve temporaries in unobvious ways. 
+For example, some binary operators imply a temporary:</p>
+     <p>&nbsp;&nbsp;enum { zero, one, two } num; </p>
+        &nbsp;&nbsp;num |= two;                 // Not allowed <br>
+        &nbsp;&nbsp;num = num | two;            // OK<br>
+
+<p>Another case that involves temporaries in an unobvious way is the return value of a property. 
+The following example illustrates code that compiled with previous versions of the compiler:</p>
+
+<p>&nbsp;&nbsp;#include &lt;vcl.h&gt;</p>
+&nbsp;&nbsp;class TTest {<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;WideString FData ;<br>
+&nbsp;&nbsp;public:<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;__property WideString Data = {read = FData };<br>
+&nbsp;&nbsp;};<br>
+<br>
+&nbsp;&nbsp;void Func(WideString&amp; wref);<br>
+<br>
+&nbsp;&nbsp;void test() {<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;TTest t;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;Func(t.Data);<br>
+&nbsp;&nbsp;}<br>
+<br>
+
+<p>With C++Builder 2007, the above generates two errors:</p>
+<p>  &nbsp;&nbsp;Error E2357 test.cpp 14: Reference initialized with 'const WideString', needs lvalue of type 'WideString' in function test()<br>
+  &nbsp;&nbsp;Error E2342 test.cpp 14: Type mismatch in parameter 'wref' (wanted 'WideString &amp;', got 'WideString') in function test() </p>
+
+<p>You can fix this by changing the reference to a const reference, as in:</p>
+<p>&nbsp;&nbsp;void Func(const WideString&amp; wref);</p>
+
+<p>Here is an example of trying to bind a const object to a non-const method:</p>
+<p>
+&nbsp;&nbsp;struct X {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;void foo();<br>
+&nbsp;&nbsp;};<br>
+&nbsp;&nbsp;const X x;<br>
+&nbsp;&nbsp;x.foo();	//error
+</p>
+</li>
+ 
+<strong>1.1 Reconcile Error Dialog</strong>
+
+<p>The temporaries and references issue referred to above is encountered in code generated by previous versions of the 
+<strong>Reconcile Error Dialog</strong> Wizard. 
+To remedy this, look for the <strong>VarToAnsiStr</strong> method
+</p>
+<p>  &nbsp;&nbsp;AnsiString VarToAnsiStr (Variant &amp;V, TFieldType DataType) 
+</p>
+<p>and change it to take a const Variant&amp;, as in:
+</p>
+<p>  &nbsp;&nbsp;AnsiString VarToAnsiStr (const Variant &amp;V, TFieldType DataType) 
+</p>
+
+
+<li><strong>String literals are now constants</strong>
+
+<p>String literals are now considered to be of type 'const char[]' by default. 
+This, combined with the stricter qualification binding of const values and 
+types, can generate error messages in code that compiled before.</p> 
+
+<p>You may enable the <strong>-Vbs</strong> switch to revert string literals to non-const. 
+However, CodeGear recommends that you update the code instead.</p>
+
+<p>Note that the change in the type of string literals can also change 
+how the compiler resolves calls to overloaded methods. 
+The following example illustrates this:</p>
+        <p>&nbsp;&nbsp;void foo(char *); <br>
+        &nbsp;&nbsp;void foo(const char *); <br>
+        &nbsp;&nbsp;foo(&quot;string&quot;);  // New Compiler picks foo(const char *)</p>
+</li>
+
+<li><strong>Template Changes</strong>
+
+<p>The C++ compiler no longer allows an explicit template without the 'template &lt;&gt;' prefix.
+Use the compiler switch <strong>-Vbe</strong> to allow this.
+The following example shows this:</p>
+            <p>&nbsp;&nbsp;template&lt;class&gt; <br>
+            &nbsp;&nbsp;class foo { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;foo(); <br>
+            &nbsp;&nbsp;}; <br>
+            &nbsp;&nbsp;foo&lt;int&gt;::foo();    // Error <br>
+            &nbsp;&nbsp;template&lt;&gt; foo&lt;int&gt;::foo(); // OK</p>
+
+<p>Also, the C++ compiler no longer allows explicit template specialization within a class. 
+Use the compiler switch <strong>-Vbx</strong> to allow this.
+For example, this generates an error:</p>
+
+            <p>&nbsp;&nbsp;struct S {}; <br>
+            &nbsp;&nbsp;struct SP <br>
+            &nbsp;&nbsp;{ <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;template &lt;typename T&gt; void foo(const T &amp;) {} <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;template &lt;&gt; void foo(const S &amp;) {}      // Error <br>
+            &nbsp;&nbsp;};</p>
+			&nbsp;&nbsp;template &lt;&gt; void SP::foo(const S &amp;) {}	//OK
+
+</li>
+
+<li><strong>Function Overload Resolution</strong>
+
+<p>One of the areas where the C++Builder 2007 compiler differs the most from the previous version is 
+in overload resolution, which includes the detection of ambiguity. 
+The compiler now better conforms to the rules in section 13.3 of the 2003 C++ ANSI Standard.
+Several constructs that were previously allowed might now be reported as ambiguous or no match found, 
+requiring that you modify code to clarify its intent.</p>
+
+<p>The compiler option to revert to the old behavior, 
+not enforcing the new stricter behavior, is <strong>-Vbo</strong>.
+However, not all compiler changes can be controlled by this switch, 
+so CodeGear recommends that you update the code instead.</p> 
+
+<p>The following is an example of an ambiguity that was permitted by the previous compiler:</p>
+
+<p>
+&nbsp;&nbsp;class X{};<br>
+&nbsp;&nbsp;void foo(X);<br>
+&nbsp;&nbsp;void foo(const X&amp;);<br>
+&nbsp;&nbsp;void ambig() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;X x;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;foo(x);	//error-ambiguous-the previous compiler chose 'void foo(x)'<br>
+&nbsp;&nbsp;}
+</p> 
+</li>
+
+<strong>4.1 std::abs() Ambiguity</strong>
+
+<p>The standard <strong>abs</strong> function might also generate an ambiguity message 
+when invoked with a parameter 
+that does not exactly match the types expected by the various overloaded versions of <strong>abs</strong>. 
+Here is an example:
+</p>
+
+<p>&nbsp;&nbsp;#include &lt;limits&gt;<br>
+&nbsp;&nbsp;bool test(long l) {<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;return std::abs(l) &gt; 0;<br>
+&nbsp;&nbsp;}
+</p>
+
+<p>The code above generates an error and a warning:
+</p>
+<p>
+&nbsp;&nbsp;Error E2015 test.cpp 5: Ambiguity between 'std::abs(int) at C:\dev\tp\sc\include\math.h:208' 
+and 'std::abs(long double) at C:\dev\tp\sc\include\math.h:275' in function test(long)<br>
+&nbsp;&nbsp;Warning W8057 test.cpp 6: Parameter 'l' is never used in function test(long)<br>
+</p>
+
+<p>To fix this, cast to the type of the overload you wish to invoke. For example,
+</p>
+
+<p>&nbsp;&nbsp;#include &lt;limits&gt; <br>
+&nbsp;&nbsp;bool test(long l) {<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;return std::abs(static_cast&lt;int&gt;(l)) &gt; 0;<br>
+&nbsp;&nbsp;}
+</p>
+
+<li><strong>Initialization and Conversion</strong>
+
+<p>The compiler now obeys the rules of 8.5.1 and 13.3.1 of the 2003 C++ ANSI Standard 
+for initialization and conversion:</p> 
+
+<ol type="a">
+<li type="a">
+Direct initialization now requires initialization by a constructor 
+and no longer picks a user conversion sequence.
+</li> 
+<li type="a">
+Copy initialization for objects of the same or derived type now requires 
+a constructor call.
+</li> 
+<li type="a">
+Copy initialization for objects of the different types no longer prefers 
+user conversion over construction. 
+If the compiler finds a suitable user conversion, it now continues to look for 
+(possibly ambiguous) converting constructors. 
+If the chosen conversion function is a converting constructor, 
+the call initializes a temporary of the destination type. The 
+result of the call (which is the temporary for the constructor 
+case) is then used to directinitialize the object.
+Use the compiler switch <strong>-Vbo</strong> to revert to the previous behavior.
+</li> 
+<li type="a"> 
+<p>For an explicit cast, the compiler now performs direct initialization on a temporary.</p> 
+</li>
+</ol>
+
+<p>This example illustrates the new behavior:</p>
+
+        <p>&nbsp;&nbsp;// In this example, dst is destination type and src is source type <br>
+        &nbsp;&nbsp;class A { }; <br>
+        &nbsp;&nbsp;class V { <br>
+        &nbsp;&nbsp;public: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;V() { }; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;V( const V &amp; ) { } <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;V( const A &amp; ) { } <br>
+        &nbsp;&nbsp;}; <br>
+        &nbsp;&nbsp;class G {<br> 
+        &nbsp;&nbsp;public: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;G() { } <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;operator V() { } <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;operator A() { } <br>
+        &nbsp;&nbsp;}; <br>
+        &nbsp;&nbsp;G g; V v; <br>
+        &nbsp;&nbsp;// direct initialization <br>
+        &nbsp;&nbsp;// ==&gt; constructors are considered. <br>
+        &nbsp;&nbsp;V v9(g); <br>
+        &nbsp;&nbsp;// Both of these statements previously compiled but now get the error: <br>
+        &nbsp;&nbsp;// Error E2015: Ambiguity between 'V::V(const V &amp;)' and 'V::V(const A &amp;)' <br>
+		<br>
+        &nbsp;&nbsp;// casts <br>
+        &nbsp;&nbsp;// (V)g is treated as V tmp(g) which is direct initialization of 'tmp' <br>
+        &nbsp;&nbsp;// ==&gt; constructors are considered. <br>
+        &nbsp;&nbsp;(V)g; <br>
+        &nbsp;&nbsp;static_cast&lt;V&gt;(g); <br>
+        &nbsp;&nbsp;// Both of these statements previously compiled but now get the error: <br>
+        &nbsp;&nbsp;// Error E2015: Ambiguity between 'V::V(const V &amp;)' and 'V::V(const A &amp;)' <br>
+		<br>
+        &nbsp;&nbsp;// copy initialization with dst=V src=G <br>
+        &nbsp;&nbsp;// ==&gt; user-defined conversion sequences are considered. <br>
+        &nbsp;&nbsp;V v4 = g; <br>
+        &nbsp;&nbsp;V v5 = G(); <br>
+        &nbsp;&nbsp;// Both of these statements now compile but previously got the error: <br>
+        &nbsp;&nbsp;// Error E2015: Ambiguity between 'V::V(const A &amp;)' and 'V::V(const V &amp;)' <br>
+		<br>
+        &nbsp;&nbsp;// copy initialization with dst=V src=V <br>
+        &nbsp;&nbsp;// ==&gt; converting constructors of V are considered. <br>
+        &nbsp;&nbsp;V v6 = (V)g; <br>
+        &nbsp;&nbsp;V v7 = V(g); <br>
+        &nbsp;&nbsp;// Both of these statements compiled previously but now get the error: <br>
+        &nbsp;&nbsp;// Error E2015: Ambiguity between 'V::V(const V &amp;)' and 'V::V(const A &amp;)'</p> 
+
+</li>
+
+<p><strong>5.1 Conversion via user-defined operators</strong></p>
+
+<p>The new C++Builder 2007 compiler often reports ambiguities for conversions 
+that involve user-defined operators. 
+An example is shown below:</p>
+
+<p> &nbsp;&nbsp;class AnsiString<br>
+ &nbsp;&nbsp;{<br>
+ &nbsp;&nbsp;public:<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;bool operator ==(const AnsiString&amp; other);<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;AnsiString(const wchar_t* src);<br>
+ &nbsp;&nbsp;};<br>
+ <br>
+ &nbsp;&nbsp;class Variant<br>
+ &nbsp;&nbsp;{<br>
+ &nbsp;&nbsp;public:<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;operator AnsiString() const;/br&gt;
+   &nbsp;&nbsp;&nbsp;&nbsp;operator wchar_t*() const;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;bool operator ==(const AnsiString&amp; rhs) const<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;{ return static_cast&lt;AnsiString&gt;(*this) == rhs;} <br>
+ &nbsp;&nbsp;};
+</p>
+
+<p>C++Builder users might notice that the above is a stripped down version 
+of the VCL <strong>AnsiString</strong> and <strong>Variant</strong> classes. 
+Previous versions of the compiler invoked the 'Variant' 'operator AnsiString() const' for 
+'static_cast&lt;AnsiString&gt;(*this)', while C++Builder 2007 uses 'conversion via constructor'. 
+Since the Variant can be converted to multiple types for which there are AnsiString constructors, 
+the compiler generates an ambiguity error.
+</p>
+<p>To correct this error, you must eliminate the cast as in:
+</p>
+<p>   &nbsp;&nbsp;bool operator ==(const AnsiString&amp; rhs) const<br>
+   &nbsp;&nbsp;{ return (*this) == rhs;} <br>
+</p>
+
+<p>You can also be explicit about the operator:
+</p>
+<p>   &nbsp;&nbsp;bool operator ==(const AnsiString&amp; rhs) const<br>
+   &nbsp;&nbsp;{ return this-&gt;operator AnsiString() == rhs; }
+</p>   
+<p><strong>5.2 Variant/OleVariant/AnsiString/WideString/TDateTime</strong></p>
+
+<p>The issue described above with a user-defined conversion operator vs. conversion via constructor 
+might be encountered 
+in several constructs involving the VCL classes 
+Variant, OleVariant, AnsiString, WideString, TDateTime, Currency, and so forth. 
+The following table lists constructs that now generate error messages and the updated syntax.   
+</p>   
+
+<table>
+<tr>
+<th><strong>Previous Construct</strong></th> <th><strong>Updated Construct</strong></th> <th><strong>Notes</strong></th>
+</tr>
+<tr><td>AnsiString test(OleVariant v) {<br>
+  &nbsp;&nbsp;AnsiString ret = (AnsiString) v;<br>
+  &nbsp;&nbsp;return ret;<br>
+}</td>
+
+<td>AnsiString test(OleVariant v) {<br>
+  &nbsp;&nbsp;AnsiString ret = /*(AnsiString)*/ v;<br>
+  &nbsp;&nbsp;return ret;<br>
+}</td>
+
+<td>Do not cast RHS when relying on conversion operator in an assignment.
+</td></tr>
+
+<tr>
+<td>WideString test(OleVariant v) {<br>
+  &nbsp;&nbsp;WideString w(v);<br>
+  &nbsp;&nbsp;return w;<br>
+}</td>
+
+<td>WideString test(OleVariant v) {<br>
+  &nbsp;&nbsp;WideString w = v;<br>
+  &nbsp;&nbsp;return w;<br>
+}
+</td>
+<td>	Use Copy Initialization instead of the more direct constructor.</tr>
+</td></table>
+
+<p>The underlying compiler change for the errors described above is related to the way 
+the compiler now handles initialization and conversion.</p>
+
+</ol>
+
+
+<p><A href="#contents">Top</A> </p>
+
+<p>&nbsp; </p>
+
+
+<H1 id=ide>Windows Vista<font size="-6"><sup>TM</sup></font> Notes</H1>
+
+<UL>
+ <LI>In Windows Vista, you must run the installer while logged on as a user with 
+ administrative privileges, because changes to the Program Files directory require elevated security.</LI>
+ 
+ <li>The registration client occasionally fails on Windows Vista.  To work around this problem, select 
+ <strong>Allow this program</strong> when the Windows Live OneCare Firewall appears, then exit and restart registration. 
+ Do not select <strong>Block this program</strong>, 
+ because doing so prevents you from registering afterward.</li>
+ 
+ 
+ <LI>Windows Vista does not support the legacy WinHelp help viewer (WinHelp.exe).	  
+ If you want to use .HLP files, you need to add the WinHelp viewer to the <font face="Courier New">uses</font> list of any unit included in the application.  
+ To download the WinHelp viewer, visit the Microsoft website 
+ <a href="http://www.microsoft.com/downloads/details.aspx?familyid=6ebcfad9-d3f5-4365-8070-334cd175d4bb&displaylang=en">
+ http://www.microsoft.com/downloads/details.aspx?familyid=6ebcfad9-d3f5-4365-8070-334cd175d4bb</a>. 
+ See the related item under <A href="#generalnotes">General Notes</A>.</LI>
+ 
+ <li>If you use the <strong>TAnimation</strong> component in Vista, you must also add the component <strong>TShellResource</strong> 
+ under the Win32 tab to your project. 
+ Adding TShellResource adds these resources:
+<ul>
+<li>FindFolder.res</li>
+<li>FindFile.res</li>
+<li>FindComputer.res </li>
+<li>CopyFiles.res</li>
+<li>CopyFile.res</li>
+<li>RecycleFile.res</li>
+<li>EmptyRecycle.res</li>
+<li>DeleteFile.res</li>
+</ul> </li>
+
+<li>If you are using BDE on Windows Vista, you need to reconfigure BDE so that it does not attempt to write files 
+to the C:\&lt;root&gt; directory. To do this, log on as an administrator and run <strong>BDEAdmin.exe</strong>, located at 
+Program Files\Common Files\Borland Shared\BDE.  
+Under Native, click <strong>PARADOX</strong>, and change <strong>NET DIR</strong> to point to a location other than the root directory.  
+A suggested target is <strong>C:\Users\Public\Documents\RAD STUDIO</strong>.</li>
+<li>
+The computer might restart when you add a manifest that has the Windows Vista extension to an .exe file 
+or to a .dll file in Windows XP Service Pack 2 (SP2). For more information on this problem and the hotfix, see
+<a href="http://support.microsoft.com/kb/921337" target="_top">http://support.microsoft.com/kb/921337</a>.
+</li>
+<li>
+If you rebuild an existing VCL application that includes common dialog components and
+run it on a Vista system, it uses Vista file and task dialogs rather than traditional open, save, and message dialogs.
+If this is not desired, set the global variable <strong>UseLatestCommonDialogs</strong> false
+at the beginning of a program to force the original behavior.
+</li>
+<li>To run and debug VCL for the Web (IntraWeb) applications, you should use Windows 2003 or Windows XP.  
+If you are using Windows Vista, you must turn off User Access Control (UAC) when debugging VCL for the Web applications.  
+For more information about IntraWeb, including help for VCL for the Web components, 
+see <a href="http://www.atozed.com/intraweb/docs/"><strong>http://www.atozed.com/intraweb/docs/</strong></a>.
+</li>
+<li>
+On Vista with UAC enabled, if an executable's file name includes &quot;setup&quot;, &quot;update&quot;, or &quot;install&quot;,
+you cannot debug the program unless the IDE is started under the System Administrator account. 
+Trying to run executable files that include these strings outside of
+the IDE triggers a &quot;User Account Control&quot; dialog requesting the password for the System Administrator account. 
+Running within the IDE without debugging raises an error indicating the program requires privilege elevation. 
+Running within the IDE with debugging raises a process creation error. For more information, see
+<a href="http://blogs.msdn.com/uac/archive/2006/01/13/512776.aspx" target="_top">http://blogs.msdn.com/uac/archive/2006/01/13/512776.aspx</a>.
+</li>
+
+</UL>
+
+<p><A href="#contents">Top</A> </p>
+
+<p>&nbsp;</p>
+
+<H1 id=commandline>Command Line Notes</H1>
+
+<UL>
+
+ <LI>You can now build projects from the command line using the MSBuild executable.  
+ Select <strong>Start Programs&gt;CodeGear RAD Studio&gt;RAD Studio Command Prompt</strong> to  
+ automatically set both the path to the MSBuild  executable and the environment variable for the product. 
+ For more information about using MSBuild, look up MSBuild in the Index or Contents of the online help.
+ </LI></UL>
+
+<p><A href="#contents">Top</A> </p>
+
+<p>&nbsp; </p>
+
+<H1 id=dbnotes>Database Notes</H1>
+
+<h2>Upgrading dbExpress for Delphi 2007 for Win32</h2>
+
+<p>If you have been using dbExpress with Delphi 2007 for Win32, and you upgrade your copy of Delphi 
+2007 for Win32, you do not need to make any source code changes.  However, you do need to recompile 
+any code that uses the SQLExpr or DbxCommon units, two units that have changed since the first shipment of 
+Delphi 2007 for Win32. </p>
+
+
+<h2>Known Problems</h2>
+
+<ul>
+<li><p>The new MySQL dbExpress driver, dbxmys30.dll, was tested against LibMySQL.dll from a 5.0.xx server install. 
+If you intend to use dbExpress against MySQL 4.0.xx, 
+you should either upgrade your LibMySQL.dll to a 5.0.xx version or use the dbxmysA30.dll driver with dbExpress.  
+Using an older version of LibMySQL.dll with the current dbExpress driver for MySQL can result 
+in unexpected behavior.
+</p></li>
+
+<li>
+<p id="RAID247279">An error message is displayed when trying to expand a table node from Data Explorer using LibMySQL.dll 
+(4.x version):</p>
+&quot;Attempted to read or write protected memory.&quot;<br>
+To avoid this, upgrade LibMySQL.dll to a 5.0.xx version.
+</li>
+
+<li><p>The following combinations have been tested:</p>
+
+<table width="75%" border="1">
+<tr><td>LibMySQL.dll (4.0.XX)</td><td>DBXMysA30.dll</td><td>MySQL 4.0.XX Server</td></tr> 
+<tr><td>LibMySQL.dll (5.0.XX)</td><td>DBXMys30.dll</td><td>MySQL 4.0.XX Server</td></tr> 
+<tr><td>LibMySQL.dll (5.0.XX)</td><td>DBXMys30.dll</td><td>MySQL 4.1.XX Server</td></tr> 
+<tr><td>LibMySQL.dll (5.0.XX)</td><td>DBXMys30.dll</td><td>MySQL 5.0.XX Server</td></tr>
+</table>
+</li>
+
+<li>
+<p>If you wish to use the DBXMysA30 driver, 
+you can both rename the DBXMys30.dll to DBXMys30.dll.bkup and DBXMysA30 to DBXMys30.dll. 
+Alternatively, you can add a new entry to the dbxdrivers.ini file that defines DBXMysA30.dll 
+as the LibraryName.</p>
+</li>
+
+</ul>
+
+<H2>New features</H2>
+
+<H3>dbExpress 4 Framework</H3>
+
+<p><strong>Delphi database driver Framework.</strong> This is an object oriented driver Framework written in Delphi.</p>
+
+<p><strong>Delegate driver support.</strong> A <em>delegate driver</em> is a driver between the application and the actual driver. 
+Delegate drivers allow for pre and post processing of all public methods and properties of the dbExpress 4 Framework. 
+Delegate drivers are useful for connection pooling, driver profiling, tracing, and auditing.
+Delegate drivers are easy to implement. See the source documentation at the beginning of the DBXCommon unit for more information.</p>
+
+<p><strong>TDBXPool delegate driver.</strong> Provides connection pooling for any dbExpress driver.</p>
+
+<p><strong>TDBXTrace delegate driver.</strong> Provides enhanced tracing capability. Produces Delphi code for all traced methods and properties.</p>
+
+<p><strong>Extensible Commands.</strong> Commands that are not SQL statements or stored procedures are supported by specifying a custom &quot;command type&quot; property. 
+This property is a String allowing driver and delegate driver implementers to introduce their own command type namespace of custom commands. 
+The TDBXPool delegate driver leverages this capability to implement a &quot;show pools&quot; command, which returns a reader with information on the current state of all connection pools.</p>
+
+<p><strong>Source code documentation.</strong> Works with help insight for all public methods, properties, and events. 
+XML/HTML documentation can also be generated using the --doc Delphi compiler switch.</p>
+
+<p><strong>Single source.</strong> dbExpress 4 source code can be compiled for both Win32 and .NET platforms.</p>
+
+<p><strong>dbExpress 4 source code.</strong> Full source code is provided for the dbExpress 4 Framework.</p>
+
+<p><strong>Dual interfaced drivers.</strong> All CodeGear dbExpress drivers implement the older dbExpress 3 and newer dbExpress 4 interfaces.</p>
+
+<p><strong>dbExpress 3 adapter driver.</strong> The dbxadapter30.dll DLL provides a dbExpress 4 interface for existing dbExpress 3 drivers. 
+This allows applications to still use older non-CodeGear dbExpress 3 drivers with dbExpress 4.</p>
+
+<strong>Samples</strong>
+<ul>	<li>
+	CTS. Certification Test Suite for the dbExpress 4 Framework. 
+	This is a driver compliance test suite that also provides good examples of using the dbExpress 4 Framework directly.</li>
+	<li>
+	Delegates. This demonstrates the ease of use and power of driver delegate implementations such as TDBXTrace and TDBXPool.</li>
+</ul>
+
+<h3>Single source dbExpress VCL components</h3>
+
+<p>The unified code base is much easier to read, debug, and maintain.</p>
+
+<p>VCL now accesses dbExpress database drivers using the new dbExpress 4 Framework.</p>
+
+<h3>New database Drivers</h3>
+
+<ul>
+<li>InterBase 2007</li>
+<li>MySQL 4.1 and 5.0</li>
+</ul>
+
+<h3>New Unicode enabled database drivers</h3>
+<ul>
+<li>InterBase 2007</li>
+<li>MySQL 4.1 and 5.0</li>
+<li>Oracle</li>
+</ul>
+Note that Unicode support for MS-SQL was already in the product.
+
+<h3>Oracle dbExpress Unicode and ANSI drivers</h3>
+<p>Both Unicode and ANSI drivers ship with dbExpress. 
+The Unicode version is dbxoraW30.dll and the ANSI version is dbxora30.dll.</p>
+
+
+<h2>Database Change Notes</h2>
+
+<h3>dbExpress 2.5 not supported</h3>
+
+<p>dbExpress 2.5 is no longer supported in this release.</p>
+
+<h3>New MySQL dbExpress driver</h3>
+
+<p>The new MySQL driver is called dbxmys30.dll. 
+This driver supports Unicode strings. 
+This driver works only with the version of MySQL's libmysql.dll for MySQL 4.1 and 5.0 servers.
+dbxmys30.dll does not work with older versions of libmysql.dll.</p>
+
+<p>The old MySQL driver is still included in the product but has been renamed to dbxmysA30.dll. 
+The &quot;A&quot; has been added to the DLL name to signify that this older driver only supports ASCII strings, not Unicode. 
+dbxmysA30.dll can only be used with versions of MySQL's libmysql.dll that support MySQL servers version 4.0 and below.</p>
+
+<h3> Delegate drivers</h3>
+
+Two delegate drivers are provided:
+<ul><li>
+DBXTrace
+</li>
+<li>
+DBXPool
+</li>
+</ul>
+
+<h3>dbExpress VCL components</h3>
+
+Most applications are not affected by changes to the dbExpress VCL. 
+However, there are some methods, properties, events, constants, and enums that were removed or replaced with equivalent functionality. 
+These changes were required for these reasons:<ul>
+<li>
+Shift to using the more Delphi-like dbExpress 4 Framework instead of the more C-like COM interfaces that dbExpress 3 used.
+</li>
+<li>
+Single sourcing of the dbExpress VCL components.  
+There is now a higher level of compatibility between the native and .NET versions of the dbExpress VCL components.
+</li>
+</ul>
+
+<ul>Known compatibility issues:
+<li>
+The dbExpress unit is deprecated, is empty, and consequently no longer needed. 
+Most of this unit's content has been moved to either the DBXCommon or SQLExpr units.
+</li>
+<li>
+Virtually all of the classes, interfaces, enums, constants that were in the dbExpress unit have been either removed, renamed, or replaced. 
+Renamed and replaced items can be found in the interface section of the DBXCommon or SQLExpr units.
+</li>
+<li>
+Static driver libraries are no longer supported. 
+These static libraries linked into Delphi units that allowed the native drivers to be linked into a Delphi executable file and are no longer supported. 
+These Delphi units are: DBExpasa, DBExpDB2, DBExpInf, DBExpINT, DBExpMSS, DBExpMYS, DBExpMySQL, DBExpORA, and DBExpt.
+</li>
+</ul>
+
+<h2>dbExpress application deployment for the Win32 platform</h2>
+<h3>Using packages</h3>
+
+<p>Project|Options|Packages must have the <strong>Build with runtime packages</strong> option checked. 
+DbxCommonDriver100.bpl must be deployed with your application. 
+As with prior releases, if your application uses any of the DBX*.dll dynalink dbExpress drivers, they also must be deployed. </p>
+
+<h3>Unit interface compatibility</h3>
+
+<p>For the most part, the product maintains unit interface compatibility with BDS2006. 
+However, the dbExpress VCL breaks this compatibility in three units: SQLExpr, DBXpress, and SQLConst. 
+Only SQLExpr contains components. DBXpress has been deprecated.
+To avoid conflicts with the BDS2006 version of dbExpress100.bpl, 
+dbExpress100.bpl has temporarily been renamed dbExpress4100.bpl. 
+The &quot;4&quot; signifies that this version of the dbExpress package is for version 4 of the dbExpress drivers. 
+When version 11.0 of the VCL ships, the normal VCL naming convention will be resumed
+and dbExpress4100.bpl will be renamed dbExpress110.bpl.</p>
+
+
+<H2>Supported Servers</H2>
+
+<H3>dbExpress</H3>
+
+<UL>
+
+<LI>InterBase 2007, 7.5.1, 7.1*, 7.0*, 6.5* (<STRONG>All</STRONG>) (Driver dbxINT30.dll, Client GDS32.DLL)</li>
+
+<LI>Adaptive Sybase Anywhere 9, 8* (<STRONG>Ent</STRONG>) (Driver dbxASA30.dll, Client dbodbc9.dll)</li>
+
+<LI>DB2 UDB 8.x, 7.x* (<STRONG>Ent</STRONG>) (Driver dbxDB230.dll, Client db2cli.dll)</li>
+
+<LI>Informix 9.x (<STRONG>Ent</STRONG>) (Driver dbxINF30.dll, Client isqlb09a.dll)</li>
+
+<LI>MSSQL 2005, 2000 (<STRONG>Ent</STRONG>) (Driver dbxMSS30.dll, Client oledb.dll)</li>
+
+<LI>MySQL 4.0.24 (<STRONG>All</STRONG>) (Driver dbxMYSA30.dll, Client libmysql.dll)</li>
+<STRONG> Note:</STRONG> No change from dbxMYS30.dll of Delphi2006. It is renamed.
+
+<LI>MySQL 5.0.27, 4.1.22* (<STRONG>All</STRONG>) (Driver dbxMYS30.dll, Client libmysql.dll)</li>
+ 
+<LI>Oracle 10g, 9.2.0*, 9.1.0* (<STRONG>Ent</STRONG>) (Driver dbxora30.dll, Driver dbxoraW30.dll, Client OCI.DLL)</li>
+
+<LI>Sybase 12.5 (<STRONG>Ent</STRONG>) (Driver dbxASE30.dll, Client libct.dll &amp; libcs.dll)</li>
+
+</UL>
+
+<P><STRONG>*</STRONG> <EM>Driver not fully certified with this version of the database.</EM></P>
+
+
+<p><A href="#contents">Top</A> </p>
+
+<p>&nbsp; </p>
+
+<H1 id=debugger>Debugger Notes</H1>
+
+<UL>
+ <LI>Attempting to place a data breakpoint in code might result in program corruption. 
+ For example, placing a data breakpoint on a VMT slot might result in the program 
+ jumping to an incorrect location (the &quot;last&quot; byte of the address is overwritten 
+ with 0xcc). </LI>
+ 
+  <li>Installation of System Mechanic 7 Pro disables the functionality of the integrated debugger. 
+ The observed behavior is immediate termination of the process and a diagnostic message in the Event Log View. 
+ If the product is installed, debugging functionality can be restored by disabling execution of the &quot;iolo DMV Service&quot; 
+ via the Services manager.</li>
+</UL>
+<p><A href="#contents">Top</A> </p>
+
+<p>&nbsp; </p>
+
+<H1 id=doc>Documentation Notes</H1>
+
+<UL>
+
+ <LI>If you encounter package errors and the online help for the IDE does not work, 
+ the problem might be caused by an incomplete installation of the .NET 2.0 Framework SDK.  
+ The help viewer that is used by the products is part of the .NET 2.0 Framework SDK. 
+ When the .NET Framework is explicitly installed, you should check all three available options 
+ (including Product Documentation). 
+<br><br>
+ To remedy this problem:
+ <br><ol>
+ <li>Uninstall the .NET Framework SDK, located in C:\Program Files\Microsoft.NET\SDK.</li>
+<li>Uninstall the product.</li><li>Reboot your system.</li>
+<li>Reinstall the product.  This step also installs the .NET 2.0 Framework SDK with all the pre-requisites.</li></ol>
+
+</li>
+<li>Upon pressing F1 to get Help, you might first see a dialog box prompting you to choose between using online Help as 
+the primary source, using local Help as the primary source, or not using online Help at all. Select the second option, 
+&quot;Use local Help as primary source&quot; to enable the browser to find the proper Help files.</li>
+ </UL>
+
+<p><A href="#contents">Top</A> </p>
+
+<p>&nbsp; </p>
+
+<H1 id=international>International Notes </h1>
+
+<UL>
+ <LI>Breakpoints are not recognized and are marked as &quot;invalid&quot; if 
+ a source file name containing non-Roman characters is placed in the project path. 
+ </LI>
+ 
+ <LI>If you are using IME (input method editor), a sporadic error caused by a 
+ .NET Framework bug might result in a long delay (approximately 5 minutes) 
+ followed by an error message. After two or three times, this error appears 
+ to stop occurring. All language windows are potentially affected. 
+ <p> </p>
+ <p>To avoid this error, create or update the following registry entry: </p>
+ <p> </p> 
+ <p>HKEY_CURRENT_USER\Console\LoadConIme</p>
+ <p>This entry is type REG_DWORD and you should set its value to 0.
+ </p>
+</LI>
+</UL>
+
+<p><A href="#contents">Top</A> </p>
+
+<p>&nbsp;</p>
+
+<H1 id=together>Together Notes</h1>
+
+<ul>
+<li>In C++Builder 2007, the integrated modeling tool Together only supports read-only modeling, 
+that is, code visualization without code generation. 
+In Delphi 2007 for Win32, Together supports the full set of modeling features described in 
+the online help.</li>
+
+<li id="RAID250577">If Together code visualization does not work for your C++ project, use the Project Manager 
+to add the header files (.h or .hpp) to your project.  This should make the information available to the 
+Together modeling tools.
+</li>
+
+ <li>After removing Together support from a project, it is not possible to remove 
+ the diagram support files from the Project Manager. To remove these files, 
+ select the IDE main menu item, Project | Remove from Project. The
+ items displayed in the list are the diagram support files. They can be multi-selected and 
+ removed. </li>
+ 
+ <li>If modeling support is disabled when you select <strong>Together refactorings</strong>, you 
+ see a message asking if you want to enable modeling support for the project. 
+ You must respond &quot;Yes&quot; to this message in order to use Together 
+ refactorings. </li>
+</ul>
+
+<p><A href="#contents">Top</A> </p>
+
+<p>&nbsp;</p>
+<H1 id=vclrtl>VCL/RTL Notes</h1>
+
+<ul>
+<li>
+Three new VCL dialogs have been added for Windows Vista:
+<ul><li><strong>TCustomFileOpenDialog</strong></li>
+<li><strong>TCustomFileSaveDialog</strong></li> 
+<li><strong>TTaskDialog</strong></li> </ul>
+ These components are all wrappers for Windows Vista dialogs. If the global variable <strong>UseLatestCommonDialogs</strong>
+ is set to true, Vista dialogs are automatically used on Vista systems.
+</li>
+<li>
+A new property has been added to TApplication called <strong>MainFormOnTaskBar</strong>.
+It defaults to True for new applications and False for existing ones. 
+The property controls how Window's TaskBar buttons are handled by VCL. 
+This property can be applied to older applications, but 
+it affects the Z-order of your MainForm, so you should ensure that you have no dependencies on the old behavior. 
+MainFormOnTaskBar is intended to be set at startup and persist throughout the duration of the application. 
+Changing this property at runtime could result in unexpected behavior. 
+The major reason for this change was to better support several new features available on Windows Vista.
+</li>
+</ul>
+<p><A href="#contents">Top</A> </p>
+<p>&nbsp; </p>
+
+<H1 id=SOAP>SOAP Server</h1>
+<p>The default Delphi SOAP Server application with Web App Debugger class does not compile. 
+There are two possible workarounds:</p>
+
+<ul><li>
+Include <strong>$(BDS)\Lib\Indy9</strong> in the Library path and remove $(BDS)\Lib\Indy10. 
+However, this means your application must use Indy 9. 
+</li>
+<li>
+Compile IndySockTransport and sockapp and put it in $(BDS)\Lib\Indy10.
+</li>
+</ul>
+<p><A href="#contents">Top</A> </p>
+<p>&nbsp; </p>
+
+<P>&nbsp;</P>
+
+<P>Copyright 2007 CodeGear Software. All rights reserved.</P></BODY></HTML>

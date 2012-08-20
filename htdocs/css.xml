@@ -1,0 +1,1651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<css>
+  <property name="azimuth" inherited="true">
+    <media name="aural" />
+    <value type="angle" />
+    <value optional="true">
+      <value optional="true">
+        <value name="left-side" />
+        <value name="far-left" />
+        <value name="left" />
+        <value name="center-left" />
+        <value name="center" />
+        <value name="center-right" />
+        <value name="right" />
+        <value name="far-right" />
+        <value name="right-side" />
+      </value>
+      <value name="behind" />
+    </value>
+    <value name="leftwards" />
+    <value name="rightwards" />
+    <value name="inherit" />
+  </property>
+  <property name="background" inherited="false">
+    <media name="visual" />
+    <value optional="true">
+      <value type="background-color" />
+      <value type="background-image" />
+      <value type="background-repeat" />
+      <value type="background-attachment" />
+      <value type="background-position" />
+    </value>
+    <value name="inherit" />    
+  </property>
+  <property name="background-attachment" inherited="false">
+    <media name="visual" />
+    <value name="scroll" />
+    <value name="fixed" />
+    <value name="inherit" />
+  </property>
+  <property name="background-color" inherited="false">
+    <media name="visual" />
+    <value name="transparent" />
+	<value type="csscolor" />
+	<value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="background-image" inherited="false">
+    <media name="visual" />
+    <value type="uri" />
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="background-position" inherited="false">
+    <media name="visual" />
+    <value optional="true">
+      <value optional="true">
+        <value type="percentage" min="1" max="2" />
+        <value type="length" min="1" max="2" />
+      </value>
+      <value optional="true">
+        <value name="top" />
+        <value name="center" />
+        <value name="bottom" />
+      </value>
+      <value optional="true">
+        <value name="left" />
+        <value name="center" />
+        <value name="right" />
+      </value>
+    </value>
+    <value name="inherit" />
+  </property>
+  <property name="background-repeat" inherited="false">
+    <media name="visual" />
+    <value name="repeat" />
+    <value name="repeat-x" />
+    <value name="repeat-y" />
+    <value name="no-repeat" />
+    <value name="inherit" />
+  </property>
+  <property name="border" inherited="false">
+    <media name="visual" />
+	<value optional="true">
+	  <value type="border-width" />
+	  <value type="border-style" />
+	  <value type="csscolor" />
+	  <value type="color" />
+	</value>
+    <value name="inherit" />    
+  </property>
+  <property name="border-collapse" inherited="true">
+    <media name="visual" />
+    <value name="collapse" />
+    <value name="separate" />
+    <value name="inherit" />
+  </property>
+  <property name="border-color" inherited="false">
+    <media name="visual" />
+	<value type="csscolor" min="1" max="4"/>
+	<value type="color" min="1" max="4" />
+	<value name="transparent" />
+    <value name="inherit" />
+  </property>
+  <property name="border-spacing" inherited="true">
+    <media name="visual" />
+	<value sequence="true">
+	  <value type="length">
+        <value optional="true" min="0" max="1">
+          <value type="length" />
+        </value>
+      </value>
+    </value>
+    <value name="inherit" />
+  </property>
+  <property name="border-style" inherited="false">
+    <media name="visual" />
+    <value type="border-style" min="1" max="4" />
+    <value name="inherit" />
+  </property>
+  <property name="border-top" inherited="false">
+    <media name="visual" />
+    <value optional="true">
+      <value type="border-top-width" />
+      <value type="border-style" />
+      <value type="csscolor" />
+	  <value type="color" />
+	</value>
+    <value name="inherit" />
+  </property>
+  <property name="border-right" inherited="false">
+    <media name="visual" />
+    <value optional="true">
+      <value type="border-right-width" />
+	  <value type="border-style" />
+	  <value type="csscolor" />
+	  <value type="color" />
+	</value>
+    <value name="inherit" />
+  </property>
+  <property name="border-bottom" inherited="false">
+    <media name="visual" />
+    <value optional="true">
+      <value type="border-bottom-width" />
+	  <value type="border-style" />
+	  <value type="csscolor" />
+	  <value type="color" />
+	</value>
+    <value name="inherit" />
+  </property>
+  <property name="border-left" inherited="false">
+    <media name="visual" />
+    <value optional="true">
+      <value type="border-left-width" />
+	  <value type="border-style" />
+	  <value type="csscolor" />
+	  <value type="color" />
+	</value>
+    <value name="inherit" />
+  </property>
+  <property name="border-top-color" inherited="false">
+	<media name="visual" />
+	<value type="csscolor" />
+    <value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="border-right-color" inherited="false">
+	<media name="visual" />
+	<value type="csscolor" />
+	<value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="border-bottom-color" inherited="false">
+	<media name="visual" />
+	<value type="csscolor" />
+	<value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="border-left-color" inherited="false">
+	<media name="visual" />
+	<value type="csscolor" />
+	<value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="border-top-style" inherited="false">
+    <media name="visual" />
+    <value type="border-style" />
+    <value name="inherit" />
+  </property>
+  <property name="border-right-style" inherited="false">
+    <media name="visual" />
+    <value type="border-style" />
+    <value name="inherit" />
+  </property>
+  <property name="border-bottom-style" inherited="false">
+    <media name="visual" />
+    <value type="border-style" />
+    <value name="inherit" />
+  </property>
+  <property name="border-left-style" inherited="false">
+    <media name="visual" />
+    <value type="border-style" />
+    <value name="inherit" />
+  </property>
+  <property name="border-top-width" inherited="false">
+	<media name="visual" />
+	<value type="border-width" />
+    <value name="inherit" />
+  </property>
+  <property name="border-right-width" inherited="false">
+    <media name="visual" />
+    <value type="border-width" />
+    <value name="inherit" />
+  </property>
+  <property name="border-bottom-width" inherited="false">
+    <media name="visual" />
+    <value type="border-width" />
+    <value name="inherit" />
+  </property>
+  <property name="border-left-width" inherited="false">
+    <media name="visual" />
+    <value type="border-width" />
+    <value name="inherit" />
+  </property>
+  <property name="border-width" inherited="false">
+    <media name="visual" />
+    <value type="border-width" min="1" max="4" />
+    <value name="inherit" />
+  </property>
+  <property name="bottom" inherited="false">
+    <media name="visual" />
+    <value type="length" />
+    <value type="percentage" />
+    <value name="auto" />
+    <value name="inherit" />
+  </property>
+  <property name="caption-side" inherited="true">
+    <media name="visual" />
+    <value name="top" />
+    <value name="bottom" />
+    <value name="left" />
+    <value name="right" />
+    <value name="inherit" />
+  </property>
+  <property name="clear" inherited="false">
+    <media name="visual" />
+    <value name="none" />
+    <value name="left" />
+    <value name="right" />
+    <value name="both" />
+    <value name="inherit" />
+  </property>
+  <property name="clip" inherited="false">
+    <media name="visual" />
+    <value type="shape" />
+    <value name="auto" />
+    <value name="inherit" />
+  </property>
+  <property name="color" inherited="true">
+	<media name="visual" />
+	<value type="csscolor" />
+	<value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="content" inherited="false">
+    <media name="all" />
+    <value optional="true" min="1">
+      <value type="string" />
+      <value type="uri" />
+      <value type="counter" />
+      <value type="attr" />
+      <value name="open-quote" />
+      <value name="close-quote" />
+      <value name="no-open-quote" />
+      <value name="no-close-quote" />
+    </value>
+    <value name="inherit" />
+  </property>
+  <property name="counter-increment" inherited="false">
+    <media name="all" />
+    <value optional="true" min="1">
+      <value sequence="true">
+        <value type="identifier">
+          <value optional="true" min="0" max="1">
+            <value type="integer" />
+          </value>
+        </value>
+      </value>
+    </value>
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="counter-reset" inherited="false">
+    <media name="all" />
+    <value optional="true" min="1">
+      <value sequence="true">
+        <value type="identifier">
+          <value optional="true" min="0" max="1">
+            <value type="integer" />
+          </value>
+        </value>
+      </value>
+    </value>
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="cue" inherited="false">
+    <media name="aural" />
+    <value optional="true">
+      <value type="cue-before" />
+      <value type="cue-after" />
+    </value>
+    <value name="inherit" />
+  </property>
+  <property name="cue-after" inherited="false">
+    <media name="aural" />
+    <value type="uri" />
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="cue-before" inherited="false">
+    <media name="aural" />
+    <value type="uri" />
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="cursor" inherited="true">
+    <media name="visual" />
+    <value optional="true">
+      <value optional="true" min="0">
+        <value sequence="true">
+          <value type="uri" />
+          <value operator="," />
+        </value>
+      </value>
+      <value optional="true">
+        <value name="auto" />
+        <value name="crosshair" />
+        <value name="default" />
+        <value name="pointer" />
+        <value name="move" />
+        <value name="e-resize" />
+        <value name="ne-resize" />
+        <value name="nw-resize" />
+        <value name="n-resize" />
+        <value name="se-resize" />
+        <value name="sw-resize" />
+        <value name="s-resize" />
+        <value name="w-resize" />
+        <value name="text" />
+        <value name="wait" />
+        <value name="help" />
+      </value>
+    </value>
+    <value name="inherit" />
+  </property>
+  <property name="direction" inherited="true">
+    <media name="visual" />
+    <value name="ltr" />
+    <value name="rtl" />
+    <value name="inherit" />
+  </property>
+  <property name="display" inherited="false">
+    <media name="all" />
+    <value name="inline" />
+    <value name="block" />
+    <value name="list-item" />
+    <value name="run-in" />
+    <value name="compact" />
+    <value name="marker" />
+    <value name="table" />
+    <value name="inline-table" />
+    <value name="table-row-group" />
+    <value name="table-header-group" />
+    <value name="table-footer-group" />
+    <value name="table-row" />
+    <value name="table-column-group" />
+    <value name="table-column" />
+    <value name="table-cell" />
+    <value name="table-caption" />
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="elevation" inherited="true">
+    <media name="aural" />
+    <value type="angle" />
+    <value name="below" />
+    <value name="level" />
+    <value name="above" />
+    <value name="higher" />
+    <value name="lower" />
+    <value name="inherit" />
+  </property>
+  <property name="empty-cells" inherited="true">
+    <media name="visual" />
+    <value name="show" />
+    <value name="hide" />
+    <value name="inherit" />
+  </property>
+  <property name="float" inherited="false">
+    <media name="visual" />
+    <value name="left" />
+    <value name="right" />
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="font" inherited="true">
+    <media name="visual" />
+    <value optional="true">
+      <value sequence="true">
+        <value optional="true" min="0" max="1">
+          <value type="font-style" />
+          <value type="font-variant" />
+          <value type="font-weight" />
+        </value>
+        <value type="font-size" />
+        <value optional="true" min="0" max="1">
+          <value operator="/" />
+          <value type="line-height" />
+        </value>
+        <value type="font-family" />
+      </value>
+    </value>
+    <value name="caption" />
+    <value name="icon" />
+    <value name="menu" />
+    <value name="message-box" />
+    <value name="small-caption" />
+    <value name="status-bar" />
+    <value name="inherit" />
+  </property>
+  <property name="font-family" inherited="true">
+    <media name="visual" />
+    <value optional="true" min="0">
+      <value type="family-name" />
+      <value type="generic-family" />
+      <value operator="," />
+    </value>
+    <value optional="true">
+      <value type="family-name" />
+      <value type="generic-family" />
+    </value>
+    <value name="inherit" />
+  </property>
+  <property name="font-size" inherited="true">
+    <media name="visual" />
+    <value type="absolute-size" />
+    <value type="relative-size" />
+    <value type="length" />
+    <value type="percentage" />
+    <value name="inherit" />
+  </property>
+  <property name="font-size-adjust" inherited="true">
+    <media name="visual" />
+    <value type="number" />
+    <value name="none" />
+    <value name="inherit" /> 
+  </property>
+  <property name="font-stretch" inherited="true">
+    <media name="visual" />
+    <value name="normal" />
+    <value name="wider" />
+    <value name="narrower" />
+    <value name="ultra-condensed" />
+    <value name="extra-condensed" />
+    <value name="condensed" />
+    <value name="semi-condensed" />
+    <value name="semi-expanded" />
+    <value name="expanded" />
+    <value name="extra-expanded" />
+    <value name="ultra-expanded" />
+    <value name="inherit" />
+  </property>
+  <property name="font-style" inherited="true">
+    <media name="visual" />
+    <value name="normal" />
+    <value name="italic" />
+    <value name="oblique" />
+    <value name="inherit" />
+  </property>
+  <property name="font-variant" inherited="true">
+    <media name="visual" />
+    <value name="normal" />
+    <value name="small-caps" />
+    <value name="inherit" />
+  </property>
+  <property name="font-weight" inherited="true">
+    <media name="visual" />
+    <value name="normal" />
+    <value name="bold" />
+    <value name="bolder" />
+    <value name="lighter" />
+    <value name="100" />
+    <value name="200" />
+    <value name="300" />
+    <value name="400" />
+    <value name="500" />
+    <value name="600" />
+    <value name="700" />
+    <value name="800" />
+    <value name="900" />
+    <value name="inherit" />
+  </property>
+  <property name="height" inherited="false">
+    <media name="visual" />
+    <value type="length" />
+    <value type="percentage" />
+    <value name="auto" />
+    <value name="inherit" />
+  </property>
+  <property name="left" inherited="false">
+    <media name="visual" />
+    <value type="length" />
+    <value type="percentage" />
+    <value name="auto" />
+    <value name="inherit" />
+  </property>
+  <property name="letter-spacing" inherited="true">
+    <media name="visual" />
+    <value name="normal" />
+    <value type="length" />
+    <value name="inherit" />
+  </property>
+  <property name="line-height" inherited="true">
+    <media name="visual" />
+    <value name="normal" />
+    <value type="number" />
+    <value type="length" />
+    <value type="percentage" />
+    <value name="inherit" />
+  </property>
+  <property name="list-style" inherited="true">
+    <media name="visual" />
+    <value optional="true">
+      <value type="list-style-type" />
+      <value type="list-style-position" />
+      <value type="list-style-image" />
+    </value>
+    <value name="inherit" />
+  </property>
+  <property name="list-style-image" inherited="true">
+    <media name="visual" />
+    <value type="uri" />
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="list-style-position" inherited="true">
+    <media name="visual" />
+    <value name="inside" />
+    <value name="outside" />
+    <value name="inherit" />
+  </property>
+  <property name="list-style-type" inherited="true">
+    <media name="visual" />
+    <value name="disc" />
+    <value name="circle" />
+    <value name="square" />
+    <value name="decimal" />
+    <value name="decimal-leading-zero" />
+    <value name="lower-roman" />
+    <value name="upper-roman" />
+    <value name="lower-greek" />
+    <value name="lower-alpha" />
+    <value name="lower-latin" />
+    <value name="upper-alpha" />
+    <value name="upper-latin" />
+    <value name="hebrew" />
+    <value name="armenian" />
+    <value name="georgian" />
+    <value name="cjk-ideographic" />
+    <value name="hiragana" />
+    <value name="katakana" />
+    <value name="hiragana-iroha" />
+    <value name="katakana-iroha" />
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="margin" inherited="false">
+    <media name="visual" />
+    <value type="margin-width" />
+    <value name="inherit" />
+  </property>
+  <property name="margin-top" inherited="false">
+    <media name="visual" />
+    <value type="margin-width" />
+    <value name="inherit" />
+  </property>
+  <property name="margin-right" inherited="false">
+    <media name="visual" />
+    <value type="margin-width" />
+    <value name="inherit" />
+  </property>
+  <property name="margin-bottom" inherited="false">
+    <media name="visual" />
+    <value type="margin-width" />
+    <value name="inherit" />
+  </property>
+  <property name="margin-left" inherited="false">
+    <media name="visual" />
+    <value type="margin-width" />
+    <value name="inherit" />
+  </property>
+  <property name="marker-offset" inherited="false">
+    <media name="visual" />
+    <value type="length" />
+    <value name="auto" />
+    <value name="inherit" />
+  </property>
+  <property name="marks">
+    <media name="visual" />
+    <media name="paged" />
+    <value optional="true">
+      <value name="crop" />
+      <value name="cross" />
+    </value>
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="max-height" inherited="false">
+    <media name="visual" />
+    <value type="length" />
+    <value type="percentage" />
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="max-width" inherited="false">
+    <media name="visual" />
+    <value type="length" />
+    <value type="percentage" />
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="min-height" inherited="false">
+    <media name="visual" />
+    <value type="length" />
+    <value type="percentage" />
+    <value name="inherit" />
+  </property>
+  <property name="min-width" inherited="false">
+    <media name="visual" />
+    <value type="length" />
+    <value type="percentage" />
+    <value name="inherit" />
+  </property>
+  <property name="orphans" inherited="true">
+    <media name="visual" />
+    <media name="paged" />
+    <value type="integer" />
+    <value name="inherit" />
+  </property>
+  <property name="outline" inherited="false">
+    <media name="visual" />
+    <media name="interactive" />
+    <value optional="true">
+      <value type="outline-color" />
+      <value type="outline-style" />
+      <value type="outline-width" />
+    </value>
+    <value name="inherit" />
+  </property>
+  <property name="outline-color" inherited="false">
+    <media name="visual" />
+	<media name="interactive" />
+	<value type="csscolor" />
+	<value type="color" />
+	<value name="invert" />
+    <value name="inherit" />
+  </property>
+  <property name="outline-style" inherited="false">
+    <media name="visual" />
+    <media name="interactive" />
+    <value type="border-style" />
+    <value name="inherit" />
+  </property>
+  <property name="outline-width" inherited="false">
+    <media name="visual" />
+    <media name="interactive" />
+    <value type="border-width" />
+    <value name="inherit" />
+  </property>
+  <property name="overflow" inherited="false">
+    <media name="visual" />
+    <value name="visible" />
+    <value name="hidden" />
+    <value name="scroll" />
+    <value name="auto" />
+    <value name="inherit" />
+  </property>
+  <property name="padding" inherited="false">
+    <media name="visual" />
+    <value type="padding-width" />
+    <value name="inherit" />
+  </property>
+  <property name="padding-top" inherited="false">
+    <media name="visual" />
+    <value type="padding-width" />
+    <value name="inherit" />
+  </property>
+  <property name="padding-right" inherited="false">
+    <media name="visual" />
+    <value type="padding-width" />
+    <value name="inherit" />
+  </property>
+  <property name="padding-bottom" inherited="false">
+    <media name="visual" />
+    <value type="padding-width" />
+    <value name="inherit" />
+  </property>
+  <property name="padding-left" inherited="false">
+    <media name="visual" />
+    <value type="padding-width" />
+    <value name="inherit" />
+  </property>
+  <property name="page" inherited="true">
+    <media name="visual" />
+    <media name="paged" />
+    <value type="identifier" />
+    <value name="auto" />
+  </property>
+  <property name="page-break-after" inherited="false">
+    <media name="visual" />
+    <media name="paged" />
+    <value name="auto" />
+    <value name="always" />
+    <value name="avoid" />
+    <value name="left" />
+    <value name="right" />
+    <value name="inherit" />
+  </property>
+  <property name="page-break-before" inherited="false">
+    <media name="visual" />
+    <media name="paged" />
+    <value name="auto" />
+    <value name="always" />
+    <value name="avoid" />
+    <value name="left" />
+    <value name="right" />
+    <value name="inherit" />
+  </property>
+  <property name="page-break-inside" inherited="true">
+    <media name="visual" />
+    <media name="paged" />
+    <value name="avoid" />
+    <value name="auto" />
+    <value name="inherit" />
+  </property>
+  <property name="pause" inherited="false">
+    <media name="aural" />
+    <value optional="true" min="1" max="2">
+      <value type="time" />
+      <value type="percentage" />
+    </value>
+    <value name="inherit" />
+  </property>
+  <property name="pause-after" inherited="false">
+    <media name="aural" />
+    <value type="time" />
+    <value type="percentage" />
+    <value name="inherit" />
+  </property>
+  <property name="pause-before" inherited="false">
+    <media name="aural" />
+    <value type="time" />
+    <value type="percentage" />
+    <value name="inherit" />
+  </property>
+  <property name="pitch" inherited="true">
+    <media name="aural" />
+    <value type="frequency" />
+    <value name="x-low" />
+    <value name="low" />
+    <value name="medium" />
+    <value name="high" />
+    <value name="x-high" />
+    <value name="inherit" />
+  </property>
+  <property name="pitch-range" inherited="true">
+    <media name="aural" />
+    <value type="number" />
+    <value name="inherit" />
+  </property>
+  <property name="play-during" inherited="false">
+    <media name="aural" />
+    <value sequence="true">
+      <value type="uri" />
+      <value optional="true" min="0" max="1">
+        <value name="mix" />
+      </value>
+      <value optional="true" min="0" max="1">
+        <value name="repeat" />
+      </value>
+    </value>
+    <value name="auto" />
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="position" inherited="false">
+    <media name="visual" />
+    <value name="static" />
+    <value name="relative" />
+    <value name="absolute" />
+    <value name="fixed" />
+    <value name="inherit" />
+  </property>
+  <property name="quotes" inherited="true">
+    <media name="visual" />
+    <value optional="true" min="1">
+      <value sequence="true">
+        <value type="string" />
+        <value type="string" />
+      </value>
+    </value>
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="richness" inherited="true">
+    <media name="aural" />
+    <value type="number" />
+    <value name="inherit" />
+  </property>
+  <property name="right" inherited="false">
+    <media name="visual" />
+    <value type="length" />
+    <value type="percentage" />
+    <value name="auto" />
+    <value name="inherit" />
+  </property>
+  <property name="size">
+    <media name="visual" />
+    <media name="paged" />
+    <value type="length" min="1" max="2" />
+    <value name="auto" />
+    <value name="portrait" />
+    <value name="landscape" />
+    <value name="inherit" />
+  </property>
+  <property name="speak" inherited="true">
+    <media name="aural" />
+    <value name="normal" />
+    <value name="none" />
+    <value name="spell-out" />
+    <value name="inherit" />
+  </property>
+  <property name="speak-header" inherited="true">
+    <media name="aural" />
+    <value name="once" />
+    <value name="always" />
+    <value name="inherit" />
+  </property>
+  <property name="speak-numeral" inherited="true">
+    <media name="aural" />
+    <value name="digits" />
+    <value name="continuous" />
+    <value name="inherit" />
+  </property>
+  <property name="speak-punctuation" inherited="true">
+    <media name="aural" />
+    <value name="code" />
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="speech-rate" inherited="true">
+    <media name="aural" />
+    <value type="number" />
+    <value name="x-slow" />
+    <value name="slow" />
+    <value name="medium" />
+    <value name="fast" />
+    <value name="x-fast" />
+    <value name="faster" />
+    <value name="slower" />
+    <value name="inherit" />
+  </property>
+  <property name="stress" inherited="true">
+    <media name="aural" />
+    <value type="number" />
+    <value name="inherit" />
+  </property>
+  <property name="table-layout" inherited="false">
+    <media name="visual" />
+    <value name="auto" />
+    <value name="fixed" />
+    <value name="inherit" />
+  </property>
+  <property name="text-align" inherited="true">
+    <media name="visual" />
+    <value name="left" />
+    <value name="right" />
+    <value name="center" />
+    <value name="justify" />
+    <value type="string" />
+    <value name="inherit" />
+  </property>
+  <property name="text-decoration" inherited="false">
+    <media name="visual" />
+    <value name="none" />
+    <value name="underline" />
+    <value name="overline" />
+    <value name="line-through" />
+    <value name="blink" />
+    <value name="inherit" />
+  </property>
+  <property name="text-indent" inherited="true">
+    <media name="visual" />
+    <value type="length" />
+    <value type="percentage" />
+    <value name="inherit" />
+  </property>
+  <property name="text-shadow" inherited="false">
+    <media name="visual" />
+    <value name="none" />
+	<value optional="true" min="0">
+	  <value type="csscolor" />
+	  <value type="color" />
+	  <value sequence="true" min="0" max="1">
+        <value type="length" />
+        <value type="length" />
+        <value type="length" />
+        <value operator="," />
+      </value>
+    </value>
+	<value optional="true" min="0" max="1">
+	  <value type="csscolor" />
+	  <value type="color" />
+	  <value sequence="true" min="0" max="1">
+        <value type="length" />
+        <value type="length" />
+        <value type="length" />
+      </value>
+    </value>
+    <value name="inherit" />
+  </property>
+  <property name="text-transform" inherited="true">
+    <media name="visual" />
+    <value name="capitalize" />
+    <value name="uppercase" />
+    <value name="lowercase" />
+    <value name="none" />
+    <value name="inherit" />
+  </property>
+  <property name="top" inherited="false">
+    <media name="visual" />
+    <value type="length" />
+    <value type="percentage" />
+    <value name="auto" />
+    <value name="inherit" />
+  </property>
+  <property name="unicode-bidi" inherited="false">
+    <media name="visual" />
+    <value name="normal" />
+    <value name="embed" />
+    <value name="bidi-override" />
+    <value name="inherit" />
+  </property>
+  <property name="vertical-align" inherited="false">
+    <media name="visual" />
+    <value name="baseline" />
+    <value name="sub" />
+    <value name="super" />
+    <value name="top" />
+    <value name="text-top" />
+    <value name="middle" />
+    <value name="bottom" />
+    <value name="text-bottom" />
+    <value type="percentage" />
+    <value type="length" />
+    <value name="inherit" />
+  </property>
+  <property name="visibility" inherited="false">
+    <media name="visual" />
+    <value name="visible" />
+    <value name="hidden" />
+    <value name="collapse" />
+    <value name="inherit" />
+  </property>
+  <property name="voice-family" inherited="true">
+    <media name="aural" />
+    <value optional="true" min="0">
+      <value type="specific-voice" />
+      <value type="generic-voice" />
+      <value operator="," />
+    </value>
+    <value optional="true">
+      <value type="specific-voice" />
+      <value type="generic-voice" />
+      <value operator="," />
+    </value>
+    <value name="inherit" />
+  </property>
+  <property name="volume" inherited="true">
+    <media name="aural" />
+    <value type="number" />
+    <value type="percentage" />
+    <value name="silent" />
+    <value name="x-soft" />
+    <value name="soft" />
+    <value name="medium" />
+    <value name="loud" />
+    <value name="x-loud" />
+    <value name="inherit" />
+  </property>
+  <property name="white-space" inherited="true">
+    <media name="visual" />
+    <value name="normal" />
+    <value name="pre" />
+    <value name="nowrap" />
+    <value name="inherit" />
+  </property>
+  <property name="widows" inherited="false">
+    <media name="visual" />
+    <value type="integer" />
+    <value name="inherit" />
+  </property>
+  <property name="width" inherited="false">
+    <media name="visual" />
+    <value type="length" />
+    <value type="percentage" />
+    <value name="auto" />
+    <value name="inherit" />
+  </property>
+  <property name="word-spacing" inherited="true">
+    <media name="visual" />
+    <value name="normal" />
+    <value type="length" />
+    <value name="inherit" />
+  </property>
+  <property name="z-index" inherited="false">
+    <media name="visual" />
+    <value name="auto" />
+    <value type="integer" />
+    <value name="inherit" />
+  </property>
+
+<!--
+  microsoft specific CSS properties from
+
+  http://msdn.microsoft.com/library/default.asp?url=/workshop/author/css/reference/attributes.asp
+ -->
+
+  <property name="behavior" ie_version="5">
+	<media name="visual" />
+	<value type="sscroll" />
+	<value name="inherit" />
+  </property>
+  <property name="ime-mode" inherited="true" ie_version="5">
+    <media name="visual" />
+    <value type="smode" />
+    <value name="inherit" />
+  </property>
+  <property name="layout-grid" inherited="true" ie_version="5">
+    <media name="visual" />
+    <value type="slayout" />
+    <value name="inherit" />
+  </property>
+  <property name="layout-grid-char" inherited="false" ie_version="5">
+    <media name="visual" />
+    <value type="scharsize" />
+    <value name="inherit" />
+  </property>
+  <property name="layout-grid-line" inherited="false" ie_version="5">
+    <media name="visual" />
+    <value type="slinespace" />
+    <value name="inherit" />
+  </property>
+  <property name="layout-grid-mode" inherited="true" ie_version="5">
+    <media name="visual" />
+    <value type="smode" />
+    <value name="inherit" />
+  </property>
+  <property name="layout-grid-type" inherited="true" ie_version="5">
+    <media name="visual" />
+    <value type="stype" />
+    <value name="inherit" />
+  </property>
+  <property name="line-break" inherited="true" ie_version="5">
+    <media name="visual" />
+    <value type="sbreak" />
+    <value name="inherit" />
+  </property>
+  <property name="text-autospace" inherited="false" ie_version="5">
+    <media name="visual" />
+    <value type="sideograph" />
+    <value name="inherit" />
+  </property>
+  <property name="text-justify" inherited="true" ie_version="5">
+    <media name="visual" />
+    <value type="salign" />
+    <value name="inherit" />
+  </property>
+  <property name="text-kashida-space" inherited="true" ie_version="5.5">
+    <media name="visual" />
+    <value type="vkashida" />
+	<value name="inherit" />
+  </property>
+  <property name="text-underline-position" inherited="true" ie_version="5.5">
+    <media name="visual" />
+    <value type="sposition" />
+    <value name="inherit" />
+  </property>
+  <property name="word-break" inherited="true" ie_version="5">
+    <media name="visual" />
+    <value type="swordbreak" />
+    <value name="inherit" />
+  </property>
+  <property name="word-wrap" inherited="true" ie_version="5.5">
+    <media name="visual" />
+    <value type="swrap" />
+    <value name="inherit" />
+  </property>
+  <property name="writing-mode" inherited="true" ie_version="5.5">
+    <media name="visual" />
+    <value type="sflow" />
+    <value name="inherit" />
+  </property>
+  <property name="background-position-x" inherited="false">
+	<media name="visual" />
+	<value type="ipositionx" />
+    <value name="inherit" />
+  </property>
+  <property name="background-position-y" inherited="false">
+    <media name="visual" />
+    <value type="ipositiony" />
+    <value name="inherit" />
+  </property>
+  <property name="layout-flow" inherited="true">
+    <media name="visual" />
+    <value type="slayoutflow" />
+    <value name="inherit" />
+  </property>
+  <property name="scrollbar-3dlight-color" inherited="true" ie_version="5.5">
+    <media name="visual" />
+    <value type="vcolor" />
+	<value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="scrollbar-arrow-color" inherited="true" ie_version="5.5">
+	<media name="visual" />
+	<value type="vcolor" />
+	<value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="scrollbar-base-color" inherited="true" ie_version="5.5">
+	<media name="visual" />
+	<value type="vcolor" />
+	<value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="scrollbar-darkshadow-color" inherited="true" ie_version="5.5">
+	<media name="visual" />
+	<value type="vcolor" />
+	<value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="scrollbar-face-color" inherited="true" ie_version="5.5">
+	<media name="visual" />
+	<value type="vcolor" />
+	<value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="scrollbar-highlight-color" inherited="true" ie_version="5.5">
+	<media name="visual" />
+	<value type="vcolor" />
+	<value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="scrollbar-shadow-color" inherited="true" ie_version="5.5">
+	<media name="visual" />
+	<value type="vcolor" />
+	<value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="scrollbar-track-color" inherited="true" ie_version="5.5">
+	<media name="visual" />
+	<value type="vcolor" />
+	<value type="color" />
+	<value name="inherit" />
+  </property>
+  <property name="zoom" inherited="false" ie_version="5.5">
+    <media name="visual" />
+    <value type="vmagnification" />
+    <value name="inherit" />
+  </property>
+  <property name="overflow-x" inherited="false">
+    <media name="visual" />
+    <value type="soverflow" />
+    <value name="inherit" />
+  </property>
+  <property name="overflow-y" inherited="false">
+    <media name="visual" />
+    <value type="soverflow" />
+    <value name="inherit" />
+  </property>
+
+  <!-- types for css values -->
+
+  <!--
+    'type' refers to an internal symbol kind.
+    'ref' refers to a sibling type in the below type mapping.
+	'name' is a concrete name to be used.
+	'function' refers to a function that may be called.
+  -->
+
+  <type name="angle" editable="true">
+	<value type="deg" />
+	<value type="rad" />
+	<value type="grad" />
+  </type>
+  <type name="color" editable="true">
+	<value type="color" />
+  </type>
+  <type name="csscolor">
+    <value name="aqua" />
+    <value name="black" />
+    <value name="blue" />
+    <value name="fuchsia" />
+    <value name="gray" />
+    <value name="green" />
+    <value name="lime" />
+    <value name="maroon" />
+    <value name="navy" />
+    <value name="olive" />
+    <value name="purple" />
+    <value name="red" />
+    <value name="silver" />
+    <value name="teal" />
+    <value name="white" />
+    <value name="yellow" />
+    <value name="ActiveBorder" />
+    <value name="ActiveCaption" />
+    <value name="AppWorkspace" />
+    <value name="Background" />
+    <value name="ButtonFace" />
+    <value name="ButtonHighlight" />
+    <value name="ButtonShadow" />
+    <value name="ButtonText" />
+    <value name="CaptionText" />
+    <value name="GrayText" />
+    <value name="Highlight" />
+    <value name="HighlightText" />
+    <value name="InactiveBorder" />
+    <value name="InactiveCaption" />
+    <value name="InactiveCaptionText" />
+    <value name="InfoBackground" />
+    <value name="InfoText" />
+    <value name="Menu" />
+    <value name="MenuText" />
+    <value name="ScrollBar" />
+    <value name="ThreeDDarkShadow" />
+    <value name="ThreeDFace" />
+    <value name="ThreeDHighlight" />
+    <value name="ThreeDLightShadow" />
+    <value name="ThreeDShadow" />
+    <value name="Window" />
+    <value name="WindowFrame" />
+	<value name="WindowText" />
+	<value ref="hash" />
+    <value function="true" name="rgb" />
+  </type>
+  <type name="hash">
+    <value type="hash" />
+  </type>
+  <type name="uri" editable="true">
+    <value type="uri" />
+  </type>
+  <type name="length" editable="true">
+	<value type="em" />
+    <value type="ex" />
+    <value type="px" />
+    <value type="in" />
+    <value type="cm" />
+    <value type="mm" />
+    <value type="pt" />
+    <value type="pc" />
+  </type>
+  <type name="border-style">
+    <value name="none" />
+    <value name="hidden" />
+    <value name="dotted" />
+    <value name="dashed" />
+    <value name="solid" />
+    <value name="double" />
+    <value name="groove" />
+    <value name="ridge" />
+    <value name="inset" />
+    <value name="outset" />
+  </type>
+  <type name="border-width">
+    <value name="thin" />
+    <value name="medium" />
+	<value name="thick" />
+	<value ref="length" />
+  </type>
+  <type name="clip">
+    <value name="auto" />
+    <value function="true" name="rect" />
+  </type>
+  <type name="string">
+    <value type="string" />
+  </type>
+  <type name="counter">
+    <value function="true" name="counter" />
+  </type>
+  <type name="identifier">
+    <value type="identifier" />
+  </type>
+  <type name="integer">
+    <value type="integer" />
+  </type>
+  <type name="family-name">
+	<value name="&quot;Courier New&quot;, Courier, monospace" />
+	<value name="&quot;MS Serif&quot;, &quot;New York&quot;, serif" />
+	<value name="&quot;Times New Roman&quot;, Times, serif" />
+	<value name="&quot;MS Sans Serif&quot;, Geneva, sans-serif" />
+	<value name="Verdana, Geneva, Arial, Helvetica, sans-serif" />
+	<value name="Arial, Helvetica, sans-serif" />
+	<value ref="font" />
+  </type>
+  <type name="font">
+	<value type="font" />
+  </type>
+  <type name="generic-family">
+    <value name="serif" />
+    <value name="sans-serif" />
+    <value name="cursive" />
+    <value name="fantasy" />
+    <value name="monospace" />
+  </type>
+  <type name="absolute-size">
+    <value name="xx-small" />
+    <value name="x-small" />
+    <value name="small" />
+    <value name="medium" />
+    <value name="large" />
+    <value name="x-large" />
+    <value name="xx-large" />
+  </type>
+  <type name="relative-size">
+    <value name="larger" />
+    <value name="smaller" />
+  </type>
+  <type name="number">
+    <value type="integer" />
+    <value type="real" />
+  </type>
+  <type name="margin-width">
+    <value name="auto" />
+    <value ref="length" />
+    <value ref="percentage" />
+  </type>
+  <type name="padding-width">
+    <value ref="length" />
+    <value ref="percentage" />
+  </type>
+  <type name="time" editable="true">
+    <value type="ms" />
+    <value type="s" />
+  </type>
+  <type name="frequency" editable="true">
+    <value type="hz" />
+    <value type="khz" />
+  </type>
+  <type name="specific-voice">
+    <value ref="identifier" />
+  </type>
+  <type name="generic-voice">
+    <value name="male" />
+    <value name="female" />
+    <value name="child" />
+  </type>
+  <type name="sscroll">
+	<value name="scroll" />
+	<value name="alternate" />
+	<value name="slide" />
+  </type>
+  <type name="smode">
+	<value name="auto" />
+	<value name="active" />
+	<value name="inactive" />
+	<value name="disabled" />
+  </type>
+  <type name="slayout">
+	<value name="mode" />
+	<value name="type" />
+	<value name="line" />
+	<value name="char" />
+  </type>
+  <type name="scharsize">
+	<value name="none" />
+	<value name="auto" />
+	<value ref="length" />
+	<value ref="percentage" />
+  </type>
+  <type name="percentage" editable="true">
+    <value type="percentage" />
+  </type>
+  <type name="slinespace">
+	<value name="none" />
+	<value name="auto" />
+	<value ref="length" />
+	<value ref="percentage" />
+  </type>
+  <type name="smode">
+	<value name="both" />
+	<value name="none" />
+	<value name="line" />
+	<value name="char" />
+  </type>
+  <type name="stype">
+	<value name="loose" />
+	<value name="strict" />
+	<value name="fixed" />
+  </type>
+  <type name="sbreak">
+	<value name="normal" />
+	<value name="strict" />
+  </type>
+  <type name="sideograph">
+	<value name="none" />
+	<value name="ideograph-alpha" />
+	<value name="ideograph-numeric" />
+	<value name="ideograph-parenthesis" />
+	<value name="ideograph-space" />
+  </type>
+  <type name="salign">
+	<value name="auto" />
+	<value name="distribute" />
+	<value name="distribute-all-lines" />
+	<value name="distribute-center-last" />
+	<value name="inter-cluster" />
+	<value name="inter-ideograph" />
+	<value name="inter-word" />
+	<value name="kashida" />
+	<value name="newspaper" />
+  </type>
+  <type name="vkashida">
+	<value ref="percentage" />
+  </type>
+  <type name="sposition">
+	<value name="above" />
+	<value name="below" />
+	<value name="auto" />
+	<value name="auto-pos" />
+  </type>
+  <type name="swordbreak">
+	<value name="normal" />
+	<value name="break-all" />
+	<value name="keep-all" />
+  </type>
+  <type name="swrap">
+	<value name="normal" />
+	<value name="break-word" />
+  </type>
+  <type name="sflow">
+	<value name="lr-tb" />
+	<value name="tb-rl" />
+  </type>
+  <type name="ipositionx">
+	<value ref="length" />
+	<value ref="percentage" />
+	<value ref="halignment" />
+  </type>
+  <type name="halignment">
+	<value name="left" />
+	<value name="center" />
+	<value name="right" />
+  </type>
+  <type name="ipositiony">
+	<value ref="length" />
+	<value ref="percentage" />
+	<value ref="valignment" />
+  </type>
+  <type name="valignment">
+	<value name="top" />
+	<value name="center" />
+	<value name="bottom" />
+  </type>
+  <type name="slayoutflow">
+	<value name="horizontal" />
+	<value name="vertical-ideograph" />
+  </type>
+  <type name="vcolor">
+    <value name="aliceblue" />
+	<value name="antiquewhite" />
+	<value name="aqua" />
+	<value name="aquamarine" />
+	<value name="azure" />
+	<value name="beige" />
+	<value name="bisque" />
+	<value name="black" />
+	<value name="blanchedalmond" />
+	<value name="blue" />
+	<value name="blueviolet" />
+	<value name="brown" />
+	<value name="burlywood" />
+	<value name="cadetblue" />
+	<value name="chartreuse" />
+	<value name="chocolate" />
+	<value name="coral" />
+	<value name="cornflowerblue" />
+	<value name="cornsilk" />
+	<value name="crimson" />
+	<value name="cyan" />
+	<value name="darkblue" />
+	<value name="darkcyan" />
+	<value name="darkgoldenrod" />
+	<value name="dargray" />
+	<value name="darkgreen" />
+	<value name="darkkhaki" />
+	<value name="darkmagenta" />
+	<value name="darkolivegreen" />
+	<value name="darkorange" />
+	<value name="darkorchid" />
+	<value name="darkred" />
+	<value name="darksalmon" />
+	<value name="darkseagreen" />
+	<value name="darkslateblue" />
+	<value name="darkslategray" />
+	<value name="darkturquoise" />
+	<value name="darkviolet" />
+	<value name="deeppink" />
+	<value name="deepskyblue" />
+	<value name="dimgray" />
+	<value name="dodgerblue" />
+	<value name="firebrick" />
+	<value name="floralwhite" />
+	<value name="forestgreen" />
+	<value name="fuchsia" />
+	<value name="gainsboro" />
+	<value name="ghostwhite" />
+	<value name="gold" />
+	<value name="goldenrod" />
+	<value name="gray" />
+	<value name="green" />
+	<value name="greenyellow" />
+	<value name="honeydew" />
+	<value name="hotpink" />
+	<value name="indianred" />
+	<value name="indigo" />
+	<value name="ivory" />
+	<value name="khaki" />
+	<value name="lavender" />
+	<value name="lavenderblush" />
+	<value name="lawngreen" />
+	<value name="lemonchiffon" />
+	<value name="lightblue" />
+	<value name="lightcoral" />
+	<value name="lightcyan" />
+	<value name="lightgoldenrodyellow" />
+	<value name="lightgreen" />
+	<value name="lightgrey" />
+	<value name="lightpink" />
+	<value name="lightsalmon" />
+	<value name="lightseagreen" />
+	<value name="lightskyblue" />
+	<value name="lightslategray" />
+	<value name="lightsteelblue" />
+	<value name="lightyellow" />
+	<value name="lime" />
+	<value name="limegreen" />
+	<value name="linen" />
+	<value name="magenta" />
+	<value name="maroon" />
+	<value name="mediumaquamarine" />
+	<value name="mediumblue" />
+	<value name="mediumorchid" />
+	<value name="mediumpurple" />
+	<value name="mediumseagreen" />
+	<value name="mediumslateblue" />
+	<value name="mediumspringgreen" />
+	<value name="mediumturquoise" />
+	<value name="mediumvioletred" />
+	<value name="midnightblue" />
+	<value name="mintcream" />
+	<value name="mistyrose" />
+	<value name="moccasin" />
+	<value name="navajowhite" />
+	<value name="navy" />
+	<value name="oldlace" />
+	<value name="olive" />
+	<value name="olivedrab" />
+	<value name="orange" />
+	<value name="orangered" />
+	<value name="orchid" />
+	<value name="palegoldenrod" />
+	<value name="palegreen" />
+	<value name="paleturqouise" />
+	<value name="palevioletred" />
+	<value name="papayawhip" />
+	<value name="peachpuff" />
+	<value name="peru" />
+	<value name="pink" />
+	<value name="plum" />
+	<value name="powderblue" />
+	<value name="purple" />
+	<value name="red" />
+	<value name="rosybrown" />
+	<value name="royalblue" />
+	<value name="saddlebrown" />
+	<value name="salmon" />
+	<value name="sandybrown" />
+	<value name="seagreen" />
+	<value name="seashell" />
+	<value name="sienna" />
+	<value name="silver" />
+	<value name="skyblue" />
+	<value name="slateblue" />
+	<value name="slategray" />
+	<value name="snow" />
+	<value name="springgreen" />
+	<value name="steelblue" />
+	<value name="tan" />
+	<value name="teal" />
+	<value name="thistle" />
+	<value name="tomato" />
+	<value name="turquoise" />
+	<value name="violet" />
+	<value name="wheat" />
+	<value name="white" />
+	<value name="whitesmoke" />
+	<value name="yellow" />
+	<value name="yellowgreen" />
+	<value name="activeborder" />
+	<value name="activecaption" />
+	<value name="appworkspace" />
+	<value name="background" />
+	<value name="buttonface" />
+	<value name="buttonhighlight" />
+	<value name="buttonshadow" />
+	<value name="buttontext" />
+	<value name="captiontext" />
+	<value name="graytext" />
+	<value name="highlight" />
+	<value name="highlighttext" />
+	<value name="inactiveborder" />
+	<value name="inactivecaption" />
+	<value name="inactivecaptiontext" />
+	<value name="infobackground" />
+	<value name="infotext" />
+	<value name="menu" />
+	<value name="menutext" />
+	<value name="scrollbar" />
+	<value name="threeddarkshadow" />
+	<value name="threedface" />
+	<value name="threedhighlight" />
+	<value name="threedlightshadow" />
+	<value name="threedshadow" />
+	<value name="window" />
+	<value name="windowframe" />
+	<value name="windowtext" />
+  </type>
+</css>

@@ -1,0 +1,165 @@
+@charset "utf-8";
+/*	Name: 1490680840
+	Emulate text browser
+	Copyright 2006 Opera Software */
+* {
+	font-family: monospace !important;	
+	font-size: 1em !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	text-align: left !important;
+	text-decoration: none !important;
+	letter-spacing: 0px !important;
+	line-height: 1em !important;
+	color: white !important;
+	background: #2A2F47 !important;
+	border: none !important;
+	outline: none !important;
+	width: auto !important;
+	min-width: 0px !important;
+	max-width: none !important;
+	height: auto !important;
+	min-height: 0px !important;
+	max-height: none !important;
+	position: static !important;
+}
+html::before, html::after, html *::before, html *::after {display: none !important;}
+input, textarea, select {
+	font-weight: normal !important;
+	color: black !important;
+	background: white !important;	
+	border-width: 2px 1px 1px 2px !important;
+	border-style: solid !important;
+	border-color: black silver silver black !important;
+}
+input[type="text"], input[type="password"] {min-height: 1.2em !important;}
+textarea {min-height: 4em !important;}
+button, input[type="file"], input[type="submit"], input[type="button"], input[type="reset"], input[type="image"] {
+	text-align: center !important;	
+	color: black !important;
+	background: silver !important;
+	padding: 2px 3px 2px 3px !important;
+	border: medium outset !important;
+	min-width: 2em !important;
+	height: 1.2em !important;
+}
+button:active, input[type="file"]:active, input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active, 
+input[type="image"]:active {
+	padding: 2px 2px 2px 4px !important;
+	border: medium inset !important;
+}
+input[type="radio"] {border: none !important;}
+h1, h2, h3, h4, h5, h6, th, caption {
+	font-weight: bold !important;
+	margin-top: 2em !important;
+}
+h1 {text-transform: uppercase !important;}
+h1, h2 {letter-spacing: 5px !important;}
+h3 {letter-spacing: 3px !important;}
+h4 {letter-spacing: 2px !important;}
+ol > li {list-style: decimal !important;}
+ol ol > li {list-style: upper-alpha !important;}
+ol ol ol > li {list-style: lower-alpha !important;}
+ol ol ol ol > li {list-style: lower-roman !important;}
+ul > li {list-style: square !important;}
+ul ul > li {list-style: circle !important;}
+a, a[href], a[href]:link, span {font-weight: inherit !important;}
+a[href]:visited {text-decoration: line-through !important;}
+a[href], a[href]:link, a[href]:hover {text-decoration: underline !important;}
+a[href]:active, a[href] img[alt]:active {text-decoration: none !important;}
+kbd {
+	color: #3366CC !important;	
+	background: white !important;
+	padding: 0px 2px !important;
+}
+hr {
+	margin: 4px 0px 4px 0px !important;
+	border-top: medium dashed white !important;
+	height: 0px !important;
+}
+@media screen, handheld, projection, tv {
+	head, title {display: block !important;}
+	title {
+		font-weight: bold !important;
+		text-align: center !important;
+		color: #FFCC00 !important;
+		background-color: #000114 !important;
+		padding: 8px !important;
+		margin-bottom: 1em !important;
+	}
+	body {padding: 0 1em 3.5em !important;}
+	html a[target]:before, html *[lang]:before, html *[lang]:after, img, iframe {
+		font-size: smaller !important;
+		color: #FFCC00 !important;
+		background: #000114 !important;
+		padding: 0px 2px 1px 2px !important;
+		display: inline !important;
+	}
+	html a[target]:before, html *[lang]:before, img {margin-right: 4px !important;}
+	html a[target]:before {content: "Win:" !important;}
+	html a[target="_blank"]:before {content: "New:" !important;}
+	html *[lang]:before {content: "Lng " attr(lang) ":" !important;}
+	html *[lang]:after {
+		content: attr(lang) !important;
+		text-decoration: line-through !important;
+		margin-left: 4px !important;	
+	}
+	html body:after, html body[lang]:after {
+		content: "Navigate: [Z] and [X] — Elements: [Shift+arrow keys]" !important;
+		font-size: smaller !important;
+		text-align: center !important;
+		text-decoration: none !important;	
+		color: #FFCC00 !important;
+		background: #000114 !important;
+		padding: 2px 0 !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		border-top: thin solid black !important;
+		border-left: thin solid black !important;
+		border-right: thin solid black !important;
+		width: 100% !important;
+		height: auto !important;
+		clear: both !important;
+		position: fixed !important;
+		left: 0 !important;
+		bottom: 0px !important;	
+		display: block !important;
+	}
+	img, iframe {
+		margin-left: 2px !important;
+		line-height: 1.5em !important;
+	}
+	iframe {content: "IFRAME" !important;}
+	iframe[longdesc] {content: attr(longdesc) !important;}
+	img {
+		content: "IMG" !important;	
+		display: none !important;
+	}
+	img[alt], a[href] img {display: inline !important;}
+	input[type="image"] {content: "Submit" !important;}
+	img[alt], input[type="image"][alt] {content: attr(alt) !important;}
+}
+@media print {
+	* {
+		color: black !important;
+		background: white !important;
+	}
+	img {
+		font-size: smaller !important;
+		color: Gray !important;
+		background-color: white !important;
+		padding: 0px 2px 1px 2px !important;
+		margin-right: 4px !important;
+		outline: thin solid black !important;
+		display: none !important;
+	}
+	a[href]:visited {text-decoration: underline !important;}
+	input[type="image"] {content: "Submit" !important;}
+	input[type="image"][alt] {content: attr(alt) !important;}
+	img[alt] {
+		content: attr(alt) !important;
+		line-height: 1.5em !important;
+		margin-left: 2px !important;
+		display: inline !important;
+	}
+}

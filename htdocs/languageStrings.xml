@@ -1,0 +1,17 @@
+<rss version="2.0">
+	<lastBuildDate>Thu, 12 Jul 2005 15:50:00 GMT</lastBuildDate>
+	<channel>
+		<item>
+			<guid>rssHeader</guid>
+			<text>Headlines</text>
+		</item>
+		<item>
+			<guid>offline</guid>
+			<text>(Offline Mode)</text>
+		</item>
+		<item>
+			<guid>goonline</guid>
+			<text>click here to try to conntect with a RSS feed server</text>
+		</item>
+	</channel>
+</rss>

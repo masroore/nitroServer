@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<codetemplate	xmlns="http://schemas.borland.com/Delphi/2005/codetemplates"
+				version="1.0.0">
+	<template name="siw" invoke="manual">
+		<description>SmartInspect Watch</description>
+		<author>Gurock Software</author>
+		<point name="name">
+			<text>Name</text>
+			<hint>The name of the watch.</hint>
+		</point>
+		<point name="value">
+			<text>Value</text>
+			<hint>The value of the watch.</hint>
+		</point>
+		<code language="C" context="methodbody" delimiter="|"><![CDATA[SiMain->Watch("|name|", |value|);]]></code>
+	</template>
+</codetemplate>

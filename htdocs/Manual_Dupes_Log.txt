@@ -1,0 +1,13 @@
+========================================
+SESSION START: 7/5/2007 15:19:48
+========================================
+
+  Scanning for duplicate files
+  Scan complete: 0 duplicate files found.
+
+========================================
+CLOSE SESSION: 7/5/2007 15:19:52
+NUMBER OF DUPLICATE FILES REMOVED: 0
+TOTAL SPACE RECOVERED: 0 bytes (0.00 megabytes.)
+========================================
+

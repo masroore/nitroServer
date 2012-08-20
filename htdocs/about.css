@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* Stylesheet for the Opera about document */
+/* Copyright 2006 Opera Software */
+@media screen, projection, tv, handheld, speech {
+html {
+	font-family: sans-serif;
+	color: rgb(56,56,56);
+	background-color: rgb(236,236,236);
+	background-image: url(images/root.png);
+	margin: 0 auto 10px;
+	border-width: 0 1px;
+	border-color: rgb(144,144,144);
+	border-style: solid;
+	max-width: 600px;
+	voice-family: female;
+}
+body {
+	color: rgb(56,56,56);
+	background-color: rgb(246,246,246);
+	margin: 0;
+}
+h1 {
+	font-family: sans-serif;	
+	font-size: 110%;
+	font-weight: normal;
+	text-align: right;
+	letter-spacing: -1px;
+	color: rgb(74,74,74);
+	background-image: url(images/top.png);
+	background-repeat: repeat-x;	
+	padding: 29px 10px 0 130px;
+	margin: 0;
+	height: 46px;
+	position: relative;
+}
+html[dir="rtl"] h1 {
+	text-align: left;
+	letter-spacing: normal;
+	padding: 29px 130px 0 10px;
+}
+h1::after {
+	content: "";
+	background-image: url(images/opera.png);
+	width: 130px;
+	height: 57px;
+	position: absolute;
+	left: 5px;
+	top: 15px;
+	speak: none;
+}
+html[dir="rtl"] h1::after {
+	left: auto;
+	right: 5px;
+}
+h2 {
+	font-family: sans-serif;
+	font-size: 75%;
+	font-weight: normal;
+	letter-spacing: -1px;
+	color: rgb(74,74,74);
+	background-color: rgb(227,227,227);
+	background-image: url(images/bar.png);
+	background-repeat: repeat-x;
+	background-position: 0px -5px;
+	padding: 5px 7px;
+	margin: 0;
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: rgb(144,144,144);
+	clear: both;
+}
+html[dir="rtl"] h2 {letter-spacing: normal;}
+a {
+	color: rgb(74,74,74);
+	background-color: transparent;
+}
+dl {
+	font-size: 70%;
+	line-height: 110%;
+	padding: 0;
+	margin: 5px auto 10px;
+	width: 90%;
+}
+dt, dd {
+	padding: 2px 3px;
+	margin: 0;
+	border-width: 1px 0 0;
+	border-style: solid;
+	border-color: rgb(223,223,223);
+}
+dt {
+	width: 150px;
+	float: left;
+	clear: both;
+}
+html[dir="rtl"] dt {float: right;}
+dd::after {
+	content: "";
+	clear: both;
+	display: block;
+	speak: none;
+}
+dd+dd {margin-left: 153px;}
+html[dir="rtl"] dd+dd {margin: 0 153px 0 0;}
+dt:first-child, dt:first-child+dd {border-top-width: 0;}
+h2+p {
+	font-size: 70%;
+	margin: 10px auto;
+	width: 90%;
+}
+html[dir="rtl"] h2+p {text-align: right;}
+ul {
+	font-size:70%;
+	padding-left: 15px;
+	margin: 10px auto;
+	width: 90%;
+}
+blockquote {margin: 10px 20px;}
+blockquote p {margin: 5px 0;}
+ul+p {
+	font-size: 70%;
+	padding: 0 7px;
+}
+address {
+	font-size: 70%;
+	font-style: normal;
+	background-color: rgb(246,246,246);
+	background-image: url(images/center.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	padding: 4px 7px 7px;
+	margin: 0;
+	border-top: 1px solid rgb(170,170,170);
+	position: relative;
+}
+html[dir="rtl"] address {text-align: right;}
+span {
+	position: absolute;
+	right: 7px;
+}
+html[dir="rtl"] span {
+	left: 7px; 
+	right: auto;
+}
+}
+@media all and (max-width: 550px) {
+	span {
+		position: static;
+		display: block;
+	}
+}
+@media all and (max-width: 400px) {
+	dt {width: 100px;}
+	dd+dd {margin-left: 103px;}
+	html[dir] dd+dd {margin: 0 103px 0 0;}
+}
+@media all and (max-width: 300px) {
+	dt {
+		font-weight: bold;
+		width: auto;
+		float: none;
+		display: run-in;
+	}
+	dt::after {content: ": ";}
+	html[dir="rtl"] dd+dd, dd+dd {margin: 0;}
+}
+@media all and (max-width: 235px) {
+	html {border-width: 0 1px 1px;}
+	h1::after {display: none;}
+	html[dir="rtl"] h1, h1 {
+		text-align: center;
+		padding: 10px 5px;
+		height: auto;
+	}
+}
+@media all and (min-width: 1025px) {html {max-width: 700px;}}
+@media print {
+	* {font-size: 10pt;}
+	h1 {
+		font-size: 16pt;
+		text-align:center;
+	}
+	h2 {font-size: 13pt;}
+	dl, h2+p {margin-bottom: 2cm;}
+}

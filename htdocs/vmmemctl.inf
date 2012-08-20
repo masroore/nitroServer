@@ -1,0 +1,52 @@
+;-------------------------------------------------------------------------
+; vmmemctl.inf -- VMware server Win2K physical memory control driver.
+;-------------------------------------------------------------------------
+[version]
+Signature	= "$Windows NT$" 
+Class 		= System
+ClassGuid 	= {4d36e97d-e325-11ce-bfc1-08002be10318}  
+Provider    	= %VMware%
+
+;-------------------------------------------------------------------------
+; Declare Destination Directories for file copy/deletion
+;-------------------------------------------------------------------------
+[DestinationDirs]
+DefaultDestDir = 12    ; DIRID_DRIVERS
+
+[Manufacturer]
+%VMware%=VMWARE
+
+[VMWARE]
+%MEMCTL_Desc%=MEMCTL,*VMMEMCTL
+
+;-------------------------------------------------------------------------
+; Installation Section
+;-------------------------------------------------------------------------
+[MEMCTL]
+CopyFiles=CpyFiles_Sys
+
+;-------------------------------------------------------------------------
+; Files to Copy/Delete - Referenced by Install and Remove sections above
+;-------------------------------------------------------------------------
+[CpyFiles_Sys]
+vmmemctl.sys,,,2
+
+;-------------------------------------------------------------------------
+; Service installation support
+;-------------------------------------------------------------------------
+[MEMCTL.Services]
+AddService=vmmemctl,2,MEMCTL_Service_Inst
+
+[MEMCTL_Service_Inst]
+DisplayName     = %MEMCTL_Desc%
+ServiceType     = 1 ;SERVICE_KERNEL_DRIVER
+StartType       = 3 ;SERVICE_MANUAL_START
+ErrorControl    = 1 ;SERVICE_ERROR_NORMAL
+ServiceBinary   = %12%\vmmemctl.sys
+Description     = %MEMCTL_Desc%
+
+[Strings]
+VMware          = "VMware, Inc."
+MEMCTL_Desc     = "VMware server memory controller"
+MEMCTL_HelpText = "VMware server physical memory manager"
+REG_DWORD       = 0x10001

@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* Stylesheet for the Opera image slideshow */
+/* Copyright 2006 Opera Software */
+html {
+	background-color: rgb(250,250,250);
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+body {
+	margin: 0;
+	height: 100%;
+	display: table-row;
+}
+div {
+	vertical-align: middle;
+	height: 100%;
+	display: table-cell;
+}
+img {
+	margin: auto;
+	display: block;
+}
+@media handheld, screen and (max-width: 300px) {
+	html {
+		background-color: rgb(0,0,0);
+		margin: auto;
+		width: 246px;
+		max-width: 100%;
+	}
+	body {background-color: rgb(100,100,100);}
+	html, body, div {display: block;}
+	img {
+		background-color: rgb(250,250,250);
+		margin: 0;
+		max-width: 100%;
+	}
+}
+@media projection, tv {
+	html, body {background-color: rgb(0,0,0);}
+	img {background-color: rgb(250,250,250);}
+}

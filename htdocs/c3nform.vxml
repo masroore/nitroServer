@@ -1,0 +1,11 @@
+<vxml:form id="_cmd">
+    <!--@$@AutoStartListeningPlaceholder, do not remove, do not change -->
+
+	<vxml:field name="dummy" type="boolean">
+		<!--@$@PromptPlaceholder, do not remove, do not change -->
+	</vxml:field>
+ 
+	<vxml:block name="block1">
+		<vxml:clear/>
+	</vxml:block>
+</vxml:form>

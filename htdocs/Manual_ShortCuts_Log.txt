@@ -1,0 +1,14 @@
+========================================
+OPEN SESSION: 07/05/07 15:20:31
+========================================
+
+  Scan for invalid shortcuts.
+  Scan complete. 0 invalid shortcut(s) found.
+
+========================================
+CLOSE SESSION: 07/05/07 15:20:33
+NUMBER OF SHORTCUTS FIXED: 0
+NUMBER OF SHORTCUTS REMOVED: 0
+TOTAL SPACE RECOVERED: 0 bytes (0.00 megabytes.)
+========================================
+

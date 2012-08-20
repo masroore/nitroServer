@@ -1,0 +1,13 @@
+del /S *.~*
+del /S *.dcu
+del /S *.o
+del /S *.ppu
+del /S *.dsk
+del /S *.cfg
+del /S *.dof
+del /S *.hpp
+del /S *.ddp
+del /S *.mps
+del /S *.mpt
+del /S *.bak
+del /S *.stat

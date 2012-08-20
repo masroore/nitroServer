@@ -1,0 +1,224 @@
+<xml>
+	<rss selectOnly="">
+		<order>010</order>
+		<channel ignoreSize="1">
+			<title>Release Notes</title>
+			<item>
+				<title>Readme</title>
+				<link>bds:/readme.htm</link>
+			</item>
+			<item>
+				<title>Install</title>
+				<link>bds:/install.htm</link>
+			</item>
+			<item>
+				<title>Deploy</title>
+				<link>bds:/deploy.htm</link>
+			</item>
+		</channel>
+	</rss>
+	<rss selectOnly="">
+		<order>020</order>
+		<channel ignoreSize="1">
+			<title>Online Documentation</title>
+			<item>
+				<title>Getting Started</title>
+				<link>javascript:openDExplore('ms-help://borland.bds5/devcommon/gettingstartedpart_xml.html');</link>
+			</item>
+			<item>
+				<title>How-To Guide</title>
+				<link>javascript:openDExplore('ms-help://borland.bds5/devcommon/procedurepart_xml.html');</link>
+			</item>
+			<item>
+				<title>Delphi Training Services</title>
+				<link>http://www.codegear.com/services/training/index.html</link>
+			</item>
+		</channel>
+	</rss>
+	<rss selectOnly="">
+		<order>030</order>
+		<channel ignoreSize="1">
+			<title>Integrated Partners</title>
+			<item>
+				<title>Doc-O-Matic</title>
+				<link>http://www.doc-o-matic.com</link>
+			</item>
+			<item>
+				<title>glyFX Icons</title>
+				<link>http://www.glyfx.com/borland/</link>
+			</item>
+			<item>
+				<title>InstallAware</title>
+				<link>http://www.installaware.com/</link>
+			</item>
+			<item>
+				<title>IntraWeb</title>
+				<link>http://www.atozed.com/intraWeb/</link>
+			</item>
+		</channel>
+	</rss>
+	<rss selectOnly="">
+		<order>040</order>
+		<channel ignoreSize="1">
+			<title>CodeGear Online Resources</title>
+			<item>
+				<title>CodeGear</title>
+				<link>http://www.codegear.com/</link>
+			</item>
+			<item>
+				<title>CodeGear Developer Network</title>
+				<link>http://dn.codegear.com/</link>
+			</item>
+			<item>
+				<title>ECO Center</title>
+				<link>http://dn.codegear.com/delphi/eco</link>
+			</item>
+			<item>
+				<title>Registered Users Site</title>
+				<link>http://www.codegear.com/Downloads/RegisteredUsers/tabid/145/Default.aspx</link>
+			</item>
+			<item>
+				<title>Customer Support</title>
+				<link>http://www.codegear.com/support/</link>
+			</item>
+			<item>
+				<title>QualityCentral</title>
+				<link>http://qc.codegear.com/</link>
+			</item>
+			<item>
+				<title>Delphi Team Weblogs</title>
+				<link>http://blogs.codegear.com/team/delphi</link>
+			</item>
+			<item>
+				<title>CodeGear Weblogs</title>
+				<link>http://blogs.codegear.com/</link>
+			</item>
+		</channel>
+	</rss>
+	<rss selectOnly="">
+		<order>050</order>
+		<channel ignoreSize="1">
+			<title>Product Demos</title>
+			<item>
+				<title>CDNtv</title>
+				<link>http://dn.codegear.com/tv/</link>
+			</item>
+			<item>
+				<title>CodeCentral Examples</title>
+				<link>http://cc.codegear.com</link>
+			</item>
+		</channel>
+	</rss>
+	<rss selectOnly="">
+		<order>060</order>
+		<channel ignoreSize="1">
+			<title>Newsgroups</title>
+					<item>
+				<title>Delphi Newsgroups</title>
+				<link>http://www.teamb.com/groups/directory/delphi</link>
+			</item>
+			<item>
+				<title>C++Builder Newsgroups</title>
+				<link>http://www.teamb.com/groups/directory/cppbuilder</link>
+			</item>
+		</channel>
+	</rss>
+
+	<rss selectOnly="">
+		<order>070</order>
+		<channel ignoreSize="1">
+			<title>English Delphi Sites</title>
+			<item>
+				<title>Delphi 3000</title>
+				<link>http://www.delphi3000.com</link>
+			</item>
+			<item>
+				<title>About Delphi Programming</title>
+				<link>http://delphi.about.com/</link>
+			</item>
+			<item>
+				<title>Delphi Super Page</title>
+				<link>http://delphi.icm.edu.pl/</link>
+			</item>
+			<item>
+				<title>Delphi Basics</title>
+				<link>http://www.delphibasics.co.uk/</link>
+			</item>
+			<item>
+				<title>Delphi32.com</title>
+				<link>http://www.delphi32.com/</link>
+			</item>
+			<item>
+				<title>Project JEDI</title>
+				<link>http://www.delphi-jedi.org/</link>
+			</item>
+			<item>
+				<title>Torry's Delphi Pages</title>
+				<link>http://www.torry.ru/</link>
+			</item>
+			<item>
+				<title>The Delphi Magazine</title>
+				<link>http://www.thedelphimagazine.com/</link>
+			</item>
+			<item>
+				<title>SwissDelphiCenter</title>
+				<link>http://www.swissdelphicenter.ch/en/index.php</link>
+			</item>
+			<item>
+				<title>Dr.Bob's Delphi Programming Clinic</title>
+				<link>http://www.drbob42.com/</link>
+			</item>
+			<item>
+				<title>Delphi-Gems</title>
+				<link>http://www.delphi-gems.com/</link>
+			</item>
+			<item>
+				<title>Richey's DELPHI-BOX</title>
+				<link>http://www.inner-smile.com/</link>
+			</item>
+		</channel>
+	</rss>
+	<rss selectOnly="">
+		<order>090</order>
+		<channel ignoreSize="1">
+			<title>German Delphi Sites</title>
+			<item>
+				<title>Delphi-PRAXiS</title>
+				<link>http://www.delphipraxis.net</link>
+			</item>
+			<item>
+				<title>Delphi-Source, der Delphi-Treff</title>
+				<link>http://www.dsdt.info/</link>
+			</item>
+			<item>
+				<title>Entwickler-Ecke</title>
+				<link>http://www.entwicklerecke.de/</link>
+			</item>
+			<item>
+				<title>ECO Space</title>
+				<link>http://www.ecospace.de/</link>
+			</item>
+			<item>
+				<title>SwissDelphiCenter</title>
+				<link>http://www.swissdelphicenter.ch/de/index.php</link>
+			</item>
+		</channel>
+	</rss>
+    	<rss selectOnly="">
+		<order>100</order>
+		<channel ignoreSize="1">
+			<title>C++ Sites</title>
+			<item>
+				<title>Dr. Bob's C++Builder Gate</title>
+				<link>http://www.drbob42.com/CBuilder/</link>
+			</item>
+			<item>
+				<title>C++Builder Developer's Journal</title>
+				<link>http://bcbjournal.org/</link>
+			</item>
+
+
+		</channel>
+	</rss>
+
+</xml>

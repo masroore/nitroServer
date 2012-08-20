@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* Stylesheet for the Opera error documents */
+/* Copyright 2006 Opera Software */
+@media screen, projection, tv, handheld, speech {
+html {
+	font-family: sans-serif;
+	color: rgb(56,56,56);
+	background-color: rgb(236,236,236);
+	background-image: url(images/root.png);
+	margin: 0 auto 10px;
+	border-width: 0 1px;
+	border-color: rgb(144,144,144);
+	border-style: solid;
+	voice-family: female;
+}
+html, head {max-width: 600px;}
+head {
+	margin: auto;
+	position: relative;
+	display: block;
+	speak: normal;
+}
+title {
+	font-size: 130%;	
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #CC0000;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	display: block;
+	speak: normal;
+}
+html[dir="rtl"] title {
+	left: auto;
+	right: 10px;
+}
+html[lang^="el"] title {text-transform: none;}
+title::after {
+	content: "!";
+	speak: none;
+}
+body {
+	color: rgb(56,56,56);
+	background-color: rgb(246,246,246);
+	margin: 0;
+}
+h1 {
+	font-family: sans-serif;	
+	font-size: 130%;
+	text-align: right;
+	letter-spacing: -1px;
+	color: rgb(74,74,74);
+	background-image: url(images/top.png);
+	background-repeat: repeat-x;
+	padding: 20px 10px 15px 5em;
+	margin: 0;
+	border-bottom: 1px solid rgb(144,144,144);
+	min-height: 25px;
+}
+html[dir="rtl"] h1 {
+	text-align: left;
+	letter-spacing: normal;
+	padding: 20px 5em 15px 10px;
+}
+h2 {
+	font-family: sans-serif;
+	font-size: 75%;
+	font-weight: normal;
+	letter-spacing: -1px;
+	color: rgb(74,74,74);
+	background-color: rgb(227,227,227);
+	background-image: url(images/bar.png);
+	background-repeat: repeat-x;
+	background-position: 0px -5px;
+	padding: 5px 7px;
+	margin: 0;
+	border-top: 1px solid rgb(144,144,144);
+	border-bottom: 1px solid rgb(144,144,144);
+}
+html[dir="rtl"] h2 {letter-spacing: normal;}
+a {
+	color: rgb(74,74,74);
+	background-color: transparent;
+}
+p {
+	font-size: 83%;
+	margin: 20px 10px;
+}
+li {
+	font-size: 83%;
+	margin: 10px 10px 0 0;
+}
+body::after {
+	content: "";
+	background-color: rgb(250,250,250);
+	background-image: url(images/center.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	border-top: 1px solid rgb(144,144,144);
+	height: 20px;
+	width: 100%;
+	display: block;
+	speak: none;
+}
+dl {
+	font-size: 83%;
+	margin: 10px;
+}
+dt {
+	font-weight: bold;
+	margin: 0 5px 0 0;
+	display: run-in;
+}
+dd {margin: 0;}
+pre {
+	font-size: 75%;
+	white-space: pre-wrap;
+	line-height: 160%;
+	background-color: rgb(251,251,251);
+	padding: 5px;
+	margin: 20px;
+	border: 1px solid rgb(70,70,70);
+	overflow: auto;
+}
+pre em {
+	font-weight: bold;
+	font-style: normal;
+	color: rgb(255,255,255);
+	background-color: rgb(0,0,0);
+	padding: 2px;
+	speak: spell-out;
+}
+pre em.error {
+	color: #FFFFFF;
+	background-color: rgb(204,0,0);
+}
+}
+@media all and (max-width: 800px) {
+	title, h1 {font-size: 110%;}
+	h1 {padding: 20px 10px 7px 6em;	}
+}
+@media all and (max-width: 350px) {
+	h1 {
+		text-align: center;
+		background-position: 0 -2px;
+		padding: 20px 10px 7px;
+		min-height: 0;
+	}
+	head {
+		font-weight: bold;
+		text-align: center;
+		background-color: #AA0000;
+		padding-top: 0.1em;
+		width: 100%;
+		height: 1.2em;
+		display: block;
+	}
+	title {
+		color: rgb(246,246,246);
+		position: static;
+	}
+	ul {
+		padding-left: 30px;
+	}
+	pre {
+		margin: 10px 5px;
+	}
+}
+@media all and (max-width: 300px) {
+	h1 {
+		font-size: 100%;
+		padding: 15px 5px 7px;
+	}
+}
+@media all and (max-width: 250px) {h1 {font-size: 83%;}}
+@media all and (min-width: 1025px) {html, head {max-width: 700px;}}
+@media print {
+	* {border: none;}
+	h2, h2+ul, head {display: none;}
+	h1 {
+		font-size: 13pt;
+		font-weight: bold;
+		page-break-before: avoid;
+		page-break-after: avoid;
+	}
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Server DataCacheMaxCapacity="4194304" ServerName="Danob/W32 0.01a" Port="80" MaxClients="1000" ThreadPoolSize="8" ScriptThreadPoolSize="4" DocRoot="C:\Nitro\htdocs\">
+  	<Bindings IP='192.168.3.3' Port='80'/>
+  	<Impersonation Enabled="True" Username="Administrator" Password="" />
+  </Server>
+  <Logging Directory="C:\Nitro\logs" Level="3" CacheSize="512" FlushInterval="30"/>
+  <FileCache PurgeInterval="90"/>
+  <CGIRunner Count="2">
+    <Entry_0 Extension=".exe" IsInterpreted="False" Interpreter=""/>
+    <Entry_1 Extension=".php" IsInterpreted="True" Interpreter="c:\WAMP5\php\php-cgi.exe"/>
+  </CGIRunner>
+</CONFIG>

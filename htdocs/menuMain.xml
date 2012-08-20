@@ -1,0 +1,172 @@
+<rss version="2.0">
+	<channel>
+		<title>Getting Started</title>
+		<link>javascript:openDExplore('ms-help://borland.bds5/devcommon/gettingstartedpart_xml.html');</link>
+	</channel>
+	<channel>
+		<title>Projects</title>
+		<item>
+			<title>Show Recent Projects</title>
+			<link>javascript:menuPersistCall('{29C682DC-AC59-4EFE-925F-C8318C62B219}');</link>
+		</item>
+		<item>
+			<title>Show Favorites</title>
+			<link>javascript:menuPersistCall('{08D4336C-D636-42C9-AED4-CDA1EA26BF4B}');</link>
+		</item>
+		<item>
+			<title>Manage Favorites</title>
+			<link>javascript:menuGuidCall('{E8175EB7-6FB1-4AE1-B0F2-85F610538EB1}');</link>
+		</item>
+		<item>
+			<title>New Project...</title>
+			<link>javascript:newProject();</link>
+		</item>
+		<item>
+			<title>Open Project...</title>
+			<link>javascript:openProject();</link>
+		</item>
+		<item>
+			<title>Help...</title>
+			<link>javascript:openDExplore('ms-help://borland.bds5/bds5start/intro.html');</link>
+		</item>
+	</channel>
+	<channel>
+		<title>News</title>
+		<item>
+			<title>Read News</title>
+			<link>javascript:menuPersistCall('{DDDD860A-11C3-41F4-9DC9-E575DCA86088}');</link>
+		</item>
+		<item>
+			<title>Read Summary</title>
+			<link>javascript:menuPersistCall('{49996494-932A-4834-B9F2-5224C9A5B6A7}');</link>
+		</item>
+		<item>
+			<title>Download all Feeds to Cache</title>
+			<link>javascript:callRssDownloadAll();</link>
+		</item>
+		<item>
+			<title>Clear Feeds Cache</title>
+			<link>javascript:callRssClearCache();</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Resources</title>
+		<item>
+			<title>Online Resources</title>
+			<item>
+				<title>YAPP - Syntax Highlighter</title>
+				<link>javascript:menuPersistCall('{38ABF9C1-DBB5-4A87-B267-0CD4CFCEC29E}');</link>
+			</item>
+			<item>
+				<title>Delphi Updates</title>
+				<link>javascript:menuGuidCall('{3E1B64D0-494C-4430-9653-7130D109D66C}');</link>
+			</item>
+			<item>
+				<title>Online Resources</title>
+				<link>javascript:menuPersistCall('{7CD0CA07-4C8F-4F50-A95B-4FB196D0B3D7}');</link>
+			</item>
+		</item>
+		<item>
+			<title>Integrated Partners</title>
+			<item>
+				<title>Doc-O-Matic</title>
+				<link>http://www.doc-o-matic.com</link>
+			</item>
+			<item>
+				<title>glyFX Icons</title>
+				<link>http://www.glyfx.com/borland/</link>
+			</item>
+			<item>
+				<title>InstallAware Express</title>
+				<link>http://www.installaware.com/codegear.asp</link>
+			</item>
+			<item>
+				<title>IntraWeb</title>
+				<link>http://www.atozed.com/intraWeb/</link>
+			</item>
+			<item>
+				<title>Rave Reports</title>
+				<link>http://www.nevrona.com/rave/be.html</link>
+			</item>
+			<item>
+				<title>TeeChart</title>
+				<link>http://www.steema.com/products/teechart/whatsnew.html</link>
+			</item>
+		</item>
+		<item>
+			<title>CodeGear Online</title>
+			<item>
+				<title>CodeGear</title>
+				<link>http://www.codegear.com/</link>
+			</item>
+			<item>
+				<title>CodeGear Developer Network</title>
+				<link>http://dn.codegear.com/</link>
+			</item>
+			<item>
+				<title>Registered Users Site</title>
+				<link>http://www.codegear.com/Downloads/RegisteredUsers/tabid/145/Default.aspx</link>
+			</item>
+			<item>
+				<title>Customer Support</title>
+				<link>http://www.codegear.com/support/</link>
+			</item>
+			<item>
+				<title>CodeGear Newsgroups</title>
+				<link>http://info.borland.com/newsgroups/</link>
+			</item>
+			<item>
+				<title>Quality Central</title>
+				<link>http://qc.codegear.com/</link>
+			</item>
+			<item>
+				<title>Delphi Team Weblogs</title>
+				<link>http://blogs.codegear.com/team/delphi</link>
+			</item>
+			<item>
+				<title>CodeGear Weblogs</title>
+				<link>http://blogs.codegear.com/</link>
+			</item>
+		</item>
+	</channel>
+	<channel>
+		<title>Help</title>
+		<item>
+			<title>Release Notes</title>
+			<item>
+				<title>Readme</title>
+				<link>bds:/readme.htm</link>
+			</item>
+			<item>
+				<title>Install</title>
+				<link>bds:/install.htm</link>
+			</item>
+			<item>
+				<title>Deploy</title>
+				<link>bds:/deploy.htm</link>
+			</item>
+		</item>
+		<item>
+			<title>Documentation</title>
+			<item>
+				<title>Getting Started</title>
+				<link>javascript:openDExplore('ms-help://borland.bds5/devcommon/gettingstartedpart_xml.html');</link>
+			</item>
+			<item>
+				<title>Delphi Training Services</title>
+				<link>http://www.codegear.com/SupportServices/Education/tabid/133/Default.aspx</link>
+			</item>
+		</item>
+		<item>
+			<title>Product Demos</title>
+			<item>
+				<title>CDNtv</title>
+				<link>http://dn.codegear.com/tv/</link>
+			</item>
+			<item>
+				<title>CodeCentral Examples</title>
+				<link>http://cc.codegear.com</link>
+			</item>
+		</item>
+	</channel>
+</rss>

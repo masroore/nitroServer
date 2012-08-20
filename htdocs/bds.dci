@@ -1,0 +1,444 @@
+[arrayd | array declaration (var) | Borland.EditOptions.Pascal]
+array[0..|] of ;
+
+[arrayc | array declaration (const) | Borland.EditOptions.Pascal]
+array[0..|] of = ();
+
+[begin | begin ... end block | Borland.EditOptions.Pascal]
+begin
+  |
+end;
+
+[cases | case statement | Borland.EditOptions.Pascal]
+case | of
+  : ;
+  : ;
+end;
+
+[casee | case statement (with else) | Borland.EditOptions.Pascal]
+case | of
+  : ;
+  : ;
+else ;
+end;
+
+[classf | class declaration (all parts) | Borland.EditOptions.Pascal]
+T| = class(T)
+private
+
+protected
+
+public
+
+published 
+
+end;
+
+[classd | class declaration (no parts) | Borland.EditOptions.Pascal]
+T| = class(T)
+
+end;
+
+[classc | class declaration (with Create/Destroy overrides) | Borland.EditOptions.Pascal]
+T| = class(T)
+private
+
+protected
+
+public
+  constructor Create; override;
+  destructor Destroy; override;
+published 
+
+end;
+
+[fors | for (no begin/end) | Borland.EditOptions.Pascal]
+for | :=  to  do
+
+[forb | for statement | Borland.EditOptions.Pascal]
+for | :=  to  do
+begin
+
+end;
+
+[function | function declaration | Borland.EditOptions.Pascal]
+function |(): ;
+begin
+
+end;
+
+[ifs | if (no begin/end) | Borland.EditOptions.Pascal]
+if | then
+
+[ifb | if statement | Borland.EditOptions.Pascal]
+if | then
+begin
+
+end;
+
+[ife | if then (no begin/end) else (no begin/end) | Borland.EditOptions.Pascal]
+if | then
+
+else
+
+[ifeb | if then else | Borland.EditOptions.Pascal]
+if | then
+begin
+
+end
+else
+begin
+
+end;
+
+[procedure | procedure declaration | Borland.EditOptions.Pascal]
+procedure |();
+begin
+
+end;
+
+[trye | try except | Borland.EditOptions.Pascal]
+try
+  |
+except
+
+end;
+
+[tryf | try finally | Borland.EditOptions.Pascal]
+try
+  | 
+finally
+
+end;
+
+[trycf | try finally (with Create/Free) | Borland.EditOptions.Pascal]
+|variable := typename.Create; 
+try
+
+finally
+  variable.Free;
+end;
+
+[whileb | while statement | Borland.EditOptions.Pascal]
+while | do
+begin
+
+end;
+
+[whiles | while (no begin) | Borland.EditOptions.Pascal]
+while | do
+
+[withb | with statement | Borland.EditOptions.Pascal]
+with | do
+begin
+
+end;
+
+[withs | with (no begin) | Borland.EditOptions.Pascal]
+with | do
+
+[switche | switch statement (with default) | Borland.EditOptions.C&C++]
+switch (|)
+{
+  case : ;
+  break;
+  case : ;
+  break;
+  default: ;
+}
+
+[classf | class declaration (all parts) | Borland.EditOptions.C&C++]
+class T| : public T
+{
+private:
+
+protected:
+
+public:
+
+__published:
+
+};
+
+[classd | class declaration (no parts) | Borland.EditOptions.C&C++]
+class T| : public T
+{
+};
+
+[classc | class declaration (with constructor/desctructor) | Borland.EditOptions.C&C++]
+class T| : public T
+{
+private:
+
+protected:
+
+public:
+  __fastcall T();
+  __fastcall ~T();
+__published:
+
+};
+
+[struct | structure declaration | Borland.EditOptions.C&C++]
+struct |
+{
+};
+
+[templ | template class declaration | Borland.EditOptions.C&C++]
+template <class T>
+class |
+{
+};
+
+[fors | for (no opening/closing braces) | Borland.EditOptions.C&C++]
+for (|; ;)
+
+[forb | for statement | Borland.EditOptions.C&C++]
+for (|; ;)
+{
+
+}
+
+[function | function declaration | Borland.EditOptions.C&C++]
+|()
+{
+
+}
+
+[ifs | if (no opening/closing braces) | Borland.EditOptions.C&C++]
+if (|)
+
+[ifb | if statement | Borland.EditOptions.C&C++]
+if (|)
+{
+
+}
+
+[ife | if (no opening/closing braces) else (no opening/closing braces) | Borland.EditOptions.C&C++]
+if (|)
+
+else
+
+[ifeb | if else | Borland.EditOptions.C&C++]
+if (|)
+{
+
+}
+else
+{
+
+}
+
+
+[trye | try catch | Borland.EditOptions.C&C++]
+try
+{
+  |
+}
+catch()
+{
+}
+
+[whileb | while statement | Borland.EditOptions.C&C++]
+while (|)
+{
+
+}
+
+[whiles | while (no opening/closing braces) | Borland.EditOptions.C&C++]
+while (|)
+
+[doc | Full Document | Borland.EditOptions.HTML]
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+  |
+  </body>
+</html>
+
+
+[table | Basic Table | Borland.EditOptions.HTML]
+<table>
+  <tr>
+    <td>|</td>
+  </tr>
+</table>
+
+[link | A HREF Link | Borland.EditOptions.HTML]
+<a href="|"></a>
+[font | Font Tag | Borland.EditOptions.HTML]
+<font>|</font>
+[block | Blockquote Tag | Borland.EditOptions.HTML]
+<blockquote>|</blockquote>
+[br | Line Break | Borland.EditOptions.HTML]
+<br>
+|
+[hr | Horizontal Rule | Borland.EditOptions.HTML]
+<hr>
+|
+[div | Div Tag | Borland.EditOptions.HTML]
+<div>|</div>
+[b | Bold Tag | Borland.EditOptions.HTML]
+<b>|</b>
+[i | Italic Tag | Borland.EditOptions.HTML]
+<i>|</i>
+[em | Emphasis Tag | Borland.EditOptions.HTML]
+<em>|</em>
+[strong | Strong Tag | Borland.EditOptions.HTML]
+<strong>|</strong>
+[form | Form Tag | Borland.EditOptions.HTML]
+<form action="|" method="get"></form>
+[h1 | Header 1 | Borland.EditOptions.HTML]
+<h1>|</h1>
+[h2 | Header 2 | Borland.EditOptions.HTML]
+<h2>|</h2>
+[h3 | Header 3 | Borland.EditOptions.HTML]
+<h3>|</h3>
+[h4 | Header 4 | Borland.EditOptions.HTML]
+<h4>|</h4>
+[h5 | Header 5 | Borland.EditOptions.HTML]
+<h5>|</h5>
+[h6 | Header 6 | Borland.EditOptions.HTML]
+<h6>|</h6>
+[img | Image Tag | Borland.EditOptions.HTML]
+<img src="|">
+[input | Input Tag | Borland.EditOptions.HTML]
+<input type="|">
+[pre | Pre Tag | Borland.EditOptions.HTML]
+<pre>|</pre>
+[html | HTML Tag | Borland.EditOptions.HTML]
+<html>
+|
+</html>
+[head | Head Tag | Borland.EditOptions.HTML]
+<head>
+|
+</head>
+[title | Title Tag | Borland.EditOptions.HTML]
+<title>
+|
+</title>
+[body | Body Tag | Borland.EditOptions.HTML]
+<body>
+|
+</body>
+[tr | Table Row Tag | Borland.EditOptions.HTML]
+<tr>|</tr>
+[td | Table Data Tag | Borland.EditOptions.HTML]
+<td>|</td>
+[class | new class declaration | Borland.EditOptions.C#]
+/// <summary>
+/// Summary description for Class1.
+/// </summary>
+public class Class1
+{
+  public Class1()
+  {
+    //
+    // TODO: Add constructor logic here
+    //
+    |
+  }
+}
+[tryf | try finally statement | Borland.EditOptions.C#]
+try
+{
+  |
+}
+finally
+{
+
+}
+[tryc | try catch statement | Borland.EditOptions.C#]
+try
+{
+  |
+}
+catch (Exception ex)
+{
+
+}
+[trycf | try catch finally statement | Borland.EditOptions.C#]
+try
+{
+  |
+}
+catch (Exception ex)
+{
+
+}
+finally
+{
+
+}
+[ifs | if statement  (no opening/closing braces)  | Borland.EditOptions.C#]
+if (|)
+[ife | if else statement | Borland.EditOptions.C#]
+if (|)
+{
+}
+else
+{
+}
+[fors | for (no opening/closing braces)  | Borland.EditOptions.C#]
+for (|; ;)
+[forb | for statement | Borland.EditOptions.C#]
+for (|; ;)
+{
+
+}
+[function | function declaration | Borland.EditOptions.C#]
+|()
+{
+
+}
+[ifb | if statement | Borland.EditOptions.C#]
+if (|)
+{
+
+}
+[whileb | while statement | Borland.EditOptions.C#]
+while (|)
+{
+
+}
+[whiles | while (no opening/closing braces)  | Borland.EditOptions.C#]
+while (|)
+[classnc | new class declaration (no comments) | Borland.EditOptions.C#]
+public class Class1
+{
+  public Class1()
+  {
+    |
+  }
+}
+[switch | switch statement | Borland.EditOptions.C#]
+switch (|)
+{
+  case :
+    ;
+    break;
+  case :
+    ;
+    break;
+}
+[switchd | switch statement (with default) | Borland.EditOptions.C#]
+switch (|)
+{
+  case :
+    ;
+    break;
+  case :
+    ;
+    break;
+  default:
+    ;
+    break;
+}
+[interface | interface declaration | Borland.EditOptions.C#]
+public interface |
+{
+
+}

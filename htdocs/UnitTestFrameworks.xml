@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Frameworks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="www.borland.com/schemas/unittesting">
+  <UnitTestFramework>
+    <Name>DUnit / Delphi Win32</Name>
+    <OutputPersonality>Delphi.Personality</OutputPersonality>
+    <BaseLocation>$(BDS)\Source\DUnit</BaseLocation>
+    <SourceLocation>src</SourceLocation>
+    <ExecutableLocation>bin</ExecutableLocation>
+    <AddSourceLocation>false</AddSourceLocation>
+    <CodeGenOptions>
+      <CodeTemplate>DUnitTestCaseTemplate.pas</CodeTemplate>
+      <Imports>TestFramework</Imports>
+      <FileNamePrefix>Test</FileNamePrefix>
+      <FileNameSuffix />
+      <FunctionReturnVarName>ReturnValue</FunctionReturnVarName>
+      <SetupMethodAttribute />
+      <SetupMethodName>SetUp</SetupMethodName>
+      <TearDownDisposeName>Free</TearDownDisposeName>
+      <TearDownMethodName>TearDown</TearDownMethodName>
+      <TearDownMethodAttribute />
+      <TestCaseAttribute />
+      <TestCaseBaseClass>TTestCase</TestCaseBaseClass>
+      <TestCasePrefix>Test</TestCasePrefix>
+      <TestCaseSuffix />
+      <TestMethodAttribute />
+      <TestMethodPrefix>Test</TestMethodPrefix>
+      <TestMethodSuffix />
+      <DataMemberNaming>FPrefix</DataMemberNaming>
+      <TestClassComment>Test methods for class </TestClassComment>
+      <TestMethodComment1>TODO: Setup method call parameters</TestMethodComment1>
+      <TestMethodComment2>TODO: Validate method results</TestMethodComment2>
+      <TestRegisterCode>RegisterTest(%s.Suite);</TestRegisterCode>
+      <UsesAttributes>false</UsesAttributes>
+    </CodeGenOptions>
+    <ProjectOptions>
+      <TemplateFile>DUnitTestProjectTemplate.dpr</TemplateFile>
+      <ProjectExtension>.dpr</ProjectExtension>
+      <ProjectType>Application</ProjectType>
+      <References />
+      <ProjectNamespace />
+      <NeedsAssemblyInfo>false</NeedsAssemblyInfo>
+    </ProjectOptions>
+    <TestRunners>
+      <UnitTestRunner>
+        <Description>GUI</Description>
+        <HostExecutable />
+        <ConditionalDefines>_CONSOLE_TESTRUNNER</ConditionalDefines>
+        <SearchPath />
+      </UnitTestRunner>
+      <UnitTestRunner>
+        <Description>Console</Description>
+        <HostExecutable />
+        <ConditionalDefines>CONSOLE_TESTRUNNER</ConditionalDefines>
+        <SearchPath />
+      </UnitTestRunner>
+    </TestRunners>
+  </UnitTestFramework>
+  <UnitTestFramework>
+    <Name>DUnit / C++ Win32</Name>
+    <OutputPersonality>CPlusPlusBuilder.Personality</OutputPersonality>
+    <BaseLocation>$(BDS)\Source\DUnit</BaseLocation>
+    <SourceLocation>src</SourceLocation>
+    <ExecutableLocation>bin</ExecutableLocation>
+    <AddSourceLocation>true</AddSourceLocation>
+    <CodeGenOptions>
+      <CodeTemplate>DUnitTestCaseTemplate.cpp</CodeTemplate>
+      <Imports>TestFramework.hpp</Imports>
+      <FileNamePrefix>Test</FileNamePrefix>
+      <FileNameSuffix />
+      <FunctionReturnVarName />
+      <SetupMethodAttribute />
+      <SetupMethodName>SetUp</SetupMethodName>
+      <TearDownDisposeName />
+      <TearDownMethodName>TearDown</TearDownMethodName>
+      <TearDownMethodAttribute />
+      <TestCaseAttribute />
+      <TestCaseBaseClass>TTestCase</TestCaseBaseClass>
+      <TestCasePrefix>Test</TestCasePrefix>
+      <TestCaseSuffix />
+      <TestMethodAttribute />
+      <TestMethodPrefix>Test</TestMethodPrefix>
+      <TestMethodSuffix />
+      <DataMemberNaming>FPrefix</DataMemberNaming>
+      <TestClassComment>Test methods for class </TestClassComment>
+      <TestMethodComment1>TODO: Setup method call parameters</TestMethodComment1>
+      <TestMethodComment2>TODO: Validate method results</TestMethodComment2>
+      <TestRegisterCode />
+      <UsesAttributes>false</UsesAttributes>
+    </CodeGenOptions>
+    <ProjectOptions>
+      <TemplateFile>DUnitTestProjectTemplate.cpp</TemplateFile>
+      <ProjectExtension>.cpp</ProjectExtension>
+      <ProjectType>Application</ProjectType>
+      <References />
+      <ProjectNamespace />
+      <NeedsAssemblyInfo>false</NeedsAssemblyInfo>
+    </ProjectOptions>
+    <TestRunners>
+      <UnitTestRunner>
+        <Description>GUI</Description>
+        <HostExecutable />
+        <ConditionalDefines>DUNIT_GUI</ConditionalDefines>
+        <SearchPath>src</SearchPath>
+      </UnitTestRunner>
+      <UnitTestRunner>
+        <Description>Console</Description>
+        <HostExecutable />
+        <ConditionalDefines>DUNIT_CONSOLE</ConditionalDefines>
+        <SearchPath>src</SearchPath>
+      </UnitTestRunner>
+    </TestRunners>
+  </UnitTestFramework>
+  <UnitTestFramework>
+    <Name>DUnit / Delphi.Net</Name>
+    <OutputPersonality>DelphiDotNet.Personality</OutputPersonality>
+    <BaseLocation>$(BDS)\Source\DUnit</BaseLocation>
+    <SourceLocation>src</SourceLocation>
+    <ExecutableLocation>bin</ExecutableLocation>
+    <AddSourceLocation>true</AddSourceLocation>
+    <CodeGenOptions>
+      <CodeTemplate>DUnitTestCaseTemplate.pas</CodeTemplate>
+      <Imports>TestFramework</Imports>
+      <FileNamePrefix>Test</FileNamePrefix>
+      <FileNameSuffix />
+      <FunctionReturnVarName>ReturnValue</FunctionReturnVarName>
+      <SetupMethodAttribute />
+      <SetupMethodName>SetUp</SetupMethodName>
+      <TearDownDisposeName />
+      <TearDownMethodName>TearDown</TearDownMethodName>
+      <TearDownMethodAttribute />
+      <TestCaseAttribute />
+      <TestCaseBaseClass>TTestCase</TestCaseBaseClass>
+      <TestCasePrefix>Test</TestCasePrefix>
+      <TestCaseSuffix />
+      <TestMethodAttribute>Test</TestMethodAttribute>
+      <TestMethodPrefix>Test</TestMethodPrefix>
+      <TestMethodSuffix />
+      <DataMemberNaming>FPrefix</DataMemberNaming>
+      <TestClassComment>Test methods for class </TestClassComment>
+      <TestMethodComment1>TODO: Setup method call parameters</TestMethodComment1>
+      <TestMethodComment2>TODO: Validate method results</TestMethodComment2>
+      <TestRegisterCode>RegisterTest(%s.Suite);</TestRegisterCode>
+      <UsesAttributes>true</UsesAttributes>
+    </CodeGenOptions>
+    <ProjectOptions>
+      <TemplateFile>DelphiDotNet\DUnitTestProjectTemplate.dpr</TemplateFile>
+      <ProjectExtension>.dpr</ProjectExtension>
+      <ProjectType>Application</ProjectType>
+      <References>System.dll;System.Data.dll;System.XML.dll;Borland.Delphi.dll;Borland.Vcl.dll</References>
+      <ProjectNamespace />
+      <NeedsAssemblyInfo>false</NeedsAssemblyInfo>
+    </ProjectOptions>
+    <TestRunners>
+      <UnitTestRunner>
+        <Description>GUI</Description>
+        <HostExecutable />
+        <ConditionalDefines>_CONSOLE_TESTRUNNER</ConditionalDefines>
+        <SearchPath>src</SearchPath>
+      </UnitTestRunner>
+      <UnitTestRunner>
+        <Description>Console</Description>
+        <HostExecutable />
+        <ConditionalDefines>CONSOLE_TESTRUNNER</ConditionalDefines>
+        <SearchPath>src</SearchPath>
+      </UnitTestRunner>
+    </TestRunners>
+  </UnitTestFramework>
+  <UnitTestFramework>
+    <Name>NUnit / Delphi.Net</Name>
+    <OutputPersonality>DelphiDotNet.Personality</OutputPersonality>
+    <BaseLocation>progid:NUnitTestProject</BaseLocation>
+    <SourceLocation>src\framework</SourceLocation>
+    <ExecutableLocation>bin</ExecutableLocation>
+    <AddSourceLocation>true</AddSourceLocation>
+    <CodeGenOptions>
+      <CodeTemplate>DelphiDotNet\NUnitTestCaseTemplate.pas</CodeTemplate>
+      <Imports>NUnit.Framework</Imports>
+      <FileNamePrefix>Test</FileNamePrefix>
+      <FileNameSuffix />
+      <FunctionReturnVarName>ReturnValue</FunctionReturnVarName>
+      <SetupMethodAttribute>SetUp</SetupMethodAttribute>
+      <SetupMethodName>SetUp</SetupMethodName>
+      <TearDownDisposeName />
+      <TearDownMethodName>TearDown</TearDownMethodName>
+      <TearDownMethodAttribute>TearDown</TearDownMethodAttribute>
+      <TestCaseAttribute>TestFixture</TestCaseAttribute>
+      <TestCaseBaseClass />
+      <TestCasePrefix>Test</TestCasePrefix>
+      <TestCaseSuffix />
+      <TestMethodAttribute>Test</TestMethodAttribute>
+      <TestMethodPrefix>Test</TestMethodPrefix>
+      <TestMethodSuffix />
+      <DataMemberNaming>FPrefix</DataMemberNaming>
+      <TestClassComment>Test methods for class </TestClassComment>
+      <TestMethodComment1>TODO: Setup method call parameters</TestMethodComment1>
+      <TestMethodComment2>TODO: Validate method results</TestMethodComment2>
+      <TestRegisterCode />
+      <UsesAttributes>true</UsesAttributes>
+    </CodeGenOptions>
+    <ProjectOptions>
+      <TemplateFile>DelphiDotNet\NUnitTestProjectTemplate.dpr</TemplateFile>
+      <ProjectExtension>.dpr</ProjectExtension>
+      <ProjectType>Library</ProjectType>
+      <References>System.dll;System.Data.dll;System.XML.dll;NUnit.Framework.dll</References>
+      <ProjectNamespace />
+      <NeedsAssemblyInfo>false</NeedsAssemblyInfo>
+    </ProjectOptions>
+    <TestRunners>
+      <UnitTestRunner>
+        <Description>GUI</Description>
+        <HostExecutable>nunit-gui.exe</HostExecutable>
+        <ConditionalDefines />
+        <SearchPath />
+      </UnitTestRunner>
+      <UnitTestRunner>
+        <Description>Console</Description>
+        <HostExecutable>nunit-console.exe</HostExecutable>
+        <ConditionalDefines />
+        <SearchPath />
+      </UnitTestRunner>
+    </TestRunners>
+  </UnitTestFramework>
+  <UnitTestFramework>
+    <Name>NUnit / C#</Name>
+    <OutputPersonality>CSharp.Personality</OutputPersonality>
+    <BaseLocation>progid:NUnitTestProject</BaseLocation>
+    <SourceLocation>src\framework</SourceLocation>
+    <ExecutableLocation>bin</ExecutableLocation>
+    <AddSourceLocation>true</AddSourceLocation>
+    <CodeGenOptions>
+      <CodeTemplate>CSharp\NUnitTestCaseTemplate.cs</CodeTemplate>
+      <Imports>NUnit.Framework</Imports>
+      <FileNamePrefix>Test</FileNamePrefix>
+      <FileNameSuffix />
+      <FunctionReturnVarName>returnValue</FunctionReturnVarName>
+      <SetupMethodAttribute>SetUp</SetupMethodAttribute>
+      <SetupMethodName>SetUp</SetupMethodName>
+      <TearDownDisposeName />
+      <TearDownMethodName>TearDown</TearDownMethodName>
+      <TearDownMethodAttribute>TearDown</TearDownMethodAttribute>
+      <TestCaseAttribute>TestFixture</TestCaseAttribute>
+      <TestCaseBaseClass />
+      <TestCasePrefix>Test</TestCasePrefix>
+      <TestCaseSuffix />
+      <TestMethodAttribute>Test</TestMethodAttribute>
+      <TestMethodPrefix>Test</TestMethodPrefix>
+      <TestMethodSuffix />
+      <DataMemberNaming>lowerCaseFirstLetter</DataMemberNaming>
+      <TestClassComment>Test methods for class </TestClassComment>
+      <TestMethodComment1>TODO: Setup method call parameters</TestMethodComment1>
+      <TestMethodComment2>TODO: Validate method results</TestMethodComment2>
+      <TestRegisterCode />
+      <UsesAttributes>true</UsesAttributes>
+    </CodeGenOptions>
+    <ProjectOptions>
+      <TemplateFile />
+      <ProjectExtension />
+      <ProjectType>Library</ProjectType>
+      <References>System.dll;System.Data.dll;System.XML.dll;NUnit.Framework.dll</References>
+      <ProjectNamespace />
+      <NeedsAssemblyInfo>true</NeedsAssemblyInfo>
+    </ProjectOptions>
+    <TestRunners>
+      <UnitTestRunner>
+        <Description>GUI</Description>
+        <HostExecutable>nunit-gui.exe</HostExecutable>
+        <ConditionalDefines />
+        <SearchPath />
+      </UnitTestRunner>
+      <UnitTestRunner>
+        <Description>Console</Description>
+        <HostExecutable>nunit-console.exe</HostExecutable>
+        <ConditionalDefines />
+        <SearchPath />
+      </UnitTestRunner>
+    </TestRunners>
+  </UnitTestFramework>
+</Frameworks>

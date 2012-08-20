@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<codetemplate	xmlns="http://schemas.borland.com/Delphi/2005/codetemplates"
+				version="1.0.0">
+	<template name="siwarn" invoke="manual">
+		<description>SmartInspect LogWarning</description>
+		<author>Gurock Software</author>
+		<point name="title">
+			<text>Title</text>
+			<hint>The title of the warning message.</hint>
+		</point>
+		<code language="C" context="methodbody" delimiter="|"><![CDATA[SiMain->LogWarning("|title|");]]></code>
+	</template>
+</codetemplate>

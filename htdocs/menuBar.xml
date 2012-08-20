@@ -1,0 +1,105 @@
+<rss version="2.0">
+	<title>Quick Link Bar Content</title>
+	<link/>
+	<description>"Welcome Page" Quick Link Bar Content</description>
+	<lastBuildDate>Thu, 02 Sep 2004 14:48:00 GMT</lastBuildDate>
+	<channel>
+		<title>Release Notes</title>
+		<item>
+			<title>Readme</title>
+			<link>bds:/readme.htm</link>
+		</item>
+		<item>
+			<title>Install</title>
+			<link>bds:/install.htm</link>
+		</item>
+		<item>
+			<title>Deploy</title>
+			<link>bds:/deploy.htm</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Documentation</title>
+		<item>
+			<title>Getting Started</title>
+			<link>javascript:openDExplore('ms-help://borland.bds5/devcommon/gettingstartedpart_xml.html');</link>
+		</item>
+		<item>
+			<title>Delphi Training Services</title>
+			<link>http://learn.codegear.com/delphi</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Integrated Partners</title>
+		<item>
+			<title>glyFX Icons</title>
+			<link>http://www.glyfx.com/borland/</link>
+		</item>
+		<item>
+			<title>InstallAware Express</title>
+			<link>www.installaware.com/codegear.asp</link>
+		</item>
+		<item>
+			<title>IntraWeb</title>
+			<link>http://www.atozed.com/intraWeb/</link>
+		</item>
+		<item>
+			<title>Rave Reports</title>
+			<link>http://www.nevrona.com/rave/be.html</link>
+		</item>
+		<item>
+			<title>TeeChart</title>
+			<link>http://www.steema.com/products/teechart/whatsnew.html</link>
+		</item>
+		<item>
+		    <title>Doc-O-Matic</title>
+			<link>http://www.doc-o-matic.com</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Product Demos</title>
+		<item>
+			<title>CDNtv</title>
+			<link>http://dn.codegear.com/tv/</link>
+		</item>
+		<item>
+			<title>Code Central Examples</title>
+			<link>	</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Resources</title>
+		<item>
+			<title>CodeGear</title>
+			<link>http://www.codegear.com/</link>
+		</item>
+		<item>
+			<title>CodeGear Developer Network</title>
+			<link>http://dn.codegear.com/</link>
+		</item>
+		<item>
+			<title>Registered Users Site</title>
+			<link>http://www.codegear.com/Downloads/RegisteredUsers/tabid/145/Default.aspx</link>
+		</item>
+		<item>
+			<title>Customer Support</title>
+			<link>http://www.codegear.com/support/</link>
+		</item>
+		<item>
+			<title>Delphi Newsgroups</title>
+			<link>http://support.borland.com/entry.jspa?externalID=1175&categoryID=177</link>
+		</item>
+		<item>
+			<title>Quality Central</title>
+			<link>http://qc.codegear.com/</link>
+		</item>
+		<item>
+			<title>Delphi Team Weblogs</title>
+			<link>http://blogs.codegear.com/team/delphi</link>
+		</item>
+		<item>
+			<title>CodeGear Weblogs</title>
+			<link>http://blogs.codegear.com/</link>
+		</item>
+	</channel>
+</rss>

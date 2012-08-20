@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<codetemplate	xmlns="http://schemas.borland.com/Delphi/2005/codetemplates"
+				version="1.0.0">
+	<template name="sicolf" invoke="manual">
+		<description>SmartInspect LogColored with format string</description>
+		<author>Gurock Software</author>
+		<point name="color">
+			<text>clBlue</text>
+			<hint>The background color of the message.</hint>
+		</point>
+		<point name="format">
+			<text>Format</text>
+			<hint>The format string to create the title of the message.</hint>
+		</point>
+		<point name="args">
+			<text>Args</text>
+			<hint>The array of arguments for the format string.</hint>
+		</point>
+		<code language="C" context="methodbody" delimiter="|"><![CDATA[SiMain->LogColored(|color|, "|format|", OPENARRAY(TVarRec, (|args|)));]]></code>
+	</template>
+</codetemplate>

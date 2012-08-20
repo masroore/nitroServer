@@ -1,0 +1,415 @@
+1. License Agreement for Altap Salamander
+2. License Agreement for ALTAP Self-Extractor
+3. License Agreement for PictView Plugin
+4. License Agreement for WinSCP Plugin
+
+1. License Agreement for Altap Salamander
+
+This Limited Use Software License Agreement (the "Agreement") is a legal
+agreement between you (either an individual or a single entity) and ALTAP,
+spol. s r.o. ("ALTAP") for the ALTAP software product ("Software") with which this
+Agreement is provided, including associated media, printed materials, and
+"online" or electronic documentation. The term "Software" also shall
+include any upgrades, modified versions or updates of the Software licensed
+to you by ALTAP. By installing, copying, or otherwise using the Software,
+you agree to be bound by the terms of this Agreement. If you do not agree
+to the terms of this Agreement, do not install, distribute, or use the
+Software.
+
+The Software is protected by copyright laws and international copyright
+treaties, as well as other intellectual property laws and treaties. The
+Software is licensed, not sold. The Software is licensed as a single
+product. Its component parts may not be separated.
+
+The Software includes certain plugin components, including, but not
+limited to, an ZIP plugin, IEViewer plugin, and PictView plugin
+(collectively "Plugins"). You may install and use Plugins solely as part
+of, and in conjunction with, Software. You may not use Plugins in any
+other manner, including using Plugins with any other application. If you
+wish to use Plugins in any way not specifically authorized in this section
+you must contact support@altap.cz for a separate license.
+
+The evaluation (unregistered) version of the Software, may be freely
+distributed, with exceptions noted below, provided the distribution package
+is not modified. You may not charge any fee for the copy or use of the
+evaluation Software itself, but you may charge a distribution fee that is
+reasonably related to any cost you incur distributing the evaluation
+Software (e.g. packaging). You must not represent in any way that you are
+selling the Software itself. Your distribution of the evaluation Software
+will not entitle you to any compensation from ALTAP.
+
+You may install this Software to test and evaluate for 30 days. Following
+this test period of 30 days, you must register (if you wish to continue
+to use Software) or uninstall the Software. If you register, you will obtain
+one of the following two types of licenses: (1) Commercial Use License, or
+(2) Educational Use License.
+
+After you have purchased the Commercial Use License (the "license") for
+Software, and have received the file enabling the registered copy,
+registered copy of Software may either be used by a single person who uses
+the Software personally on one or more computers (e.g. one installation at
+home and one at the office used by the same person), or installed on a
+single workstation used no simultaneously by multiple people, but not both.
+This is not a concurrent use license. You can use any available language
+version of Software and Plugins (additional registration is not needed).
+
+You may access this copy through a network, provided that you have obtained
+an individual Software license for each workstation that will access
+Software through the network. For instance, if 2 different workstations
+will access Software on the network, each workstation must have its own
+Software license, regardless of whether they use Software at different
+times or concurrently. Each individual license also allows a single user to
+use the program at home.
+
+The Educational Use License is limited to the universities or other
+educational institutions, such as pre-schools, elementary schools, middle
+or junior high schools, high schools, and community, junior colleges, or
+public libraries. After educational institution has purchased the
+Educational Use License for Software, and has received the file enabling
+the registered copy, registered copy of Software may be used on all
+computers of this educational institution and by all its teachers and
+students for educational purposes at home or college. Individual teachers
+and students cannot obtain the Educational Use License by themselves, they
+should ask their school to register the Software.
+
+You may also make copies of the Software as may be necessary for backup and
+archival purposes, provided your backup copy is not installed or used on
+any computer.
+
+Use of ZIP plugin (part of the Software) is limited by use of its part -
+ALTAP Self-Extractor (it's used for creating of self-extracting archives).
+Conditions for use of ALTAP Self-Extractor are enclosed in License
+Agreement for ALTAP Self-Extractor.
+
+Conditions for use of PictView plugin are enclosed in License Agreement
+for PictView plugin.
+
+Conditions for use of WinSCP plugin are enclosed in License Agreement
+for WinSCP plugin.
+
+You may not use, copy, emulate, clone, lease, sell, rent, sublicense, lend,
+modify, decompile, disassemble, otherwise reverse engineer, or transfer the
+Software, or any subset of the Software, except as provided for in this
+Agreement. Provided that you have obtained Commercial Use License, you may
+transfer all your rights to use the Software to another person or legal
+entity provided (1) that you transfer this Agreement, the Software,
+including all copies, updates and prior versions to such person or entity,
+(2) that you retain no copies, including copies stored on a computer, and
+(3) that the receiving party accepts the terms and conditions of this
+Agreement.
+
+SOFTWARE IS DISTRIBUTED "AS IS". NO WARRANTY OF ANY KIND
+IS EXPRESSED OR IMPLIED. YOU USE AT YOUR OWN RISK. THE
+AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, LOSS
+OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR
+MISUSING THIS SOFTWARE.
+
+The SOFTWARE is being delivered to you AS IS and ALTAP makes no warranty as
+to its use or performance. ALTAP DO NOT AND CANNOT WARRANT
+THE PERFORMANCE OR RESULTS YOU MAY OBTAIN BY USING THE
+SOFTWARE OR DOCUMENTATION. ALTAP MAKE NO WARRANTIES,
+EXPRESS OR IMPLIED, AS TO NONINFRINGEMENT OF THIRD
+PARTY RIGHTS, MERCHANTABILITY, OR FITNESS FOR ANY
+PARTICULAR PURPOSE. IN NO EVENT WILL ALTAP BE LIABLE
+TO YOU FOR ANY CONSEQUENTIAL, INCIDENTAL OR SPECIAL
+DAMAGES, INCLUDING ANY LOST PROFITS OR LOST SAVINGS,
+EVEN IF AN ALTAP REPRESENTATIVE HAS BEEN ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM BY
+ANY THIRD PARTY. Some states or jurisdictions do not
+allow the exclusion or limitation of incidental, consequential or special
+damages, or the exclusion of implied warranties or limitations on how long
+an implied warranty may last, so the above limitations may not apply to
+you.
+
+ALTAP, spol. s r.o.
+
+2. License Agreement for ALTAP Self-Extractor
+
+This Limited Use Software License Agreement (the "Agreement") is a legal
+agreement between you (either an individual or a single entity) and ALTAP,
+spol. s r.o. ("ALTAP") for the ALTAP software product ("Software") with which this
+Agreement is provided, including associated media, printed materials, and
+"online" or electronic documentation. The term "Software" also shall
+include any upgrades, modified versions or updates of the Software licensed
+to you by ALTAP. By installing, copying, or otherwise using the Software,
+you agree to be bound by the terms of this Agreement. If you do not agree
+to the terms of this Agreement, do not install, distribute, or use the
+Software.
+
+The Software is protected by copyright laws and international copyright
+treaties, as well as other intellectual property laws and treaties. The
+Software is licensed, not sold. The Software is licensed as a single
+product. Its component parts may not be separated.
+
+The unregistered version of the Software, may be freely distributed, with
+exceptions noted below, provided the distribution package is not modified.
+You may not charge any fee for the copy or use of the unregistered Software
+itself, but you may charge a distribution fee that is reasonably related to
+any cost you incur distributing the unregistered Software (e.g. packaging).
+You must not represent in any way that you are selling the Software itself.
+Your distribution of the unregistered Software will not entitle you to any
+compensation from ALTAP.
+
+The unregistered Software may be used without fee or royalty as long as
+self-extracting archives created by the Software are used only for personal
+non-commercial use excluding software distribution (self-extracting
+archives may not be included in any software installation tool). For
+unlimited use of self-extracting archives created by the Software
+(commercial, in government institutions, for software distribution, etc.),
+you must register (purchase the license for Software).
+
+After you have purchased the license for the Software, and have received
+the file enabling the registered copy, registered copy of the Software may
+either be used by a single person who uses the Software personally on one
+or more computers (e.g. one installation at home and one at the office used
+by the same person), or installed on a single workstation used no
+simultaneously by multiple people, but not both. This is not a concurrent
+use license. You can use any available language version of Software
+(additional registration is not needed).
+
+You may access this copy through a network, provided that you have obtained
+an individual Software license for each workstation that will access
+Software through the network. For instance, if 2 different workstations
+will access Software on the network, each workstation must have its own
+Software license, regardless of whether they use Software at different
+times or concurrently. Each individual license also allows a single user to
+use the program at home.
+
+You may also make copies of the Software as may be necessary for backup and
+archival purposes, provided your backup copy is not installed or used on
+any computer.
+
+You may not use, copy, emulate, clone, lease, sell, rent, sublicense, lend,
+modify, decompile, disassemble, otherwise reverse engineer, or transfer the
+Software, or any subset of the Software, except as provided for in this
+Agreement. You may transfer all your rights to use the Software to another
+person or legal entity provided (1) that you transfer this Agreement, the
+Software, including all copies, updates and prior versions to such person
+or entity, (2) that you retain no copies, including copies stored on a
+computer, and (3) that the receiving party accepts the terms and conditions
+of this Agreement.
+
+SOFTWARE IS DISTRIBUTED "AS IS". NO WARRANTY OF ANY
+KIND IS EXPRESSED OR IMPLIED. YOU USE AT YOUR OWN RISK.
+THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES,
+LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR
+MISUSING THIS SOFTWARE.
+
+The SOFTWARE is being delivered to you AS IS and ALTAP makes no warranty as
+to its use or performance. ALTAP DO NOT AND CANNOT WARRANT
+THE PERFORMANCE OR RESULTS YOU MAY OBTAIN BY USING
+THE SOFTWARE OR DOCUMENTATION. ALTAP MAKE NO WARRANTIES,
+EXPRESS OR IMPLIED, AS TO NONINFRINGEMENT OF THIRD
+PARTY RIGHTS, MERCHANTABILITY, OR FITNESS FOR ANY
+PARTICULAR PURPOSE. IN NO EVENT WILL ALTAP BE LIABLE
+TO YOU FOR ANY CONSEQUENTIAL, INCIDENTAL OR SPECIAL
+DAMAGES, INCLUDING ANY LOST PROFITS OR LOST SAVINGS,
+EVEN IF AN ALTAP REPRESENTATIVE HAS BEEN ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM BY
+ANY THIRD PARTY. Some states or jurisdictions do not
+allow the exclusion or limitation of incidental, consequential or special
+damages, or the exclusion of implied warranties or limitations on how long
+an implied warranty may last, so the above limitations may not apply to
+you.
+
+ALTAP, spol. s r.o.
+
+3. License Agreement for PictView Plugin
+
+This Limited Use Software License Agreement (the "Agreement") is a legal
+agreement between you (either an individual or a single entity) and ALTAP,
+spol. s r.o. ("ALTAP") for the ALTAP software product ("Software") with which this
+Agreement is provided, including associated media, printed materials, and
+"online" or electronic documentation. The term "Software" also shall
+include any upgrades, modified versions or updates of the Software licensed
+to you by ALTAP. By installing, copying, or otherwise using the Software,
+you agree to be bound by the terms of this Agreement. If you do not agree
+to the terms of this Agreement, do not install, distribute, or use the
+Software.
+
+The Software is protected by copyright laws and international copyright
+treaties, as well as other intellectual property laws and treaties. The
+Software is licensed, not sold. The Software is licensed as a single
+product. Its component parts may not be separated.
+
+The evaluation (unregistered) version of the Software, may be freely
+distributed, with exceptions noted below, provided the distribution package
+is not modified. You may not charge any fee for the copy or use of the
+evaluation Software itself, but you may charge a distribution fee that is
+reasonably related to any cost you incur distributing the evaluation
+Software (e.g. packaging). You must not represent in any way that you are
+selling the Software itself. Your distribution of the evaluation Software
+will not entitle you to any compensation from ALTAP.
+
+You may install this Software to test and evaluate for 30 days. Following
+this test period of 30 days or less, if you wish to continue to use
+Software, you must register. You will obtain one of the following two types
+of licenses: (1) Commercial Use License, or (2) Educational Use License.
+
+After you have purchased the Commercial Use License (the "license") for
+Software, and have received the file enabling the registered copy,
+registered copy of Software may either be used by a single person who uses
+the Software personally on one or more computers (e.g. one installation at
+home and one at the office used by the same person), or installed on a
+single workstation used no simultaneously by multiple people, but not both.
+This is not a concurrent use license. You can use any available language
+version of Software and Plugins (additional registration is not needed).
+
+You may access this copy through a network, provided that you have obtained
+an individual Software license for each workstation that will access
+Software through the network. For instance, if 2 different workstations
+will access Software on the network, each workstation must have its own
+Software license, regardless of whether they use Software at different
+times or concurrently. Each individual license also allows a single user to
+use the program at home.
+
+The Educational Use License is limited to the universities or other
+educational institutions, such as pre-schools, elementary schools, middle
+or junior high schools, high schools, and community, junior colleges, or
+public libraries. After educational institution has purchased the
+Educational Use License for Software, and has received the file enabling
+the registered copy, registered copy of Software may be used on all
+computers of this educational institution and by all its teachers and
+students for educational purposes at home or college. Individual teachers
+and students cannot obtain the Educational Use License by themselves, they
+should ask their school to register the Software.
+
+You may also make copies of the Software as may be necessary for backup and
+archival purposes, provided your backup copy is not installed or used on
+any computer.
+
+You may not use, copy, emulate, clone, lease, sell, rent, sublicense, lend,
+modify, decompile, disassemble, otherwise reverse engineer, or transfer the
+Software, or any subset of the Software, except as provided for in this
+Agreement. Provided that you have obtained Commercial Use License, you may
+transfer all your rights to use the Software to another person or legal
+entity provided (1) that you transfer this Agreement, the Software,
+including all copies, updates and prior versions to such person or entity,
+(2) that you retain no copies, including copies stored on a computer, and
+(3) that the receiving party accepts the terms and conditions of this
+Agreement.
+
+SOFTWARE IS DISTRIBUTED "AS IS". NO WARRANTY OF ANY
+KIND IS EXPRESSED OR IMPLIED. YOU USE AT YOUR OWN RISK.
+THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES,
+LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR
+MISUSING THIS SOFTWARE.
+
+The SOFTWARE is being delivered to you AS IS and ALTAP makes no warranty as
+to its use or performance. ALTAP DO NOT AND CANNOT WARRANT
+THE PERFORMANCE OR RESULTS YOU MAY OBTAIN BY USING THE
+SOFTWARE OR DOCUMENTATION. ALTAP MAKE NO WARRANTIES,
+EXPRESS OR IMPLIED, AS TO NONINFRINGEMENT OF THIRD
+PARTY RIGHTS, MERCHANTABILITY, OR FITNESS FOR ANY
+PARTICULAR PURPOSE. IN NO EVENT WILL ALTAP BE LIABLE
+TO YOU FOR ANY CONSEQUENTIAL, INCIDENTAL OR SPECIAL
+DAMAGES, INCLUDING ANY LOST PROFITS OR LOST SAVINGS,
+EVEN IF AN ALTAP REPRESENTATIVE HAS BEEN ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM BY
+ANY THIRD PARTY. Some states or jurisdictions do not
+allow the exclusion or limitation of incidental, consequential or special
+damages, or the exclusion of implied warranties or limitations on how long
+an implied warranty may last, so the above limitations may not apply to
+you.
+
+ALTAP, spol. s r.o.
+
+4. License Agreement for WinSCP Plugin
+
+This Limited Use Software License Agreement (the "Agreement") is a legal
+agreement between you (either an individual or a single entity) and ALTAP,
+spol. s r.o. ("ALTAP") for the ALTAP software product ("Software") with which this
+Agreement is provided, including associated media, printed materials, and
+"online" or electronic documentation. The term "Software" also shall
+include any upgrades, modified versions or updates of the Software licensed
+to you by ALTAP. By installing, copying, or otherwise using the Software,
+you agree to be bound by the terms of this Agreement. If you do not agree
+to the terms of this Agreement, do not install, distribute, or use the
+Software.
+
+The Software is protected by copyright laws and international copyright
+treaties, as well as other intellectual property laws and treaties. The
+Software is licensed, not sold. The Software is licensed as a single
+product. Its component parts may not be separated.
+
+The evaluation (unregistered) version of the Software, may be freely
+distributed, with exceptions noted below, provided the distribution package
+is not modified. You may not charge any fee for the copy or use of the
+evaluation Software itself, but you may charge a distribution fee that is
+reasonably related to any cost you incur distributing the evaluation
+Software (e.g. packaging). You must not represent in any way that you are
+selling the Software itself. Your distribution of the evaluation Software
+will not entitle you to any compensation from ALTAP.
+
+You may install this Software to test and evaluate for 30 days. Following
+this test period of 30 days or less, if you wish to continue to use
+Software, you must register. You will obtain one of the following two types
+of licenses: (1) Commercial Use License, or (2) Educational Use License.
+
+After you have purchased the Commercial Use License (the "license") for
+Software, and have received the file enabling the registered copy,
+registered copy of Software may either be used by a single person who uses
+the Software personally on one or more computers (e.g. one installation at
+home and one at the office used by the same person), or installed on a
+single workstation used no simultaneously by multiple people, but not both.
+This is not a concurrent use license. You can use any available language
+version of Software and Plugins (additional registration is not needed).
+
+You may access this copy through a network, provided that you have obtained
+an individual Software license for each workstation that will access
+Software through the network. For instance, if 2 different workstations
+will access Software on the network, each workstation must have its own
+Software license, regardless of whether they use Software at different
+times or concurrently. Each individual license also allows a single user to
+use the program at home.
+
+The Educational Use License is limited to the universities or other
+educational institutions, such as pre-schools, elementary schools, middle
+or junior high schools, high schools, and community, junior colleges, or
+public libraries. After educational institution has purchased the
+Educational Use License for Software, and has received the file enabling
+the registered copy, registered copy of Software may be used on all
+computers of this educational institution and by all its teachers and
+students for educational purposes at home or college. Individual teachers
+and students cannot obtain the Educational Use License by themselves, they
+should ask their school to register the Software.
+
+You may also make copies of the Software as may be necessary for backup and
+archival purposes, provided your backup copy is not installed or used on
+any computer.
+
+You may not use, copy, emulate, clone, lease, sell, rent, sublicense, lend,
+modify, decompile, disassemble, otherwise reverse engineer, or transfer the
+Software, or any subset of the Software, except as provided for in this
+Agreement. Provided that you have obtained Commercial Use License, you may
+transfer all your rights to use the Software to another person or legal
+entity provided (1) that you transfer this Agreement, the Software,
+including all copies, updates and prior versions to such person or entity,
+(2) that you retain no copies, including copies stored on a computer, and
+(3) that the receiving party accepts the terms and conditions of this
+Agreement.
+
+SOFTWARE IS DISTRIBUTED "AS IS". NO WARRANTY OF ANY
+KIND IS EXPRESSED OR IMPLIED. YOU USE AT YOUR OWN RISK.
+THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES,
+LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR
+MISUSING THIS SOFTWARE.
+
+The SOFTWARE is being delivered to you AS IS and ALTAP makes no warranty as
+to its use or performance. ALTAP DO NOT AND CANNOT WARRANT
+THE PERFORMANCE OR RESULTS YOU MAY OBTAIN BY USING THE
+SOFTWARE OR DOCUMENTATION. ALTAP MAKE NO WARRANTIES,
+EXPRESS OR IMPLIED, AS TO NONINFRINGEMENT OF THIRD
+PARTY RIGHTS, MERCHANTABILITY, OR FITNESS FOR ANY
+PARTICULAR PURPOSE. IN NO EVENT WILL ALTAP BE LIABLE
+TO YOU FOR ANY CONSEQUENTIAL, INCIDENTAL OR SPECIAL
+DAMAGES, INCLUDING ANY LOST PROFITS OR LOST SAVINGS,
+EVEN IF AN ALTAP REPRESENTATIVE HAS BEEN ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM BY
+ANY THIRD PARTY. Some states or jurisdictions do not
+allow the exclusion or limitation of incidental, consequential or special
+damages, or the exclusion of implied warranties or limitations on how long
+an implied warranty may last, so the above limitations may not apply to
+you.
+
+ALTAP, spol. s r.o.

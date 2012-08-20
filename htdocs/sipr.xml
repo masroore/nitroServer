@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<codetemplate	xmlns="http://schemas.borland.com/Delphi/2005/codetemplates"
+				version="1.0.0">
+	<template name="sipr" invoke="manual">
+		<description>SmartInspect Enter/Leave Process</description>
+		<author>Gurock Software</author>
+		<point name="process">
+			<text>Process</text>
+			<hint>The name of the process.</hint>
+		</point>
+		<code language="C" context="methodbody" delimiter="|"><![CDATA[SiMain->EnterProcess("|process|");
+|selected||end|
+SiMain->LeaveProcess("|process|");]]>
+		</code>
+	</template>
+</codetemplate>

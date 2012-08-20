@@ -1,0 +1,51 @@
+========================================
+SESSION START: 07/05/07 15:19:54
+========================================
+
+  Scanning registry for invalid references.
+  Analyzing: HKEY_CURRENT_USER...
+  Analyzing: HKEY_USERS...
+  Analyzing: HKEY_LOCAL_MACHINE...
+  Analyzing: Shared DLL References...
+  Analyzing: Virtual Device Driver References...
+  Analyzing: Bad Font References...
+  Analyzing: Invalid File Associations...
+  Scan complete. 9 invalid references found.
+  Removing invalid HKEY_USERS reference...
+      Invalid Data Location: HKEY_USERS\S-1-5-21-72947045-2218319512-3862072460-1000\Software\Altap\Altap Salamander 2.5\Plugins Configuration\Encrypt & Decrypt
+      Value Name: Temp Dir
+      Value Data: C:\DOCUME~1\SERVER~2.HOM\LOCALS~1\Temp\SalEncTemp
+  Removing invalid HKEY_LOCAL_MACHINE reference...
+      Invalid Data Location: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Active Setup Temp Folders
+      Value Name: Folder
+      Value Data: C:\WINDOWS\msdownld.tmp|?:\msdownld.tmp
+  Removing invalid File Association reference...
+      Invalid Data Location: HKEY_CLASSES_ROOT\JobObject\CLSID
+      Value Name: 
+      Value Data: 
+  Removing invalid File Association reference...
+      Invalid Data Location: HKEY_CLASSES_ROOT\.job
+      Value Name: 
+      Value Data: 
+  Removing invalid File Association reference...
+      Invalid Data Location: HKEY_CLASSES_ROOT\mhtmlfile\SHELL
+      Value Name: 
+      Value Data: 
+  Removing invalid File Association reference...
+      Invalid Data Location: HKEY_CLASSES_ROOT\mhtmlfile\SHELL
+      Value Name: 
+      Value Data: 
+  Removing invalid File Association reference...
+      Invalid Data Location: HKEY_CLASSES_ROOT\QueueObject\CLSID
+      Value Name: 
+      Value Data: 
+  Removing invalid File Association reference...
+      Invalid Data Location: HKEY_CLASSES_ROOT\.que
+      Value Name: 
+      Value Data: 
+
+========================================
+CLOSE SESSION: 07/05/07 15:20:22
+NUMBER OF INVALID REFERENCES REMOVED: 8
+========================================
+

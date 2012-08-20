@@ -1,0 +1,1374 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>W3Mfc v1.81, CWSocket / CSSLSocket v1.19, CThreadPoolServer v1.28 &amp; 
+CW32Handle v1.01</title>
+<link rel="stylesheet" type="text/css" href="./naughter.css">
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<h2 align="left"><img src="w3mfc.gif" width="39" height="35" alt="w3mfc.gif (1165 bytes)"><strong>W3Mfc 
+v1.81, CWSocket / CSSLSocket v1.19, CThreadPoolServer v1.28 &amp; 
+CW32Handle v1.01</strong></h2>
+
+<p align="left">&nbsp;</p>
+
+<p>Welcome to <strong>W3Mfc</strong>, a collection of freeware MFC classes to 
+implement a simple Web server.</p>
+
+<p>The idea behind is W3Mfc was originally to learn about the HTTP protocol and 
+how it is implemented on Win32. It is not intended to be a replacement for IIS 
+or Apache. Instead it is designed as a tool for learning or in cases where 
+deployment of a solution on IIS would be considered overkill.</p>
+
+<p>For detailed information about the <strong>H</strong>yper <strong>T</strong>ext
+<strong>T</strong>ransfer <strong>P</strong>rotocol you should read RFC 1945, 
+You can download this from a number of sites by searching for RFC and 1945 on <a
+href="http://www.yahoo.com">www.yahoo.com</a>.</p>
+
+<p>Another document that these classes refer to is RFC 2045 which defines MIME.</p>
+
+<p>&nbsp;</p>
+
+<p>The classes which constitute W3Mfc are:</p>
+
+<p><em>CHttpServerSettings</em>: This class contains the settings which are used 
+to configure the web server. Example member variables in this class include the 
+virtual directories and the their default filenames. If you are developing a 
+stand alone web server based on W3Mfc, you could for example store all the 
+variables for the CHttpServerSettings instance in an ini file or in the 
+registry.</p>
+
+<p>&nbsp;</p>
+
+<p><em>CHttpServer</em>: This is the actual class which implements the web 
+server. It has a number of very simple functions to allow you to control the 
+state of the web server such as Start and Stop. Internally a background thread 
+is spun off to handle the client connections.</p>
+
+<p>&nbsp;</p>
+
+<p><em>CWSocket</em>: This is a simple C++/MFC encapsulation of an SDK socket. A 
+class called <i>CHttpSocket</i> is derived for this in the W3MFC web server to 
+provide custom HTTP parsing. The CWSocket class can be using in other projects 
+to provide a simple encapsulation of a socket.</p>
+
+<p>&nbsp;</p>
+
+<p><em>CSSLSocket</em>: An encapsulation of a secure sockets connection.</p>
+
+<p>&nbsp;</p>
+
+<p><em>CHttpResponseHeader</em>: This class helps in the handling of sending 
+request headers when returning the HTTP responses to clients. It provides a 
+number of methods to allow standard Http headers to be added to the client 
+response.</p>
+
+<p>&nbsp;</p>
+
+<p><em>CHttpMimeManager</em>: This class is used when returning client 
+responses. It is used to determine to mime type of a file given its extension 
+type. This information is taken from the registry and is cached in this class. 
+For example files of .htm or .html will normally be of mime type &quot;text/html&quot;.</p>
+
+<p>&nbsp;</p>
+
+<p><em>CHttpRequest</em>: This class represents a request from a client. It 
+contains information such as the URI of the request, the Http Verb used and the 
+Http version used for the request. A member of this type is stored in the 
+CHttpClient class.</p>
+
+<p>&nbsp;</p>
+
+<p><em>CHttpClient</em>: This class is used in the CHttpServer class to handle 
+client connections. It handles the parsing of client requests and returning the 
+appropriate response. A number of virtual functions are provided to allow end 
+user customisation.</p>
+
+<p>&nbsp;</p>
+
+<p><em>CHttpDirectory</em>: This class is used by the CHttpClient class to allow 
+per directory customisation of client connections. A number of virtual functions 
+are provided to allow end user customisation.</p>
+
+<p>&nbsp;</p>
+
+<p><i>CThreadPoolServer:</i> This class provides the thread pool functionality. 
+To use it in your code, just derive a class from CThreadPoolClient (as is done 
+for the W3MFC web server) and implement your own specific code in 
+CThreadPoolClient::Run. The CThreadPoolServer class can be used in other 
+projects to provide a simple encapsulation of a thread pool.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table>
+  <tr>
+    <td><a href="#Features">Features</a></td>
+  </tr>
+  <tr>
+    <td><a href="#Copyright">Copyright</a></td>
+  </tr>
+  <tr>
+    <td><a href="#Usage">Usage</a></td>
+  </tr>
+  <tr>
+    <td><a href="#History">History</a></td>
+  </tr>
+  <tr>
+    <td><a href="#Contact">Contacting the Author</a></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="Features"></a>Features
+</h2>
+
+
+<ul>
+  <li>HTTP/1.0 compliant.</li>
+  <li>Works on any Win32 OS with Winsock 2 installed.</li>
+  <li>Can use Windows registry or an easy to edit Ini file to determine mime 
+	type.</li>
+  <li>Supports pass-through plaintext authentication for files located on NTFS 
+	volumes.</li>
+  <li>Supports running under a configurable user account.</li>
+  <li>Supports binding to a specific IP address.</li>
+  <li>Supports multiple virtual directories.</li>
+  <li>Supports directory listing.</li>
+  <li>Server name returned can be easily configured.</li>
+  <li>Supports server redirection by means of the HTTP 301 status code.</li>
+  <li>Consumes very little system memory and CPU resources</li>
+  <li>Compact and easy to follow implementation.</li>
+  <li>The interface provided is synchronous which provides an easier programming 
+	model than using asynchronous sockets.</li>
+  <li>The code does not rely on the MFC socket classes. These classes have a 
+	number of shortcomings, one of which causes problems when they are used in 
+	NT services.</li>
+  <li>The code can be used in a console application without any problems.</li>
+  <li>The classes are fully Unicode compliant and include Unicode built options 
+	in the workspace file.</li>
+  <li>Uses a thread pool to improve server performance.</li>
+  <li>Includes full CGI v1.1 support</li>
+  <li>Includes ISAPI v5.1 Extension support (excluding the asynchronous 
+	extensions only supported by IIS itself)</li>
+  <li>Uses the Windows registry to determine command line for CGI programs.</li>
+  <li>Fully supports the &quot;POST&quot; method and entity-bodies.</li>
+  <li>Supports reverse DNS lookups of client connections.</li>
+  <li>Includes full SSL support via the <a href="http://www.openssl.org">OpenSSL</a> 
+	open source library</li>
+  <li>Includes support for HTTP Keep-Alives.</li>
+  <li>Fully supports NTLM, Basic, Anonymous and Directory based authentication.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="Copyright"></a><b>Copyright</b></h2>
+<ul>
+  <li>You are allowed to include the source code in any product (commercial, 
+	shareware, freeware or otherwise) when your product is released in binary 
+	form.</li>
+  <li>You are allowed to modify the source code in any way you want except you 
+	cannot modify the copyright details at the top of each module.</li>
+  <li>If you want to distribute source code with your application, then you are 
+	only allowed to distribute versions released by the author. This is to 
+	maintain a single distribution point for the source code.</li>
+</ul>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="Usage"></a><strong>Usage</strong>
+
+</h2>
+
+<ul>
+  <li>To use the class in your code the following modules in your project:<br>
+    base64.cpp/h<br>
+    HttpClient.cpp/h<br>
+  HttpDirectory.cpp/h<br>
+    HttpMimeManager.cpp/h<br>
+    HttpResponseHeader.cpp/h<br>
+    HttpSocket.cpp/h<br>
+    ThrdPool.cpp/h<br>
+    SocMfc.cpp/h<br>
+    W3Mfc.cpp/h<br>
+    You will also need to copy over all the resources from the w3mfc.rc file 
+	into your resource file.</li>
+  <li>Your code will need to include MFC either statically or dynamically.</li>
+  <li>You will need to have a functioning Winsock 2 stack installed and 
+	correctly initialised prior to starting the web server.</li>
+  <li>You will also need to have afxtempl.h, winsock.h or afxsock.h and 
+	afxpriv.h in your precompiled header. The code will work just as well in a 
+	GUI or console app.</li>
+  <li>You will need an up to date Platform SDK
+    installed to compile the code if you are using Visual C++ 6 (February 2003 
+	was the last version which was compatible with VC 6).</li>
+  <li>To see the class in action, have a look at the code in InitInstance in the 
+	module &quot;main.cpp&quot; on how to start up and stop the server.</li>
+  <li>To compile the SSL versions of W3MFC, you need to download, install and 
+	build the Win32 static library version of OpenSSL from
+    <a href="http://www.openssl.org">www.openssl.org</a>. Having built the 
+	OpenSSL code, make sure your include and lib directories are setup in VC as 
+	per the OpenSSL documentation, Then rebuild W3MFC using one of the SSL build 
+	configurations. You will need to modify your build settings to include the 
+	static libraries &quot;ssleay32.lib&quot; and &quot;libeay32.lib&quot; for your own exes which 
+	use W3MFC or alternatively you can link to the DLL versions of OpenSSL. A sample certificate called W3MFC.pem is included in the ReleaseS 
+	for basic debugging but you will need to obtain one for production machines. 
+	You need to modify the W3MFC.ini file to use SSL v2 or v3 (see sample file 
+	SSLW3MFC.ini in the ReleaseS directory) and configure the server to listen 
+	on the standard 443 HTTPS port and point it to your Certificate and private 
+	key files. For more details on the available SSL settings, please consult 
+	the CHttpServerSettings class in the module &quot;W3MFC.h&quot;, and the code which 
+	reads the ini file in the sample app in the method CW3MFCApp::InitInstance 
+	in the module &quot;main.cpp&quot;.</li>
+  <li> Please note that if you want to compile the code, then you will need to 
+	download the CWaitableTimer source code separately from my web site at
+	<a href="http://www.naughter.com/waitabletimer.html">
+	http://www.naughter.com/waitabletimer.html</a> and copy 
+	in the wtimer.h &amp; wtimer.cpp into your W3MFC's source code directory.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="History"></a><strong>History</strong></h2>
+
+<p><strong>V1.0 (4 May 1999)</strong> 
+
+<ul>
+  <li>Initial public release.</li>
+</ul>
+
+<p><strong>V1.1 (29 June 1999)</strong>
+
+<ul>
+  <li>Implemented support for &quot;HEAD&quot; command</li>
+  <li>Sample provided now also displays the HTTP verb used</li>
+  <li>Sample provided now also displays the date and time of each request</li>
+  <li>Now fully supports multiple virtual directories</li>
+  <li>Now fully supports URL's with encoded characters</li>
+  <li>Implemented support for &quot;DELETE&quot; command</li>
+  <li>Now returns an &quot;Allow:&quot; HTTP header</li>
+  <li>Timeout for requests is now 90 seconds if built for debug</li>
+  <li>Now supports directory listing</li>
+  <li>User name is now displayed in the log window</li>
+</ul>
+
+<p><strong>V1.11 (29 February 2000)</strong>
+
+<ul>
+  <li>Fixed a number of VC 6 level 4 warnings.</li>
+  <li>Now empties any passwords transmitted once they are used.</li>
+  <li>Now implements W3C Common Log file logging to the console window</li>
+</ul>
+
+<p><strong>V1.2 (15 April 2001)</strong>
+
+<ul>
+  <li>Updated copyright information</li>
+  <li>A new generalised thread pool wrapper class is now included which can be 
+	used in other projects.</li>
+  <li>A new generalised sockets wrapper class is now included which can be used 
+	in other winsock projects.</li>
+</ul>
+
+<p><strong>V1.21 (23 April 2001)</strong></p>
+
+<ul>
+  <li> Fixed a stack overwrite issue in CHttpResponseHeader::DateToStr</li>
+  <li>Fixed a bug in CHttpClient::TransmitFile which was causing &quot;304 Not 
+	Modified&quot; headers to never be returned.</li>
+  <li>Added a comment to documentation to inform users that the code will no 
+	longer work on Win 9x due to usage of IOCP.</li>
+</ul>
+
+<p><strong>V1.01 of CThreadPoolServer (21 July 2001)</strong></p>
+
+<ul>
+  <li>Made destructors of the two classes virtual as both can be used as base 
+	classes.</li>
+</ul>
+
+<p><strong>V1.02 of CThreadPoolServer / v1.22 of W3MFC (25 July 2001)</strong></p>
+
+<ul>
+  <li>Thread Pool Code now uses a Win9x compatible IO completion port if we fail 
+	to use the build in OS one. This IOCP is implemented in the class &quot;CIOCP9x&quot; 
+	in IOCP9x.h/cpp. This means that the web server now works on Windows 9x 
+	again.</li>
+  <li>W3MFC Code now use Winsock 2 functionality, namely &quot;WSAEventSelect&quot; to 
+	avoid a busy loop in the listening socket thread. This means that you will 
+	have to have Winsock 2 downloaded and installed if running on Windows 95 
+	which did not ship with Winsock 2 built in.</li>
+</ul>
+
+<p><strong>V1.03 of CThreadPoolServer / v1.23 of W3MFC (7 August 2001)</strong></p>
+
+<ul>
+  <li>Fixed some minor start-up problems with the sample web server app</li>
+  <li>Thread pool class now provides a WaitForThreadsInitInstance method. This 
+	allows client code to synchronise with all the InitInstance's in the thread 
+	pool.&nbsp;</li>
+</ul>
+
+<p><strong>V1.04 of CThreadPoolServer / v1.3 of W3MFC (26 August 2001)</strong></p>
+
+<ul>
+  <li>Removed unnecessary &quot;#pragma message&quot; in thread pool implementation file</li>
+  <li>Added support for CGI v1.1 (has been verified with some perl scripts and 
+	batch files)</li>
+  <li>Added support for reverse DNS lookups</li>
+  <li>Now fully supports POST HTTP method</li>
+  <li>Following values have been added to CHttpRequest:<br>
+    m_pszRawRequest, m_pszRawEntity, m_sRemoteHost and m_sContentType</li>
+  <li>Improved the robustness of the code by making sure exceptions are caught</li>
+</ul>
+
+<p><strong>V1.01 of CWSocket / v1.31 of W3MFC (30 September 2001)</strong></p>
+
+<ul>
+  <li>Fixed a bug in CWSocket::Receive which can occur when a disconnection 
+	occurs while a receive is in progress</li>
+  <li>Fixed a bug where entities sent i.e. m_pszRawEntity did not correctly 
+	handle the case where it had embedded NULL's e.g. a file upload. Thanks to 
+	Christian Hett for spotting this problem.</li>
+  <li>Removed some unnecessary memcpy's from CHttpClient::ParseRequest</li>
+  <li>Made the main program configurable via an ini file instead of hard coding 
+	all the settings.</li>
+  <li>Fixed a resource leak on an anonymous pipe handle in 
+	CHttpClient::TransmitCGIResponse.</li>
+</ul>
+
+<p><strong>V1.32 of W3MFC (3 November 2001)</strong></p>
+
+<ul>
+  <li> Fixed an issue where socket sends would sometimes throw the exception 
+	WSAEWOULDBLOCK. The httpsocket class now includes a &quot;SendWithRetry&quot; method 
+	which handles this case.</li>
+</ul>
+
+<p><strong>V1.33 of W3MFC / V1.02 of CWSocket / V1.05 of CThreadPoolServer (27 
+December 2001)</strong></p>
+
+<ul>
+  <li>Fixed an exception memory leak in the method CHttpSocket::SendWithRetry. 
+	Thanks to Olivier Meyer for spotting this problem.</li>
+  <li>Removed an unreferrenced variable from CHttpSocket::ReadResponse</li>
+  <li>Added a flag to TransmitFile to allow the transmission of an &quot;Expires: &quot; 
+	header</li>
+  <li>Added CHttpDirectory parameter to all transmit methods. Allows derived 
+	classes more control over the response procedure.</li>
+  <li>Added optional Non-NT authentication to the web server at the virtual 
+	directory level.&nbsp;</li>
+  <li>Reviewed TRACE statements through out W3MFC for completeness and validity</li>
+  <li>Addition of a CHttpClient::TransmitBuffer method to allow for easy 
+	transmission of in-memory generated responses. Thanks to &quot;Golden Crater&quot; for 
+	most of those suggestions.</li>
+  <li>W3MFC now takes advantage of the MS Winsock extension API &quot;TransmitFile&quot;. 
+	This should improve the performance of the code by avoiding inordinate 
+	kernel transitions<br>
+                          on NT based operating systems.</li>
+  <li>Includes a new error reporting mechanism via the CHttpServer::OnError 
+	method</li>
+  <li>Now includes a nice icon for the generated binary</li>
+  <li>Version info resource is now included in the generated binary&nbsp;</li>
+  <li>Modified &quot;Return...&quot; functions to return body length sent</li>
+  <li>Check all PostLog calls to ensure indicated parameter size is correct</li>
+  <li>W3MFC now takes advantage of the MS Winsock extension API 
+	&quot;TransmitPackets&quot;. This should improve the performance of the code by 
+	avoiding inordinate kernel transitions on Windows XP or later. Please note 
+	that I have been unable to test this feature so feedback on this would be 
+	appreciated.</li>
+</ul>
+
+<p><strong>V1.34 of W3MFC / V1.0 of CW32Handle (8 January 2002)</strong></p>
+
+<ul>
+  <li>Code only uses TransmitFile and TransmitPackets APIs if running on 
+	NT/2000/XP/2003 Server</li>
+  <li>Provided a virtual CHttpClient::TransmitFile and 
+	CHttpClient::TransmitBuffer functions. The default implementations just pass 
+	the buck to the _W3MFC_DATA function pointers if available.</li>
+  <li>Made CHttpClient::HandleClient function virtual.</li>
+  <li>Fixed an issue in CHttpClient::TransmitDirectory where created URL's could 
+	sometimes forget to put in directory separators in the URL.</li>
+  <li>Updated copyright messages to be 2002.</li>
+  <li>Provided a virtual CHttpClient::ParseRequestLine to allow derived classes 
+	to easily pull out any additional http headers e.g. &quot;User-Agent&quot; or 
+	&quot;Accept-Language&quot; etc.</li>
+  <li>Provided a virtual CHttpClient::FormCGIEnvironment to allow derived 
+	classes to easily change the environment variables sent to CGI processes.</li>
+  <li>Fixed a serious bug in CHttpResponseHeader::GetData while code was 
+	compiled for UNICODE</li>
+  <li>Addition of a very handy new &quot;CW32Handle&quot; class which implements a &quot;Smart 
+	Pointer&quot; class for Win32 Handles. For one thing it looks after calling 
+	CloseHandle in the destructor. The class turns out to be very handy when you 
+	are implementing CGI in this web server as you have to create loads of Win32 
+	handles such as anonymous pipes etc.</li>
+  <li>Improved the error reporting in CHttpClient::TransmitCGIResponse</li>
+  <li>Rewrote the CGI handling code in CHttpClient::TransmitCGIResponse to use 
+	the information provided by MS Knowledge base article &quot;Q190351&quot;.</li>
+</ul>
+
+<p><strong>V1.01 of CIOCP9x / V1.35 of W3MFC (26 January 2002)</strong></p>
+
+<ul>
+  <li>CIOCP9x class: added an additional semaphore as I have forgotten that we 
+	need to synchronise the removal of items from the queue in addition to 
+	synchronising the addition of items to the queue.</li>
+  <li>Fixed a level 4 warning in the CHttpClient class.</li>
+  <li>Only now uses TransmitPackets and TransmitFile if running 2000 / XP or 
+	2003 Server. Thanks to Olivier Meyer for spotting this problem on NT 4.</li>
+</ul>
+
+<p><strong>V1.36 of W3MFC (21 February 2002)</strong></p>
+
+<ul>
+  <li> Fixed an issue in CHttpClient::GetCGICommandLine where the code was using 
+	RegQueryValue instead of RegQueryValueEx which is the recommended way of 
+	doing registry queries in Win32.Thanks to Josh Clarke for spotting this 
+	problem.</li>
+  <li>CGI command line is now expanded with any environment variables it may 
+	contain. Again thanks goes to Josh Clarke for this nice update.</li>
+</ul>
+
+<p><strong>V1.37 of W3MFC (23 March 2002)</strong></p>
+
+<ul>
+  <li>W3MFC ships with a sample CGI app &quot;TestCGI.exe&quot;</li>
+  <li>CHttpClient::GetCGICommandLine function now defaults to the local file 
+	path if a registry entry cannot be found for it. Thanks to Gilad Novik for 
+	this suggestion.</li>
+</ul>
+<p><strong>31 March 2002</strong></p>
+
+<ul>
+  <li>Updated the sample app to print out the settings it is using when the 
+	program starts. No changes made to the core code.</li>
+</ul>
+
+<p><strong> V1.06 of CThreadPoolServer / V1.38 of W3MFC (17 April 2002)</strong></p>
+
+<ul>
+  <li>Moved the sample app up to VC 6 instead of VC 5.</li>
+  <li>Thread Pool class now uses new &quot;CDirectedIOCPRequest&quot; class instead of an 
+	SDK IOCP or dummy one for Win9x. This allows the thread pool to now support 
+	recycling of threads after a specified interval in the thread pool.</li>
+  <li>Tidied up the exposed API of the thread pool class to not reflect the 
+	exact attributes of IO completion ports and instead be more object oriented.</li>
+  <li>Change some of the Thread Pool class API parameters to provide for more 
+	flexibility.</li>
+</ul>
+
+<p><strong> V1.07 of CThreadPoolServer / V1.39 of W3MFC (29 April 2002)</strong></p>
+
+<ul>
+  <li>Fixed a bug in the CDirectedIOCP class which was causing multiple threads 
+	in the thread pool to be released into the depths of the 
+	CDirectedIOCP::GetRequest code.</li>
+  <li>Fixed a bug which was causing m_Threads array to be accessed from multiple 
+	threads when thread recycling was enabled.</li>
+</ul>
+
+<p><strong> V1.08 of CThreadPoolServer / V1.40 of W3MFC (29 April 2002)</strong></p>
+
+<ul>
+  <li>Changed value in sample W3MFC.ini file to not do directory listing by 
+	default.</li>
+  <li>ThreadPool class now provides an option to have a Q size different than 
+	the thread pool size.</li>
+  <li>Also provides a method to post to the IOCP without first checking the 
+	limit.</li>
+</ul>
+
+<p><strong> V1.41 of W3MFC (23 May 2002)</strong></p>
+
+<ul>
+  <li>Now fully supports SSL via the OpenSSL open source Library.</li>
+  <li>Removed IOCP9x module from project as not required.</li>
+  <li>Fixed a bug in CHttpServer::ListenSocketFunction which was causing the 
+	thread pool to initialize incorrectly.</li>
+</ul>
+
+<p><strong> V1.42 of W3MFC (24 May 2002)</strong></p>
+
+<ul>
+  <li>Included info in the help file on how to use SSL in W3MFC</li>
+  <li>Fixed a bug in the SSL code path which was causing a crash in 
+	CHttpClient::TransmitBuffer.</li>
+  <li>Provision of wrapper classes for OpenSSL C type variables used by W3MFC</li>
+  <li>Tidied up the SSL code in CHttpClient::HandleClient.</li>
+</ul>
+
+<p><strong> V1.43 of W3MFC (25 May 2002)</strong></p>
+
+<ul>
+  <li>Improved the performance of CHttpClient::URLDecode method</li>
+  <li>Improved the performance of CHttpClient::TransmitDirectory. Thanks to 
+	&quot;Jim&quot; for this fix.</li>
+  <li>URL's transmitted down to client in CHttpClient::TransmitDirectory are now 
+	URL encoded.</li>
+  <li>Fixed a crash which was occurring for some requests in 
+	CHttpClient::ParseRequest where the code ended up parsing into the entity 
+	body instead of stopping when it reached the separator after the http 
+	header. Thanks to Harold B Johns for spotting this.</li>
+</ul>
+
+<p><strong> V1.44 of W3MFC (29 May 2002)</strong></p>
+
+<ul>
+  <li>Environment variables for CGI processes now includes all the environment 
+	variables which W3MFC itself has. These missing environment variables were 
+	causing CGI programs to fail in calls to CoInitialize if they were using 
+	COM. Thanks to Harold B Johns for spotting this.</li>
+</ul>
+
+<p><strong> V1.45 of W3MFC (30 May 2002)</strong></p>
+
+<ul>
+  <li>Fixed a #include issue when doing a non SSL build. Thanks to Harold B 
+	Johns for spotting this.</li>
+  <li>Fixed an issue where a request for a non existent CGI file caused the web 
+	server to become unresponsive. Thanks to Harold B Johns for spotting this.</li>
+  <li>Fixed an issue in the CGI code when SSL is enabled. Thanks to Gilad Novik 
+	for reporting this problem.</li>
+</ul>
+
+<p><strong>4 June 2002</strong></p>
+
+<ul>
+  <li>Minor update to fix a missing constructor for CW32Handle class.</li>
+</ul>
+
+<p><strong> V1.46 of W3MFC (14 June 2002)</strong></p>
+
+<ul>
+  <li> Fixed a problem in CHttpClient::FindNextTerminatorFromRequest which was 
+	parsing out header details incorrectly. Thanks to Gilad Novik for reporting 
+	this problem.&nbsp;</li>
+</ul>
+
+<p><strong> V1.47 of W3MFC (28 July 2002)</strong></p>
+
+<ul>
+  <li>Now CHttpMimeManager can be replaced at runtime. This allows the mime map 
+	to be easily configured or replaced with a custom implementation.</li>
+  <li>Mime map as used by the sample app is now configured from the W3MFC ini 
+	file instead of from the system registry. In addition the shipped W3MFC ini 
+	file now includes a fully fleshed out mime section</li>
+  <li>You can now improve the robustness of the SSL behaviour by initializing 
+	the OpenSSL PRNG (PseudoRandom Number generator) with the contents of a file 
+	as specified via CHttpServerSettings::m_sSSLRandomnessFile.</li>
+  <li>A fresh default web site is now shown using the default ini settings, 
+	instead of expecting a web site to be configured at c:\inetpub\wwwroot</li>
+  <li>Improved the performance of looking up mime types by implementing a hash 
+	table for storage</li>
+</ul>
+
+<p><strong> V1.48 of W3MFC (18 August 2002)</strong></p>
+
+<ul>
+  <li>Now uses v1.09 of the CThreadPoolServer class.&nbsp;</li>
+  <li>Sample app now allows you to decide via a ini value whether or not to use 
+	the CIOCPThreadPoolQueue class instead of the CDirectedThreadPoolQueue 
+	class.</li>
+</ul>
+
+<p><strong> V1.09 of CThreadPoolServer (18 August 2002)</strong></p>
+
+<ul>
+  <li>Renamed CDirectedIOCP to CDirectedThreadPoolQueue</li>
+  <li>Renamed CDirectedIOCPRequest to CThreadPoolRequest</li>
+  <li>Now user can decide which queuing mechanism to use thro the Start method. 
+	2 pre built classes are provided, namely CDirectedThreadPoolQueue and 
+	CIOCPThreadPoolQueue</li>
+  <li>Provision of virtual GetNonDirectedRequestIndexToRemove and 
+	GetDirectedRequestIndexToRemove methods in the CDirectedThreadPoolQueue 
+	class. This allows derived classes to implement their own schemes as to 
+	which requests to prioritize on the thread pool queue.</li>
+</ul>
+
+<p><strong> V1.10 of CThreadPoolServer (20 August 2002)</strong></p>
+
+<ul>
+  <li> Provided virtual destructors for all the classes which constitute the 
+	Thread pool framework</li>
+  <li>Removed forward reference of the now defunct class CDirectedIOCP</li>
+  <li>Removed unreferenced parameters level 4 warnings in the CThreadPool class 
+	declaration</li>
+  <li>Fixed usage of 2 int variables in 
+	CDirectedThreadPoolQueue::GetNonDirectedRequestIndexToRemove and 
+	GetDirectedRequestIndexToRemove which were incorrectly declared as BOOL's. 
+	Thanks to Serhiy Pavlov for these updates.</li>
+</ul>
+
+<p><strong> V1.11 of CThreadPoolServer (4 October 2002)</strong></p>
+
+<ul>
+  <li>CThreadPoolClient::Run now has a return value to decide whether or not the 
+	worker thread should continue to service requests upon return from handling 
+	the current request</li>
+</ul>
+
+<p><strong> V1.12 of CThreadPoolServer (8 October 2002)</strong></p>
+
+<ul>
+  <li>Shutting down of the thread pool now uses directed requests instead of 
+	undirected requests. This should improve the speed of shutdown of the thread 
+	pool when it contains a lot of requests<br>
+                          on the queue.</li>
+  <li>Defined enums for m_dwID member of the CThreadPoolRequest class</li>
+</ul>
+
+<p><strong> V1.13 of CThreadPoolServer (12 October 2002)</strong></p>
+
+<ul>
+  <li> Removed and replaced the PostRequestWithoutLimitCheck method with the 
+	standard PostRequest method. This avoids the problem with TRACE messages 
+	appearing along the lines &quot;CDirectedThreadPoolQueue::GetRequest, Failed to 
+	release a semaphore&quot;. Thanks to Frank Schmidt for reporting this problem.</li>
+  <li>Fixed a minor flow in &quot;CDirectedThreadPoolQueue::Create()&quot; where I forgot 
+	to call Close() when the creation of &quot;m_hGetRequestSemaphore&quot; fails. Again 
+	thanks to Frank Schmidt for spotting this.</li>
+</ul>
+
+<p><strong> V1.14 of CThreadPoolServer (14 October 2002)</strong></p>
+
+<ul>
+  <li>Reintroduced the function CThreadPoolQueue::PostRequestWithoutLimitCheck 
+	as some users of the thread pool class had legit reasons to use this 
+	function.</li>
+  <li>Changed a VERIFY call into an ASSERT in CThreadPoolServer::RecycleThread</li>
+</ul>
+
+<p><strong> V1.49 of W3MFC (17 October 2002)</strong></p>
+
+<ul>
+  <li>Fixed a bug in CHttpClient::HexToInt which was causing it to not work for 
+	upper case characters. Thanks to Frank Schmidt for spotting this problem.</li>
+</ul>
+
+<p><strong> V1.15 of CThreadPoolServer (17 October 2002)</strong></p>
+
+<ul>
+  <li>Fixed a problem where CThreadPoolServer::Stop() would hang if an I/O 
+	completion port based thread pool is being used. Thanks to Frank Schmidt for 
+	spotting this problem.</li>
+  <li>Failure to setup thread pool recycling is now reported as an error.</li>
+</ul>
+
+<p><strong> V1.16 of CThreadPoolServer (17 October 2002)</strong></p>
+
+<ul>
+  <li> Made the thread pool class Win95 compliant by dynamically linking to the 
+	waitable timer API's. Even though the code did gracefully degrade if the 
+	waitable timer functions failed, the fact that they did not use 
+	GetProcAddress to link to the functions meant that any app / dll which 
+	included the thread pool class would fail to load on Win95. Thanks to Frank 
+	Schmidt for this update.</li>
+</ul>
+
+<p><strong> V1.17 of CThreadPoolServer (7 November 2002)</strong></p>
+
+<ul>
+  <li>Minor update to the thread pool class to provide a virtual function which 
+	gets call when the m_bRequestToStop is being set.&nbsp;</li>
+</ul>
+
+<p><strong> V1.18 of CThreadPoolServer (10 November 2002)</strong></p>
+
+<ul>
+  <li>Fixed an unreferrenced variable in the function 
+	CIOCPThreadPoolQueue::GetRequest, Thanks to Michael K. O'Neill for reporting 
+	this issue.</li>
+</ul>
+
+<p><strong> V1.50 of W3MFC (17 November 2002)</strong></p>
+
+<ul>
+  <li>Class now supports the use of the &quot;Connection: Keep-Alive&quot; Header.</li>
+  <li>Removed the StringReplace method and replaced it with CString::Replace.</li>
+  <li>Fixed some Log message's text to correctly reflect the function they are 
+	used in.</li>
+  <li>Code now makes the call to CHttpClient::AllowThisConnection before the 
+	incoming request is parsed.</li>
+  <li>Fixed a typo in the name of the CHttpClient::HandleDirectoryAuthorization 
+	function</li>
+  <li>Made the operation of the delivery of the &quot;Expires&quot; header contingent on a 
+	configurable setting</li>
+  <li>CHttpResponseHeader::AddW3MfcAllowFields now returns that it can handle 
+	POST requests</li>
+  <li>The &quot;DELETE&quot; verb support is now contingent on a configurable setting.</li>
+  <li>Fixed a typo in the creation of the &quot;SERVER_PROTOCOL&quot; CGI environment 
+	variable</li>
+  <li>Updated the sample CGI app to also send a Content-Length HTTP header. This 
+	allows the sample app to work correctly when it is used in conjunction with 
+	HTTP Keep Alives&nbsp;</li>
+</ul>
+
+<p><strong> V1.51 of W3MFC (17 November 2002)</strong></p>
+
+<ul>
+  <li>Optimized the use of the Keep Alives variables in the function 
+	CHttpClient::HandleClient</li>
+  <li>Implemented code to find whether CGI programs send Keep Alives.</li>
+</ul>
+
+<p><strong> V1.52 of W3MFC (18 November 2002)</strong></p>
+
+<ul>
+  <li> Now allows anonymous access to be enabled / disabled</li>
+  <li>Now allows Basic authentication to be enabled / disabled.</li>
+  <li>Reworked the Base64 class to be based on the ATL Server Base64 routines in 
+	ATL Server in VC.NET</li>
+  <li>Renamed and Reworked the CHttpClient::ReturnUnauthorizedMessage method.</li>
+  <li>Impersonation handle used during Basic authentication now is a CW32Handle 
+	instance instead of a raw SDK handle</li>
+  <li>Now fully supports NTLM Authentication via the SSPI interface. The code is 
+	enabled for support for Kerberos, &quot;Negotiate&quot; and Digest authentication 
+	which will be added in a future release. The use of SSPI support can be 
+	changed via the compile time define &quot;W3MFC_NO_SSPI_SUPPORT&quot;. Thanks to 
+	Harold B Johns for suggesting this.</li>
+  <li>Fixed a problem in CHttpClient::ParseRequest which was causing failures to 
+	parse a certain line to be overwritten upon successful parsing of subsequent 
+	lines.&nbsp;</li>
+  <li>Test CGI app now is implemented without MFC support and deliberately does 
+	not use a Content-Length or Keep-Alive header for testing purposes.</li>
+  <li>Tidied up the importing of various header files throughout W3MFC and also 
+	the associated #pragma messages which these something display.</li>
+</ul>
+
+<p><strong> V1.53 of W3MFC (18 November 2002)</strong></p>
+
+<ul>
+  <li> CHttpSocket::ReadResponse now uses waitable timers (if it can) instead of 
+	a loop which has calls to Sleep. This should improve the scalability of the 
+	code under heavy load. Please note that if you want to compile the code, 
+	then you will need to download the CWaitableTimer source code separately 
+	from my web site and copy in the wtimer.h &amp; wtimer.cpp into your W3MFC's 
+	source code directory.</li>
+  <li>Added code to protect against NTFS alternate streams being accessed by 
+	client browsers.</li>
+  <li>Improved the robustness of parsing the authorization header fields.</li>
+</ul>
+
+<p><strong> V1.54 of W3MFC (20 November 2002)</strong></p>
+
+<ul>
+  <li>Fixed a number of level 4 warnings about unreferrenced variables. Thanks 
+	to Harold Johns for reporting these.</li>
+  <li>Updated the documentation to refer to the fact that you will need an up to 
+	date Platform SDK to be installed to compile W3MFC with SSPI support.</li>
+  <li>Fixed a memory leak of CHttpRequest objects which can occur when you 
+	shutdown the web server and you are using a directed thread pool queue and 
+	there are outstanding items in the queue which are not shutdown requests.</li>
+</ul>
+
+<p><strong>25 November 2002</strong></p>
+
+<ul>
+  <li>Added a comment to the HttpSocket.h header file about where to get the 
+	WTimer.h files if the W3MFC compile fails.</li>
+</ul>
+
+<p><strong> V1.55 of W3MFC (3 February 2003)</strong></p>
+
+<ul>
+  <li>W3MFC now compares HTTP headers without regard to case. Thanks to Gilad 
+	Novik and Frank Hahn for reporting these problems.</li>
+  <li>Tidied up inclusion of Afxpriv.h throughout W3MFC modules.</li>
+  <li>Fixed a few typos in the documentation.</li>
+</ul>
+
+<p><strong> V1.56 of W3MFC (21 February 2003)</strong></p>
+
+<ul>
+  <li>Made the m_Directories member of CHttpServerSettings a pointer array. This 
+	allows client code to add their own derived instances of CHttpDirectory to 
+	the array. This allows per directory customisation of the web server. This 
+	change also necessitated changing the settings class of the CHttpServer to 
+	be a pointer also. Thanks to &quot;Edgar&quot; for this update.</li>
+  <li>Remove the digest authentication boolean from the settings class as Digest 
+	authentication is currently not supported.</li>
+  <li>Made the CHttpClient::LoadHTMLResource method virtual</li>
+  <li>Moved a lot of the CHttpClient implementation code to CHttpDirectory. This 
+	allows more additional complex client customisation of the code.</li>
+  <li>Split off the CHttpDirectory class into its own module.</li>
+  <li>Implemented a virtual CHttpDirectory::HandleClient. This allows 
+	customisation of per directory responses. Thanks to &quot;Edgar&quot; for this 
+	suggestion.</li>
+</ul>
+
+<p><strong> V1.60 of W3MFC (27 February 2003)</strong></p>
+
+<ul>
+  <li>Includes ISAPI v5.1 Extension support (excluding the asynchronous 
+	extensions only supported by IIS itself)</li>
+  <li>Fixed a bug in the parsing of SSL requests which was causing heap 
+	corruption problems on subsequent reads of SSL requests on the same thread.</li>
+  <li>Reworked the CHttpClient::HandleClient to avoid having to call various 
+	functions when the code needs to exit prematurely</li>
+  <li>Added a member variable &quot;m_bResponseKeepAlive&quot; to avoid having to pass a 
+	keep alive variable throughout all the CHttpClient code.</li>
+  <li>Fixed a deadlock bug in CHttpServer::Stop. Thanks to &quot;Edgar&quot; for reporting 
+	this problem.</li>
+  <li>modified the Mime manager class method &quot;GetMimeType&quot; to be sent the full 
+	request rather than just the extension of the URL when it is called to 
+	determine the mime type.</li>
+  <li>Addition of a string version of the HTTP verb to CHttpRequest. This speeds 
+	up the CGI and ISAPI implementations somewhat.</li>
+  <li>Addition of a hash table in the request structure which contains all the 
+	HTTP request headers. These values are now available via CGI or ISAPI</li>
+  <li>Split of the CGI implementation into its own module and made it optional 
+	via a preprocessor directive</li>
+  <li>Split of the ISAPI implementation into its own module and made it optional 
+	via a preprocessor directive</li>
+  <li>W3MFC now uses Win32 TransmitFile API in SSL configuration and only falls 
+	back to user mode sockets if SSL is actively being used.</li>
+  <li>W3MFC now supports PATH_INFO information in URL's</li>
+  <li>Optimized loading of error pages which W3MFC uses</li>
+</ul>
+
+<p><strong> V1.61 of W3MFC (2 March 2003)</strong></p>
+
+<ul>
+  <li>Removed the function CHttpDirectory::SetClient as it can lead to thread 
+	synchronisation problems. Thanks to &quot;Edgar&quot; for reporting this problem.</li>
+</ul>
+
+<p><strong> V1.62 of W3MFC (3 March 2003)</strong></p>
+
+<ul>
+  <li>Added a few defines to allow the W3MFC to compile if you do not have the 
+	latest version of the Platform SDK installed. Thanks to &quot;Edgar&quot; for 
+	reporting this.</li>
+  <li>Fixed a copy and paste gremlin in CHttpServer::Start which was causing a 
+	critical section to not be acquired. Thanks to &quot;Edgar&quot; for reporting this.</li>
+  <li>Removed the use of &quot;friend classes&quot; entirely throughout the W3MFC 
+	codebase. This avoids potential compilation problems in any derived classes 
+	used by client code of W3MFC.</li>
+  <li>Addition of a number of preprocessor defines, namely W3MFC_EXT_CLASS, 
+	THRDPOOL_EXT_CLASS and SOCKMFC_EXT_CLASS. This allows the classes to easily 
+	be added and exported from a MFC extension dll.</li>
+</ul>
+
+<p><strong> V1.19 of CThreadPoolServer (3 March 2003)</strong></p>
+
+<ul>
+  <li>Addition of a number of preprocessor defines, namely W3MFC_EXT_CLASS, 
+	THRDPOOL_EXT_CLASS and SOCKMFC_EXT_CLASS. This allows the classes to easily 
+	be added and exported from a MFC extension dll.</li>
+</ul>
+
+<p><strong> V1.03 of CWSocket (3 March 2003)</strong></p>
+
+<ul>
+  <li>Addition of a number of preprocessor defines, namely W3MFC_EXT_CLASS, 
+	THRDPOOL_EXT_CLASS and SOCKMFC_EXT_CLASS. This allows the classes to easily 
+	be added and exported from a MFC extension dll.</li>
+  <li>Now implements support for connecting via Socks 4 and Socks 5 proxies</li>
+</ul>
+
+<p><strong>6 April 2003</strong></p>
+
+<ul>
+  <li>Updated CGI Sample app to return content-type in the HTTP header, no other 
+	changes made. Thanks to &quot;mlcarey59&quot; for reporting this</li>
+</ul>
+
+<p><strong> V1.63 of W3MFC (12 September 2003)</strong></p>
+
+<ul>
+  <li>Removed double definition of SCRIPT_NAME from CGI environment. Thanks to 
+	Dave Horner for reporting this.</li>
+  <li>SCRIPT_NAME CGI environment variable now uses forward slashes rather than 
+	back slashes as directory separators. Thanks to Dave Horner for reporting 
+	this problem.</li>
+  <li>Added a &quot;REQUEST_URI&quot; CGI environment variable. Thanks to Dave Horner for 
+	reporting this.</li>
+  <li>CGI implementation now returns a HTTP return code line if one if the CGI 
+	script does not provide one. Again thanks to Dave Horner for reporting this 
+	issue.</li>
+  <li>CGI implementation now returns immediately from 
+	CHttpCGI::ReadFromClientStdout from a socket error is detected. Again thanks 
+	to Dave Horner for reporting this issue.</li>
+  <li>&quot;PATH_TRANSLATED&quot; CGI and ISAPI environment variable is now reported as an 
+	absolute path. Again thanks to Dave Horner for reporting this issue.</li>
+  <li>&quot;SCRIPT_NAME&quot; CGI and ISAPI environment variable now includes an initial 
+	&quot;/&quot;. Again thanks to Dave Horner for reporting this issue.</li>
+  <li>CGI now uses pClient-&gt;m_Request.m_dwRawEntitySize variable when 
+	determining when W3MFC needs to write to the CGI child process.</li>
+  <li>ISAPI implementation now sends just the HTTP body to client ISAPI dlls 
+	instead of the whole HTTP request. Thanks to Michael St. Laurent for 
+	reporting this problem.</li>
+</ul>
+
+<p><strong> V1.04 of CWSocket (21 September 2003)</strong></p>
+
+<ul>
+  <li>Now supports UDP sockets.</li>
+  <li>Now supports UDP relaying via Socks 5.</li>
+</ul>
+
+<p><strong> V1.05 of CWSocket (26 September 2003)</strong></p>
+
+<ul>
+  <li>Now supports connection via HTTP proxies which support the CONNECT verb.</li>
+</ul>
+
+<p><strong> V1.06 of CWSocket / CSSLSocket (5 October 2003)</strong></p>
+
+<ul>
+  <li>Provided a new class called CSSLSocket which provides a socket wrapper 
+	class over SSL (via OpenSSL). In combination with the CWSocket class, you 
+	can now do all that CWSocket does such as Socks 4 and 5 and HTTP Proxy 
+	connections but implement the transmit / receive over a secure SSL 
+	connection. See the projects SSLClient and SSLServer in the workspace for a 
+	very simple SSL client and server pair.</li>
+</ul>
+
+<p><strong> V1.64 of W3MFC / V1.07 of CWSocket (3 November 2003)</strong></p>
+
+<ul>
+  <li>Simplified the code in CHttpSocket::ReadResponse. Thanks to Clarke Brunt 
+	for reporting this issue.</li>
+  <li>Simplified the code in CWSocket::ReadHTTPProxyResponse. Thanks to Clarke 
+	Brunt for reporting this issue.</li>
+</ul>
+
+<p><strong> V1.65 of W3MFC</strong></p>
+
+<ul>
+  <li>URL Encoded spaces as &quot;+&quot; are now correctly handled. Thanks to Dan Baker 
+	for reporting this issue. </li>
+  <li>CHttpRequest now includes a m_sRawURL member variable which provides 
+	access to the raw URL before it is URL decoded. Thanks to Dan Baker for 
+	suggesting this addition.</li>
+  <li>Shipped binary for W3MFC is now linked with the OpenSSL 0.9.6l which is 
+	the latest version currently.</li>
+</ul>
+
+<p><strong> V1.66 of W3MFC / V1.20 of CThreadPoolServer / V1.08 of CWSocket (13 
+January 2004)</strong></p>
+
+<ul>
+  <li>Made the m_bRequestToStop member variable &quot;volatile&quot; as it can be modified 
+	from multiple threads while possible been read in a loop in another thread. 
+	Thanks to Dan Baker for reporting this issue.</li>
+  <li>Used newer form of #pragma pack to avoid problems with non standard 
+	packing sizes.</li>
+</ul>
+
+<p><strong> V1.67 of W3MFC (22 February 2004)</strong></p>
+
+<ul>
+  <li>Fixed a memory leak in CHttpISAPI::CachedLoad. Thanks to &quot;mori&quot; for 
+	reporting and suggesting the fix for this bug.</li>
+  <li>Updated the copyright messages of all the modules.</li>
+</ul>
+
+<p><strong> V1.68 of W3MFC (30 March 2004)</strong></p>
+
+<ul>
+  <li>Tidied up the interaction of the various classes by removing all friend 
+	classes</li>
+</ul>
+
+<p><strong> V1.69 of W3MFC (26 August 2004)</strong></p>
+
+<ul>
+  <li>The binaries included in the download now link against OpenSSL 0.9.7d.</li>
+  <li>Per thread cleanup is now done for OpenSSL. Again thanks to Leandro 
+	Gustavo Biss Becker for reporting this problem.</li>
+  <li>OpenSSL is now configured by the W3MFC sample app to operate in a thread 
+	safe manner. Again thanks to Leandro Gustavo Biss Becker for reporting this 
+	problem.</li>
+  <li>Application initialization of OpenSSL has been taken out of W3MFC and is 
+	now the responsibility of your application. See the sample W3MFC application 
+	code in main.cpp for an example on how to correctly initialize and terminate 
+	OpenSSL.</li>
+  <li>CSSL::Close() now calls SSL_shutdown to ensure SSL connections are 
+	properly terminated. Thanks to Leandro Gustavo Biss Becker for reporting 
+	this problem.</li>
+  <li>W3MFC now correctly handles UTF8 encoded URL requests. Thanks to Huang Wei 
+	for reporting this problem and providing the fix.</li>
+</ul>
+
+<p><strong> 6 September 2004</strong></p>
+
+<ul>
+  <li>Minor update to the documentation.</li>
+</ul>
+
+<p><strong> V1.70 of W3MFC (15 October 2004)</strong></p>
+
+<ul>
+  <li>Removed an unnecessary ASSERT from CHttpClient::MapURLToLocalFilename. 
+	Thanks to Jan Bares for reporting this problem.</li>
+  <li>Changed the behaviour of the code in CHttpClient::MapURLToLocalFilename as 
+	follows:<br>
+    <br>
+                          Before Change<br>
+    <br>
+                          Requesting the URL &quot;/name&quot; would return the file 
+	&quot;name&quot; in the root directory of the web server even if a &quot;/name&quot; virtual 
+	directory existed. If &quot;name&quot; did not exist in the root directory then a 404 
+	error would be returned<br>
+    <br>
+                          After Change<br>
+    <br>
+                          Requesting the URL &quot;/name&quot; will return the virtual 
+	directory &quot;/name&quot; if such a virtual directory exists. If not then the file 
+	&quot;name&quot; in the root directory will be returned.<br>
+    <br>
+                          Thanks to Jan Bares for pointing out this behaviour 
+	which is inconsistent with other Web Server implementations.</li>
+  <li>URLs which include &quot;@&quot; now are parsed correctly. Previously the code was 
+	parsing the URI expecting it to contain username and password in the URL 
+	itself. Instead when the URI arrives at the server it is not in the URI 
+	itself but is represented in the HTTP request headers. Thanks to Jan Bares 
+	for pointing out this problem.</li>
+  <li>Passthrough authentication can now be disabled via a new 
+	CHttpServerSettings::m_bPerformPassthroughAuthentication setting. This is 
+	useful where you want to setup per directory protection using a username / 
+	password pair but you do not want to use these credentials in an attempt to 
+	impersonate that user by calling the SDK function &quot;LogonUser&quot;. Again thanks 
+	to Jan Bares for this suggestion.</li>
+</ul>
+
+<p><strong> V1.21 of CThreadPoolServer / V1.71 of W3MFC / V1.09 of CWSocket / 
+V1.01 of CW32Handle (11 November 2004)</strong></p>
+
+<ul>
+  <li>CWSocket: Updated to compile cleanly when Detect 64 bit issues and Force 
+	conformance in for loop options are enabled in Visual Studio .NET.</li>
+  <li>Updated all classes to define the respective preprocessor define to allow 
+	inclusion in an extension dll by default.</li>
+  <li>CW3MFC: Added a m_sRawExtra variable to CHttpRequest. This value is now 
+	passed to CGI and ISAPI instead of m_sExtra. This allows apps to correctly 
+	parse form parameters. Thanks to Jan Bares for reporting this problem.</li>
+  <li>CThreadPoolServer: Provided a GetRequestArray() method in 
+	CDirectedThreadPoolQueue which allows access to the internal array used to 
+	hold the thread pool requests. Can prove handy to have access to this in 
+	certain circumstances.</li>
+  <li>CThreadPoolServer: Updated to compile cleanly when Detect 64 bit issues 
+	and Force conformance in for loop options are enabled in Visual Studio .NET</li>
+</ul>
+
+<p><strong> V1.22 of CThreadPoolServer (4 December 2004)</strong></p>
+
+<ul>
+  <li>Updated the macro which detects if arrays use INT_PTR for index rather 
+	than int.</li>
+  <li>Also removed some ASSERTS which were overly restrictive in light of the 
+	queue now being externally modifiable via CThreadPoolServer::GetQueue.</li>
+</ul>
+
+<p><strong> V1.10 of CWSocket / CSSLSocket (29 December 2004)</strong></p>
+
+<ul>
+  <li>Almost all of the following updates were to match the functionality 
+	provided by the MFC CAsyncSocket class but without the overhead of hidden 
+	windows and its async behaviour.</li>
+  <li>Now automatically links to Winsock via #pragma comment</li>
+  <li>Addition of a GetPeerName method.</li>
+  <li>Replaced all calls to ZeroMemory to memset.</li>
+  <li>Addtion of a GetSockName method.</li>
+  <li>Addition of a SetSockOpt method.</li>
+  <li>Addition of a Flags parameter to Receive method.</li>
+  <li>Addition of a IOCtl method.</li>
+  <li>Optimized the code in Listen.</li>
+  <li>Addition of a ReceiveFrom method.</li>
+  <li>Addition of a ShutDown method.</li>
+  <li>Optimized the code in Close.</li>
+  <li>Remove of pszLocalBoundAddress parameter from Connect methods to make it 
+	consistent with CAsyncSocket.</li>
+  <li>Addition of a Flags parameter to Send method.</li>
+  <li>Optimized code in CWSocket destructor.</li>
+  <li>Addition of an overloaded Create method which allows all of the socket 
+	parameters to be set.</li>
+  <li>Use of _tcslen has been minimized when NULL string parameters can be 
+	passed to various CWSocket methods.</li>
+  <li>Change of various parameter names to be consistent with names as used in 
+	CAsyncSocket.</li>
+</ul>
+
+<p><strong> V1.11 of CWSocket / CSSLSocket (31 January 2005)</strong></p>
+
+<ul>
+  <li>Fixed a bug in CWSocket::Receive where it throws an error when a graceful 
+	disconnect occurs. Now the code only throws an exception if the return value 
+	from recv is SOCKET_ERROR.</li>
+</ul>
+
+<p><strong> V1.72 of W3MFC / v1.11 of CWSocket (19 February 2005)</strong></p>
+
+<ul>
+  <li>Fixed a bug when directory lists were displayed by W3MFC. It incorrectly 
+	always dropped the last entry from the listing. Thanks to Pablo Romero for 
+	reporting this bug.</li>
+  <li>Provided a CSSLSocket::IsReadible(DWORD dwTimeout) which now correctly 
+	uses the SSL_pending function. This avoids problems with the read ahead 
+	buffer used by OpenSSL and the way W3MFC uses to detect if the socket is 
+	readible. Also reworked the CHttpSocket::ReadResponse function to use this 
+	SSL_pending function. Because of these changes, the SSL code path in W3MFC 
+	now does not use the event based mechanism for reading requests which the 
+	non SSL code path uses. Thanks to Leandro Gustavo Biss Becker for reporting 
+	this issue.</li>
+</ul>
+
+<p><strong> V1.13 of CWSocket / CSSLSocket (1 May 2005)</strong></p>
+
+<ul>
+  <li>Send method now uses a const void* parameter.</li>
+</ul>
+
+<p><strong> V1.14 of CWSocket / CSSLSocket (21 June 2005)</strong></p>
+
+<ul>
+  <li> Provision of connect methods which allows a timeout to be specified. 
+	Please note that if you use a host name in these calls as opposed to an IP 
+	address, the DNS lookup is still done using the OS supplied timeout. Only 
+	the actual connection to the server is implemented using a timeout after the 
+	DNS lookup is done (if it is necessary).</li>
+</ul>
+
+<p><strong> V1.23 of CThreadPoolServer (11 September 2005)</strong></p>
+
+<ul>
+  <li>Reworked the CThreadPoolClient::_Run method so that it can now be 
+	customized at runtime. There is now a non static version which is also 
+	called _Run and there is also a virtual Main function which implements the 
+	main loop of the thread pool.</li>
+  <li>A CEvent namely &quot;m_RequestToStop&quot; is now also set when the thread pool is 
+	being stopped.</li>
+</ul>
+
+<p><strong> V1.73 of W3MFC (30 October 2005)</strong></p>
+
+<ul>
+  <li>Fixed a bug in CHttpCGI::ReadFromClientStdout when parsing CGI responses 
+	which had embedded HTTP headers in them. Thanks to Gregoire Gentil for 
+	reporting this bug.</li>
+  <li>Shipped binary for W3MFC is now linked with the OpenSSL 0.9.7i which is 
+	the latest version currently.&nbsp;</li>
+</ul>
+
+<p><strong> V1.74 of W3MFC / v1.15 of CWSocket (4 November 2005)</strong></p>
+
+<ul>
+  <li>Fixed a further bug in the CGI implementation where subsequent HTTP chunks 
+	which are transmitted to clients include an additional HTTP Status line. 
+	Thanks to Gregoire Gentil for reporting this persistent bug.</li>
+  <li>Fixed an issue where the returned HTTP status line by W3MFC did not have 
+	the correct EOL terminator.</li>
+  <li>CWSocket::Send method now returns the number of bytes written. Thanks to 
+	Owen O'Flaherty for pointing out this omission.</li>
+</ul>
+
+<p><strong> v1.16 of CWSocket (16 November 2005)</strong></p>
+
+<ul>
+  <li>CSSLSocket::Send now uses a const void* parameter.</li>
+</ul>
+
+<p><strong> v1.17 of CWSocket (27 November 2005)</strong></p>
+<ul>
+	<li>Updated comments in the header file to accompany inclusion of the 
+	OpenSSL header files.</li>
+</ul>
+
+<p><strong> V1.75 of W3MFC (3 January 2006)</strong></p>
+<ul>
+	<li>Updated the copyrights in all the W3MFC modules.</li>
+	<li>Fixed an issue in the CGI implementation so that HTTP headers such as 
+	User-Agent get mapped to HTTP_USER_AGENT environment variables. Basically 
+	all HTTP_... values should have any hyphens in their names replaced by 
+	underscores.</li>
+	<li>Now includes support for the DOCUMENT_ROOT CGI environment variable.</li>
+	<li>Now returns a HTTP status code of 302 if a &quot;Content:&quot; header is found 
+	but no status code is present. Thanks to Hector Santos for reporting this 
+	issue.</li>
+	<li>Now CGI implementation supports Complete (Non-Parsed) CGI scripts. If 
+	you prefix your CGI script with &quot;NPR-&quot; then the data as received from the 
+	script will be sent to the client unmodified. Thanks to Hector Santos for 
+	suggesting this nice addition.</li>
+	<li>Parsing of the HTTP status code line e.g. &quot;HTTP/1.0 200 Ok&quot; is now done 
+	using the CGI &quot;Status:&quot; header rather than looking for a &quot;HTTP/..&quot; line. 
+	Again thanks to Hector Santos for reporting this.</li>
+</ul>
+
+<p><strong> V1.76 of W3MFC (8 February 2006)</strong></p>
+<ul>
+	<li>Minor update to ensure that all code 
+	compiles cleanly when using /Wp64 setting. Thanks to Alexey Kuznetsov for 
+	prompting this update.</li>
+	<li>Updated the documentation to use the 
+	same style as the web site.</li>
+</ul>
+
+<p><strong> V1.77 of W3MFC / v1.18 of CWSocket (19 February 2006)</strong></p>
+
+<ul>
+  <li>Replaced all calls to ZeroMemory and CopyMemory with memset and memcpy.</li>
+</ul>
+
+<p><strong> V1.24 of CThreadPoolServer (13 April 2006)</strong></p>
+
+<ul>
+	<li>Updated copyright details.</li>
+	<li>Provision of Lock and Unlock methods along the lines of the author's 
+	CSyncCollection class.</li>
+	<li>CDirectedThreadPoolQueue::PostRequest, PostRequestWithoutLimitCheck, 
+	Close and GetRequest now includes a parameter which decides if internal 
+	locking should be done. Again this allows more fine tuned external 
+	synchronisation of the class.</li>
+	<li>Made timeout value in PostRequest default to &quot;INFINITE&quot;.</li>
+	<li>Made GetDirectedRequestIndexToRemove method virtual.</li>
+	<li>Optimized CDirectedThreadPoolQueue constructor code.</li>
+	<li>Renamed CThreadPoolClient::m_RequestToStop to m_evtRequestToStop.</li>
+</ul>
+
+<p><strong> V1.78 of W3MFC / V1.25 of CThreadPoolServer (31 May 2006)</strong></p>
+
+<ul>
+	<li>Fixed a memory leak in CHttpServer::ListenSocketFunction which occurs 
+	when an exception is thrown because the client socket connection is not 
+	accepted or when the request fails to be sent down to the thread pool. 
+	Thanks to Daniel Berman for reporting this bug.</li>
+	<li>Added detailed comments in ThrdPool.h on the proper use of 
+	CThreadPoolRequest member variables. This information also includes detailed 
+	info on how to design your thread pool requests such that you avoid any 
+	potential memory leaps. Thanks to Daniel Berman for reporting this issue.</li>
+	<li>Removed the virtual destructor for CThreadPoolRequest as the class is 
+	not meant to be derived from. Also added comments to the same effect in 
+	ThrdPool.h.</li>
+</ul>
+
+<p><strong> V1.79 of W3MFC / v1.19 of CWSocket / V1.26 of CThreadPoolServer (27 
+June 2006)</strong></p>
+
+<ul>
+	<li>Code now uses new C++ style casts rather than old style C casts where 
+	necessary.</li>
+	<li>Updated copyright details.</li>
+	<li>Made AfxThrowWSocketException part of CWSocket class and renamed to 
+	ThrowWSocketException.</li>
+	<li>Optimized CWSocketException constructor code.</li>
+	<li>Removed unnecessary CWSocketException destructor.</li>
+	<li>Optimized CIOCPThreadPoolQueue constructor code.</li>
+	<li>Optimized CHttpISAPIExtension constructor code.</li>
+	<li>Optimized CHttpISAPI constructor code.</li>
+	<li>Optimized CHttpDirectory constructor code.</li>
+	<li>Removed unused CHttpDirectory destructor.</li>
+	<li>Optimized CHttpResponseHeader constructor code</li>
+	<li>The class framework now requires the Platform SDK if compiled using VC 
+	6. </li>
+	<li>Optimized CThreadPoolClient constructor code.</li>
+	<li>Reworked thread recycling logic in CThreadPoolServer::Monitor to use a 
+	much simpler WaitForSingleObject call.</li>
+	<li>Optimized CThreadPoolServer constructor code.</li>
+	<li>Optimized CHttpClient constructor code.</li>
+	<li>Updated the code to clean compile on VC 2005.</li>
+</ul>
+
+<p><strong> V1.27 of CThreadPoolServer (6 August 2006)</strong></p>
+
+<ul>
+	<li>Minor update to fix a compile problem when compiled for x64</li>
+</ul>
+
+<p><strong> V1.28 of CThreadPoolServer (8 August 2006)</strong></p>
+
+<ul>
+	<li>Provision of a CThreadPoolClient::m_bPumpMessageQueue boolean. This 
+	allows you to specify that internally the thread pool client will use 
+	MsgWaitForMultipleObjects to wait for a request to appear on the thread pool 
+	queue or a windows message to appear on the thread's system queue. If a 
+	windows message is detected, then the thread pool will internally pump the 
+	message queue until no more messages are present. If 
+	CThreadPoolClient::m_bPumpMessageQueue is left at the default of FALSE, then 
+	you will get the old thread pool behaviour which is to directly call into 
+	CThreadPoolQueue::GetRequest which will block until a request is available. 
+	This new addition prevents problems if your thread pool initializes and uses 
+	COM as an STA. In this case the thread is required to pump messages since 
+	COM uses the message queue for synchronisation when it is initialized as an 
+	STA. If you do not pump the message queue when you are using COM as an STA, 
+	you will notice unusual behaviour such as the Windows shell being 
+	unresponsive when ShellExecute calls are running. This is because internally 
+	ShellExecute uses DDE which itself broadcasts window messages to all top 
+	level windows. When you call CoInitialize to use an STA, internally a top 
+	level window is created, but because there is no code servicing this windows 
+	message queue, the shell's ShellExecute calls will seem to hang for 30 
+	seconds. Boy did it take me some work to find the root of this problem. You 
+	have been warned!!!</li>
+	<li>Addition of a CDirectedThreadPoolQueue::m_evtDataAvailable member 
+	variable which is signalled when an item is available on the queue</li>
+</ul>
+
+<p><strong> V1.80 of W3MFC (21 September 2006)</strong></p>
+
+<ul>
+	<li>Code now securely disposes of CHttpServer::m_sUsername, 
+	CHttpServer::m_sPassword, CHttpRequest::m_sUserName, 
+	CHttpRequest::m_sPassword using SecureZeroMemory. Note that the 
+	CHttpDirectory::m_sUsername and CHttpDirectory::m_sPassword values are also 
+	securely cleaned up but these are long lived values and as such if a crash 
+	occurs, these values will most likely appear in any memory dumps.</li>
+	<li>The W3MFC binary which is include in the download is now built with VC 
+	2005 and dynamically links to the latest version of OpenSSL namely 0.9.8c, 
+	which you will need to build yourself, if you want to use the W3MFC exe as 
+	is. Also bear in mind that the new exe requires the VC 2005 MFC support dlls 
+	to be in place for it to run on client machines.</li>
+</ul>
+
+<p><strong> V1.81 of W3MFC (12 January 2007)</strong></p>
+
+<ul>
+	<li>Updated copyright details.</li>
+	<li>Optimized CHttpRequest constructor code.</li>
+	<li>Optimized CHttpServerSettings constructor code.</li>
+	<li>Fixed a simple copy and paste issue in the IDH_302 built in html 
+	resource. Thanks to G. Wilmes for reporting this issue.</li>
+	<li>Fixed a bug in CHttpResponseHeader::GetData to do with the calculation 
+	of the ASCII header size when the code is compiled for Unicode. Thanks to 
+	Alexey V. Leonov for reporting this bug.</li>
+	<li>Fixed a bug in CRegistryHttpMimeManager::GetMimeType where it did not 
+	correctly handle an empty file extension value. Thanks to Alexey V. Leonov 
+	for reporting this bug.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h2><a name="Contact"></a><strong>Contacting the Author</strong></h2>
+
+<p>PJ Naughter<br>
+Email: <a href="mailto:pjna@naughter.com">pjna@naughter.com</a><br>
+Web: <a href="http://www.naughter.com">http://www.naughter.com</a><br>
+12 January 2007</p>
+</body>
+</html>

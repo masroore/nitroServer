@@ -1,0 +1,71 @@
+@charset "utf-8";
+/*	Name: 1490680843
+	Show images and links only
+	Copyright 2006 Opera Software */
+* {
+	font-family: sans-serif !important;
+	font-size: 0px !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	color: Silver !important;
+	background: Silver !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	border: none !important;
+	outline: none !important;
+	width: auto !important;
+	max-width: none !important;
+	min-width: 0px !important;
+	height: auto !important;
+	max-height: none !important;
+	min-height: 0 !important;
+	position: static !important;
+	display: inline !important;
+}
+head, body, title, ul, ol, dl, p, h1, h2, h3, h4, h5, h6, div, blockquote {display: block !important;}
+table {display: table !important;}
+tr {display: table-row !important;}
+th, td {display: table-cell !important;}
+title {
+	font-weight: bold !important;
+	font-size: 18px !important;
+	text-align: center !important;
+	color: Red !important;
+	background: White !important;
+	padding: 2px !important;
+	margin: 0.5em auto 1.2em !important;
+	border: thick groove !important;
+	width: 50% !important;
+}
+a[href] {
+	font-size: 12px !important;
+	text-decoration: underline !important;
+	line-height: 1.5em !important;
+	white-space: nowrap !important;
+	color: Blue !important;
+	background: Silver !important;
+	padding: 2px !important;
+	margin-right: 1.2em !important;
+}
+a[href] * {
+	font-size: 12px !important;
+	color: Blue !important;	
+	background: transparent !important;
+}
+a[href] img {border: medium solid Blue !important;}
+a[href]:visited img, a[href]:active img {border: medium solid Red !important;}
+a[href]:visited {text-decoration: line-through !important;}
+a[href]:hover {
+	text-decoration: underline !important;	
+	background: White !important;
+}
+a[href]:active {text-decoration: none !important;}
+a[href]:visited, a[href]:active, a[href]:visited *, a[href]:active * {color: Red !important;}
+a[href][target="_blank"]:before {
+	content: "New window: " !important;
+	font-size: 14px !important;
+	font-style: italic !important;
+	color: Black !important;
+	background: Silver !important;
+}
+form, hr {display: none !important;}

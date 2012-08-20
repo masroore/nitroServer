@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<codetemplate	xmlns="http://schemas.borland.com/Delphi/2005/codetemplates"
+				version="1.0.0">
+	<template name="sitr" invoke="manual">
+		<description>SmartInspect Enter/Leave Thread</description>
+		<author>Gurock Software</author>
+		<point name="thread">
+			<text>Thread</text>
+			<hint>The name of the thread.</hint>
+		</point>
+		<code language="C" context="methodbody" delimiter="|"><![CDATA[SiMain->EnterThread("|thread|");
+|selected||end|
+SiMain->LeaveThread("|thread|");]]>
+		</code>
+	</template>
+</codetemplate>

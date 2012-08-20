@@ -1,0 +1,30 @@
+
+========================================
+OPEN SESSION: 07/05/07 15:20:40
+========================================
+
+  Alphabetizing Start Menu
+  --- Begin Start Menu Tweaks ---
+      Disabling start menu control panel applets
+      Disabling start menu printer folder
+      Disabling start menu favorites folder
+      Enabling start menu documents folder
+      Enabling start menu log-off option
+      Setting start menu speed to 500 ms
+  --- End Start Menu Tweaks ---
+
+  --- Begin CDROM Tweaks ---
+      Disabling autostart data CD's
+      Disabling autoplay audio CD's
+  --- Begin CDROM Tweaks ---
+      Disabling autostart data CD's
+      Disabling autoplay audio CD's
+  --- Begin CDROM Tweaks ---
+      Disabling autostart data CD's
+      Disabling autoplay audio CD's
+  Alphabetizing Start Menu
+
+========================================
+CLOSE SESSION: 07/05/07 15:21:31
+========================================
+

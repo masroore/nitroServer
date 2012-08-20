@@ -1,0 +1,48 @@
+﻿<rss version="2.0">
+	<title>YAPP: Syntax Highlighter</title>
+	<form>
+		<action>javascript:callOrYAPPConverter();</action>
+		<input>
+			<type>select</type>
+			<class>editTransparent</class>
+			<id>LanguageType</id>
+			<label>Source Code Language:</label>
+		</input>
+		<input>
+			<type>textarea</type>
+			<class>smallSizeText</class>
+			<id>SourceCode</id>
+			<label>Source Code:</label>
+			<action>javascript:orCopyFromClipboard(document.getElementById('xForm_SourceCode'));</action>
+			<actionText>Insert from clipboard</actionText>
+		</input>
+		<input>
+			<type>text</type>
+			<class>editTransparent</class>
+			<id>StartingLine</id>
+			<value>0</value>
+			<label>Starting Line Number:</label>
+		</input>
+		<input>
+			<type>submit</type>
+			<submit>Call YAPP Web Service</submit>
+			<reset>Clear Form</reset>
+		</input>
+		<input />
+		<input>
+			<type>textarea</type>
+			<action>javascript:orCopyToClipboard(document.getElementById('xForm_delphiNET'));</action>
+			<actionText>Copy result to clipboard</actionText>
+			<id>yappCode</id>
+			<class>smallSizeText</class>
+			<label>Formatted Source Code (HTML):</label>
+		</input>
+		<input />
+		<input>
+			<type>div</type>
+			<id>yappCodeRTF</id>
+			<class>codeFrame autoScroll</class>
+			<label>Formatted Source Code (RTF):</label>
+		</input>
+	</form>
+</rss>

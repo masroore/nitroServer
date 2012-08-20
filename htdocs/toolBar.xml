@@ -1,0 +1,29 @@
+<rss version="2.0">
+	<title>Tool Bar Content</title>
+	<link/>
+	<description>Borland Developer Studio 4.0 "Welcome Page" Quick Link Bar Content</description>
+	<lastBuildDate>Thu, 02 Sep 2004 14:48:00 GMT</lastBuildDate>
+	<channel>
+		<title>Release Notes</title>
+		<item>
+			<image>bds:/Images/newproject.png</image>
+			<title>New Project</title>
+			<link>javascript:newProject();</link>
+		</item>
+		<item>
+			<image>bds:/Images/openproject.png</image>
+			<title>Open Project</title>
+			<link>javascript:openProject();</link>
+		</item>
+		<item>
+			<image>bds:/Images/openfile.png</image>
+			<title>Open File</title>
+			<link>javascript:openFile();</link>
+		</item>
+		<item>
+			<image>bds:/Images/help.png</image>
+			<title>Help</title>
+			<link>javascript:openDExplore('ms-help://borland.bds4/bds4start/html/intro.htm');</link>
+		</item>
+	</channel>
+</rss>

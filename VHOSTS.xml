@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<CONFIG>
+<VirtualHosts Count="1">
+  <Host_0>
+    <Info VHostName="DefaultVHost" HostName="localhost" ListenIP="127.0.0.1" ListenPort="80" Realm="DefaultRealm" DocRoot="C:\Nitro\htdocs\" LogDir="C:\Nitro\logs" MaxClients="300" />
+    <VirtualDirs Count="5">
+    <Entry_0 VirtualPath="TST1" RealPath="C:\Nitro\HTDOCS2\T\" ExecuteScript="False" DirListing="True" Authenticate="False"/>
+    <Entry_1 VirtualPath="DXR" RealPath="C:\nitro\htdocs\" ExecuteScript="False" DirListing="True" Authenticate="False"/>
+    <Entry_2 VirtualPath="TST2" RealPath="C:\nitro\HTDOCS\T\Dir\" ExecuteScript="True" DirListing="False" Authenticate="False"/>
+	<Entry_3 VirtualPath="CGI-BIN" RealPath="C:\nitro\CGI\" ExecuteScript="True" DirListing="False" Authenticate="False"/>
+	<Entry_4 VirtualPath="SCRIPTS" RealPath="C:\nitro\ISAPI\" ExecuteScript="True" DirListing="False" Authenticate="False"/>
+  </VirtualDirs>
+  </Host_0>
+  </VirtualHosts>
+</CONFIG>
